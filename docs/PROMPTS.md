@@ -12,8 +12,8 @@
 | Tên sinh viên / Nhóm |  |
 | MSSV / Danh sách MSSV |  |
 | Giảng viên hướng dẫn |  |
-| Ngày bắt đầu |  |
-| Ngày cập nhật gần nhất |  |
+| Ngày bắt đầu | 15/5/2026 |
+| Ngày cập nhật gần nhất | 15/5/2026 |
 
 ---
 
@@ -36,7 +36,7 @@ Sinh viên/nhóm cần ghi lại:
 
 Đánh dấu các công cụ AI đã sử dụng.
 
-- [ ] ChatGPT
+- [x ] ChatGPT
 - [ ] Gemini
 - [ ] Claude
 - [ ] GitHub Copilot
@@ -81,10 +81,18 @@ Sinh viên/nhóm cần ghi lại:
 | Phần việc liên quan | Requirement / Design / Database / Coding / Testing / Debug / Report / Presentation / Other |
 | Mức độ sử dụng | Hỏi ý tưởng / Hỏi giải thích / Hỏi review / Hỏi debug / Hỏi sinh code / Hỏi tối ưu |
 
+## Prompt #01
+
+- Date: 2026-05-15
+- AI Tool: ChatGPT
+- Author: nguyen-tuan-thanh
+- Purpose: Create login UI screen for Expo React Native application
+
 #### 5.1. Prompt nguyên văn
 
 ```text
-Dán nguyên văn prompt đã hỏi AI tại đây.
+Hãy tạo phần login cho ứng dụng Expo React Native dựa trên giao diện LMS của FPT University. 
+Màn hình cần có:
 ```
 
 #### 5.2. Bối cảnh khi viết prompt
@@ -92,6 +100,7 @@ Dán nguyên văn prompt đã hỏi AI tại đây.
 Mô tả ngắn gọn vì sao sinh viên/nhóm cần dùng prompt này.
 
 ```text
+Cần tạo giao login theo yêu cầu của giáo viên
 Viết tại đây...
 ```
 
@@ -100,7 +109,9 @@ Viết tại đây...
 Tóm tắt nội dung AI đã trả lời hoặc gợi ý.
 
 ```text
-Viết tại đây...
+- React Native UI code
+- Sử dụng Expo + TypeScript
+- Có thể chạy trực tiếp trong file app/(tabs)/index.tsx
 ```
 
 #### 5.4. Kết quả đã áp dụng vào bài
@@ -108,7 +119,8 @@ Viết tại đây...
 Mô tả phần nào từ kết quả AI đã được sử dụng vào bài tập/project.
 
 ```text
-Viết tại đây...
+Prompt cung cấp đầy đủ context về framework và giao diện mong muốn. 
+AI tạo được layout cơ bản phù hợp với yêu cầu, tuy nhiên cần chỉnh sửa thêm về spacing, icon và màu sắc để giống thiết kế thực tế hơn.
 ```
 
 #### 5.5. Phần sinh viên/nhóm đã chỉnh sửa hoặc cải tiến
@@ -116,37 +128,41 @@ Viết tại đây...
 Mô tả sinh viên/nhóm đã thay đổi, kiểm tra, sửa lỗi hoặc cải tiến gì so với kết quả AI trả về.
 
 ```text
-Viết tại đây...
+- Điều chỉnh spacing giữa các component
+- Chỉnh sửa màu sắc để phù hợp với giao diện LMS
+- Tối ưu font size và alignment
+- Xóa các component mặc định của Expo template không cần thiết
+- Kiểm tra và chạy thử bằng Expo Go
 ```
 
 #### 5.6. Đánh giá chất lượng prompt
 
 Đánh dấu các nhận xét phù hợp.
 
-- [ ] Prompt rõ ràng
+- [x ] Prompt rõ ràng
 - [ ] Prompt có đủ bối cảnh
 - [ ] Prompt còn thiếu thông tin
-- [ ] Prompt tạo ra kết quả tốt
+- [x ] Prompt tạo ra kết quả tốt
 - [ ] Prompt tạo ra kết quả chưa phù hợp
 - [ ] Cần hỏi lại AI nhiều lần
-- [ ] Cần tự kiểm tra và chỉnh sửa nhiều
+- [x ] Cần tự kiểm tra và chỉnh sửa nhiều
 - [ ] Kết quả AI có lỗi hoặc chưa chính xác
 
 #### 5.7. Minh chứng liên quan
 
 | Loại minh chứng | Nội dung |
 |---|---|
-| Link commit |  |
-| File liên quan |  |
+| Link commit |  Commit thêm giao diện login |
+| File liên quan |app/(tabs)/index.tsx  |
 | Screenshot |  |
-| Kết quả chạy/test |  |
+| Kết quả chạy/test | Chạy thành công trên Expo Go  |
 | Link tài liệu/báo cáo |  |
-| Ghi chú khác |  |
+| Ghi chú khác | Đã thay thế giao diện mặc định của Expo template |
 
 #### 5.8. Ghi chú thêm
 
 ```text
-Viết tại đây...
+AI hỗ trợ tốt trong việc tạo giao diện khởi đầu, tuy nhiên vẫn cần tự chỉnh sửa để phù hợp với yêu cầu thiết kế thực tế của project.
 ```
 
 ---

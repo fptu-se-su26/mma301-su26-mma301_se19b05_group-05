@@ -68,16 +68,16 @@ Viết tại đây...
 
 | Nội dung | Thông tin |
 |---|---|
-| Ngày sử dụng |  |
-| Công cụ AI | ChatGPT / Gemini / Claude / GitHub Copilot / Cursor / Antigravity / Khác |
-| Mục đích sử dụng |  |
-| Phần việc liên quan | Requirement / Design / Database / Frontend / Backend / Testing / Debug / Report / Presentation / Other |
-| Mức độ sử dụng | Hỗ trợ ý tưởng / Hỗ trợ một phần / Hỗ trợ nhiều / Sinh chính nội dung |
+| Ngày sử dụng | 15/5/2026 |
+| Công cụ AI | ChatGPT |
+| Mục đích sử dụng | Tạo giao diện login cho ứng dụng LMS mobile bằng Expo React Native  |
+| Phần việc liên quan |  Frontend |
+| Mức độ sử dụng |  Hỗ trợ một phần  |
 
 #### 4.1. Prompt đã sử dụng
 
 ```text
-Dán nguyên văn prompt đã hỏi AI tại đây.
+Hãy tạo phần login cho ứng dụng Expo React Native dựa trên giao diện LMS của FPT University
 ```
 
 #### 4.2. Kết quả AI gợi ý
@@ -85,7 +85,11 @@ Dán nguyên văn prompt đã hỏi AI tại đây.
 Tóm tắt nội dung AI đã trả lời hoặc gợi ý.
 
 ```text
-Viết tại đây...
+AI gợi ý code giao diện login bằng React Native sử dụng:
+- SafeAreaView
+- TextInput
+- TouchableOpacity
+- StyleSheet
 ```
 
 #### 4.3. Phần sinh viên/nhóm đã sử dụng từ AI
@@ -93,7 +97,7 @@ Viết tại đây...
 Mô tả rõ phần nào được sử dụng lại từ gợi ý của AI.
 
 ```text
-Viết tại đây...
+app/(tabs)/index.tsx
 ```
 
 #### 4.4. Phần sinh viên/nhóm tự chỉnh sửa hoặc cải tiến
@@ -101,7 +105,12 @@ Viết tại đây...
 Mô tả sinh viên/nhóm đã thay đổi, kiểm tra, sửa lỗi hoặc cải tiến gì so với gợi ý ban đầu của AI.
 
 ```text
-Viết tại đây...
+Sau khi nhận kết quả từ AI, nhóm đã:
+- Điều chỉnh khoảng cách giữa các component
+- Chỉnh sửa màu sắc giao diện
+- Tối ưu kích thước chữ và alignment
+- Xóa các component mặc định của Expo template
+- Kiểm tra khả năng hiển thị trên Expo Go
 ```
 
 #### 4.5. Minh chứng
@@ -109,18 +118,20 @@ Viết tại đây...
 | Loại minh chứng | Nội dung |
 |---|---|
 | Link commit |  |
-| File liên quan |  |
+| File liên quan | app/(tabs)/index.tsx  |
 | Screenshot |  |
-| Kết quả chạy/test |  |
+| Kết quả chạy/test | Chạy thành công bằng Expo Go |
 | Link video demo |  |
-| Ghi chú khác |  |
+| Ghi chú khác | Đã thay thế giao diện starter mặc định của Expo |
 
 #### 4.6. Nhận xét cá nhân/nhóm
 
 Sinh viên/nhóm học được gì sau lần sử dụng AI này?
 
 ```text
-Viết tại đây...
+học được cách sử dụng AI để tạo nhanh giao diện React Native cơ bản trong Expo.
+
+Tuy nhiên, kết quả từ AI vẫn cần được kiểm tra và chỉnh sửa thủ công để phù hợp với yêu cầu thực tế của project. 
 ```
 
 ---
