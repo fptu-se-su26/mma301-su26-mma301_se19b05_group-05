@@ -130,6 +130,13 @@ export default function LoginScreen() {
               </TouchableOpacity>
             </View>
 
+            {/* Test Product Link */}
+            <View style={styles.registerContainer}>
+              <TouchableOpacity onPress={() => router.push('/product')}>
+                <Text style={styles.registerLink}>Xem thử trang Product</Text>
+              </TouchableOpacity>
+            </View>
+
             {/* Divider */}
             <View style={styles.dividerContainer}>
               <View style={styles.divider} />

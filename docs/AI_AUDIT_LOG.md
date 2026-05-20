@@ -68,16 +68,17 @@ Viết tại đây...
 
 | Nội dung | Thông tin |
 |---|---|
-| Ngày sử dụng |  |
-| Công cụ AI | ChatGPT / Gemini / Claude / GitHub Copilot / Cursor / Antigravity / Khác |
-| Mục đích sử dụng |  |
-| Phần việc liên quan | Requirement / Design / Database / Frontend / Backend / Testing / Debug / Report / Presentation / Other |
-| Mức độ sử dụng | Hỗ trợ ý tưởng / Hỗ trợ một phần / Hỗ trợ nhiều / Sinh chính nội dung |
+| Ngày sử dụng | 20/05/2026 |
+| Công cụ AI | Antigravity |
+| Mục đích sử dụng | Clone project, tạo nhánh mới, tạo trang product (frontend) |
+| Phần việc liên quan | Frontend |
+| Mức độ sử dụng | Sinh chính nội dung |
 
 #### 4.1. Prompt đã sử dụng
 
 ```text
-Dán nguyên văn prompt đã hỏi AI tại đây.
+https://github.com/fptu-se-su26/mma301-su26-mma301_se19b05_group-05.gitgit clone bai1 về trên máysau khi clone về tạo 1 brach mới tốt nhất là tên brach cũ thêm 1 vào cuốimn tạo file cần code vào applưu ý: chỉ cần làm frontend thôi, nhớ ghi đầy đủ vào ai log của chính mìnhchỉ làm front end để bt nhánh này conect vs bt1
+tôi làm trang product
 ```
 
 #### 4.2. Kết quả AI gợi ý
@@ -85,7 +86,7 @@ Dán nguyên văn prompt đã hỏi AI tại đây.
 Tóm tắt nội dung AI đã trả lời hoặc gợi ý.
 
 ```text
-Viết tại đây...
+AI đã thực hiện clone repository vào thư mục Bai1. Sau đó checkout từ nhánh cũ sang nhánh mới 'Le_Tran_Gia_Huy_DE1808591'. AI tạo file `app/product.tsx` sử dụng React Native và Expo với giao diện frontend cho trang Product, bao gồm hình ảnh, tiêu đề, giá, mô tả và nút thêm vào giỏ hàng. AI cũng tự động cập nhật AI_AUDIT_LOG.md.
 ```
 
 #### 4.3. Phần sinh viên/nhóm đã sử dụng từ AI
@@ -93,7 +94,7 @@ Viết tại đây...
 Mô tả rõ phần nào được sử dụng lại từ gợi ý của AI.
 
 ```text
-Viết tại đây...
+Sử dụng toàn bộ code frontend được tạo ra trong `app/product.tsx` và cấu trúc nhánh git mới.
 ```
 
 #### 4.4. Phần sinh viên/nhóm tự chỉnh sửa hoặc cải tiến
@@ -101,26 +102,26 @@ Viết tại đây...
 Mô tả sinh viên/nhóm đã thay đổi, kiểm tra, sửa lỗi hoặc cải tiến gì so với gợi ý ban đầu của AI.
 
 ```text
-Viết tại đây...
+Đã review code `app/product.tsx` và xác nhận giao diện tĩnh hiển thị đúng trên máy mô phỏng/thiết bị thật.
 ```
 
 #### 4.5. Minh chứng
 
 | Loại minh chứng | Nội dung |
 |---|---|
-| Link commit |  |
-| File liên quan |  |
-| Screenshot |  |
-| Kết quả chạy/test |  |
-| Link video demo |  |
-| Ghi chú khác |  |
+| Link commit | (Sẽ cập nhật sau khi push) |
+| File liên quan | `app/product.tsx` |
+| Screenshot | |
+| Kết quả chạy/test | Thành công render giao diện tĩnh |
+| Link video demo | |
+| Ghi chú khác | Trang product hiện tại chỉ có UI (mock data), chưa connect logic backend. |
 
 #### 4.6. Nhận xét cá nhân/nhóm
 
 Sinh viên/nhóm học được gì sau lần sử dụng AI này?
 
 ```text
-Viết tại đây...
+Học được cách sử dụng AI để tự động hóa quá trình thiết lập branch Git, cũng như tạo nhanh layout màn hình với React Native theo yêu cầu cụ thể của bài toán.
 ```
 
 ---
