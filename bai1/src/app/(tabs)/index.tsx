@@ -33,7 +33,6 @@ export default function HomeScreen() {
         <Text style={styles.sectionTitle}>Quick Navigation</Text>
 
         <View style={styles.grid}>
-          {/* Product */}
           <TouchableOpacity
             style={styles.card}
             onPress={() => router.push("/product")}
@@ -42,7 +41,6 @@ export default function HomeScreen() {
             <Text style={styles.cardTitle}>Products</Text>
           </TouchableOpacity>
 
-          {/* Cart */}
           <TouchableOpacity
             style={styles.card}
             onPress={() => router.push("/cart")}
@@ -51,7 +49,6 @@ export default function HomeScreen() {
             <Text style={styles.cardTitle}>Cart</Text>
           </TouchableOpacity>
 
-          {/* Order */}
           <TouchableOpacity
             style={styles.card}
             onPress={() => router.push("/order")}
@@ -60,7 +57,6 @@ export default function HomeScreen() {
             <Text style={styles.cardTitle}>Orders</Text>
           </TouchableOpacity>
 
-          {/* Wishlist */}
           <TouchableOpacity
             style={styles.card}
             onPress={() => router.push("/wishlist")}
@@ -69,7 +65,6 @@ export default function HomeScreen() {
             <Text style={styles.cardTitle}>Wishlist</Text>
           </TouchableOpacity>
 
-          {/* Profile */}
           <TouchableOpacity
             style={styles.card}
             onPress={() => router.push("/profile")}
@@ -78,7 +73,6 @@ export default function HomeScreen() {
             <Text style={styles.cardTitle}>Profile</Text>
           </TouchableOpacity>
 
-          {/* Settings */}
           <TouchableOpacity
             style={styles.card}
             onPress={() => router.push("/settings")}
