@@ -4,15 +4,16 @@
 
 | Thông tin | Nội dung |
 |---|---|
-| Môn học |  |
-| Mã môn học |  |
-| Lớp |  |
-| Học kỳ |  |
-| Tên bài tập / Project |  |
-| Tên sinh viên / Nhóm |  |
-| MSSV / Danh sách MSSV |  |
-| Giảng viên hướng dẫn |  |
-| Ngày hoàn thành reflection |  |
+| Môn học | MMA301 |
+| Mã môn học | MMA301 |
+| Lớp | SE19D05 |
+| Học kỳ | SU26 |
+| Tên bài tập / Project | bai1 |
+| Tên sinh viên / Nhóm | Le Hai Nam |
+| MSSV / Danh sách MSSV | DE170688 |
+| Giảng viên hướng dẫn | QuangLTN3 |
+| Ngày hoàn thành reflection | 21/5/2026 |
+
 
 ---
 
@@ -35,24 +36,20 @@ Reflection cần thể hiện:
 Mô tả ngắn gọn quá trình sử dụng AI trong bài tập/project này.
 
 ```text
-Viết tại đây...
-```
+Trong project này, em sử dụng AI chủ yếu ở giai đoạn frontend implementation và debug. 
+AI hỗ trợ gợi ý thiết kế giao diện settings, giải thích lỗi route trong Expo Router và giải thích sự khác nhau giữa Expo SDK 54 và 55.
 
-Gợi ý:
+Công cụ được sử dụng nhiều nhất là ChatGPT. 
+AI giúp tiết kiệm thời gian tìm hiểu công nghệ mới và hỗ trợ debug nhanh hơn.
 
-- Em/nhóm đã dùng AI ở giai đoạn nào?
-- Dùng AI để hỗ trợ việc gì?
-- Công cụ AI nào được sử dụng nhiều nhất?
-- AI có giúp cải thiện chất lượng bài làm không?
-- Có phần nào AI gợi ý nhưng em/nhóm không sử dụng không?
-
+Một số phần AI gợi ý nhưng em không sử dụng nguyên bản mà tự chỉnh sửa lại để phù hợp với project thực tế.
 ---
 
 ## 4. Công cụ AI đã sử dụng
 
 Đánh dấu các công cụ AI đã sử dụng.
 
-- [ ] ChatGPT
+- [ x] ChatGPT
 - [ ] Gemini
 - [ ] Claude
 - [ ] GitHub Copilot
@@ -71,7 +68,7 @@ Viết tại đây...
 ### Lý do sử dụng công cụ đó
 
 ```text
-Viết tại đây...
+ChatGPT hỗ trợ giải thích lỗi nhanh, dễ hiểu và có thể gợi ý code phù hợp với React Native và Expo Router.
 ```
 
 ---
@@ -81,26 +78,26 @@ Viết tại đây...
 Đánh dấu các nội dung phù hợp.
 
 - [ ] Hiểu yêu cầu đề bài
-- [ ] Phân tích bài toán
-- [ ] Tìm ý tưởng giải pháp
+- [x ] Phân tích bài toán
+- [ x] Tìm ý tưởng giải pháp
 - [ ] Thiết kế database
-- [ ] Thiết kế giao diện
+- [ x] Thiết kế giao diện
 - [ ] Thiết kế kiến trúc hệ thống
-- [ ] Viết code mẫu
-- [ ] Debug lỗi
+- [x ] Viết code mẫu
+- [x ] Debug lỗi
 - [ ] Viết test case
 - [ ] Review code
 - [ ] Tối ưu code
 - [ ] Kiểm tra bảo mật
-- [ ] Viết báo cáo
+- [x ] Viết báo cáo
 - [ ] Chuẩn bị thuyết trình
-- [ ] Tìm hiểu công nghệ mới
+- [ x] Tìm hiểu công nghệ mới
 - [ ] Khác: ....................................
 
 ### Mô tả chi tiết
 
 ```text
-Viết tại đây...
+AI hỗ trợ sinh code frontend cho settings.tsx, giải thích route trong Expo Router, hướng dẫn xử lý lỗi navigation trên Expo Web và giải thích compatibility giữa Expo SDK và Expo Go.
 ```
 
 ---
@@ -110,46 +107,30 @@ Viết tại đây...
 ### 6.1. Những điểm AI giúp em/nhóm học tốt hơn
 
 ```text
-Viết tại đây...
+AI giúp em hiểu nhanh hơn về Expo Router, navigation và SDK compatibility. 
+Ngoài ra AI còn giúp debug lỗi nhanh hơn và cung cấp ví dụ code để tham khảo.
 ```
 
-Gợi ý:
-
-- Hiểu bài nhanh hơn.
-- Có thêm ví dụ minh họa.
-- Biết cách debug lỗi.
-- Biết thêm cách tổ chức code.
-- Biết thêm cách thiết kế giải pháp.
-- Biết cách viết test case.
-- Biết cách cải thiện báo cáo hoặc slide.
 
 ### 6.2. Những điểm AI chưa giúp tốt hoặc gây khó khăn
 
 ```text
-Viết tại đây...
+Một số lần AI chưa hiểu đúng cấu trúc project thực tế nên đưa ra hướng xử lý chưa phù hợp. 
+Em cần cung cấp thêm bối cảnh và tự kiểm tra lại kết quả.
 ```
 
-Gợi ý:
-
-- AI trả lời sai.
-- AI sinh code không chạy.
-- AI hiểu sai yêu cầu đề bài.
-- AI đưa giải pháp quá phức tạp.
-- AI thiếu ngữ cảnh môn học.
-- AI trả lời chung chung.
-- AI khiến em/nhóm dễ phụ thuộc.
 
 ### 6.3. Em/nhóm có bị phụ thuộc vào AI không?
 
 - [ ] Không phụ thuộc
-- [ ] Phụ thuộc ít
+- [x] Phụ thuộc ít
 - [ ] Phụ thuộc trung bình
 - [ ] Phụ thuộc nhiều
 
 Giải thích:
 
 ```text
-Viết tại đây...
+AI chủ yếu được dùng để hỗ trợ ý tưởng và debug. Em vẫn tự chỉnh sửa code, kiểm tra lỗi và quyết định hướng triển khai cuối cùng.
 ```
 
 ---
@@ -158,47 +139,47 @@ Viết tại đây...
 
 Đánh dấu các cách đã sử dụng.
 
-- [ ] Chạy thử chương trình
-- [ ] Kiểm tra output
+- [ x] Chạy thử chương trình
+- [ x] Kiểm tra output
 - [ ] Viết test case
-- [ ] So sánh với yêu cầu đề bài
+- [ x] So sánh với yêu cầu đề bài
 - [ ] Đối chiếu với tài liệu môn học
-- [ ] Review code
+- [ x] Review code
 - [ ] Hỏi lại giảng viên
-- [ ] Tra cứu tài liệu chính thống
+- [ x] Tra cứu tài liệu chính thống
 - [ ] Thảo luận với thành viên nhóm
-- [ ] Kiểm tra bằng dữ liệu mẫu
-- [ ] So sánh trước và sau khi dùng AI
+- [ x] Kiểm tra bằng dữ liệu mẫu
+- [ x] So sánh trước và sau khi dùng AI
 - [ ] Khác: ....................................
 
 ### Mô tả quá trình kiểm chứng
 
 ```text
-Viết tại đây...
+Sau khi nhận code hoặc hướng dẫn từ AI, em chạy thử project bằng Expo Web, kiểm tra navigation, kiểm tra lỗi console và chỉnh sửa lại cho phù hợp với cấu trúc project.
 ```
 
 ### Ví dụ cụ thể về một lần kiểm chứng
 
-| Nội dung | Mô tả |
-|---|---|
-| AI đã gợi ý gì? |  |
-| Em/nhóm đã kiểm tra bằng cách nào? |  |
-| Kết quả kiểm tra | Đúng / Sai / Cần chỉnh sửa |
-| Em/nhóm đã xử lý tiếp như thế nào? |  |
+| Nội dung                           | Mô tả                                                            |
+| ---------------------------------- | ---------------------------------------------------------------- |
+| AI đã gợi ý gì?                    | Thêm route settings vào navigation                               |
+| Em/nhóm đã kiểm tra bằng cách nào? | Chạy Expo Web và truy cập route                                  |
+| Kết quả kiểm tra                   | Cần chỉnh sửa                                                    |
+| Em/nhóm đã xử lý tiếp như thế nào? | Tìm ra app-tabs-web.tsx chưa được cập nhật và sửa lại TabTrigger |
+
 
 ---
 
 ## 8. Ví dụ AI gợi ý sai hoặc chưa phù hợp
 
-Ghi lại ít nhất một ví dụ nếu có.
+| Nội dung                          | Mô tả                                                           |
+| --------------------------------- | --------------------------------------------------------------- |
+| AI đã gợi ý gì?                   | Chỉ chỉnh sửa app-tabs.tsx                                      |
+| Vì sao gợi ý đó sai/chưa phù hợp? | Project đang chạy Expo Web nên thực tế sử dụng app-tabs-web.tsx |
+| Em/nhóm phát hiện bằng cách nào?  | Route không hoạt động sau khi chạy thử                          |
+| Em/nhóm đã sửa như thế nào?       | Tự kiểm tra project structure và cập nhật app-tabs-web.tsx      |
+| Bài học rút ra                    | Cần cung cấp đầy đủ bối cảnh project khi hỏi AI                 |
 
-| Nội dung | Mô tả |
-|---|---|
-| AI đã gợi ý gì? |  |
-| Vì sao gợi ý đó sai/chưa phù hợp? |  |
-| Em/nhóm phát hiện bằng cách nào? |  |
-| Em/nhóm đã sửa như thế nào? |  |
-| Bài học rút ra |  |
 
 Nếu không có trường hợp AI gợi ý sai, hãy ghi rõ:
 
@@ -213,57 +194,30 @@ Trong quá trình thực hiện, em/nhóm chưa ghi nhận trường hợp AI g�
 Mô tả rõ phần nào là đóng góp chính của sinh viên/nhóm, không phải chỉ copy từ AI.
 
 ```text
-Viết tại đây...
+Em tự phân tích lỗi navigation, tự kiểm tra cấu trúc project, chỉnh sửa code AI gợi ý để phù hợp với Expo Web và tự kiểm tra kết quả chạy thực tế.
 ```
-
-Gợi ý:
-
-- Tự phân tích yêu cầu.
-- Tự chọn giải pháp.
-- Tự chỉnh sửa code.
-- Tự kiểm tra output.
-- Tự thiết kế logic.
-- Tự sửa lỗi.
-- Tự viết báo cáo theo hiểu biết của mình.
-- Tự đánh giá ưu/nhược điểm của sản phẩm.
-- Tự thuyết trình và giải thích sản phẩm.
 
 ---
 
 ## 10. So sánh trước và sau khi dùng AI
 
-| Nội dung | Trước khi dùng AI | Sau khi dùng AI | Cải thiện đạt được |
-|---|---|---|---|
-| Hiểu yêu cầu |  |  |  |
-| Phân tích bài toán |  |  |  |
-| Thiết kế giải pháp |  |  |  |
-| Code/Implementation |  |  |  |
-| Debug/Testing |  |  |  |
-| Báo cáo/Thuyết trình |  |  |  |
-| Làm việc nhóm |  |  |  |
-
----
+| Nội dung             | Trước khi dùng AI   | Sau khi dùng AI               | Cải thiện đạt được  |
+| -------------------- | ------------------- | ----------------------------- | ------------------- |
+| Hiểu yêu cầu         | Chậm                | Nhanh hơn                     | Tiết kiệm thời gian |
+| Phân tích bài toán   | Mất nhiều thời gian | Có hướng giải quyết nhanh hơn | Hiểu flow tốt hơn   |
+| Thiết kế giải pháp   | Ít ý tưởng          | Có thêm ví dụ                 | Dễ triển khai       |
+| Code/Implementation  | Tự tìm nhiều        | Có code tham khảo             | Tăng tốc phát triển |
+| Debug/Testing        | Khó xác định lỗi    | Có hướng debug                | Sửa lỗi nhanh hơn   |
+| Báo cáo/Thuyết trình | Mất thời gian       | Có gợi ý trình bày            | Viết log nhanh hơn  |
+| Làm việc nhóm        | Bình thường         | Có tài liệu rõ hơn            | Dễ chia sẻ hơn      |
 
 ## 11. Bài học về môn học
 
 Sau bài tập/project này, em/nhóm học được gì về kiến thức môn học?
 
 ```text
-Viết tại đây...
+Sau project này, em hiểu rõ hơn về Expo Router, navigation trong React Native, cách hoạt động của Expo SDK và cách debug frontend trên Expo Web.
 ```
-
-Gợi ý:
-
-- Kiến thức kỹ thuật đã hiểu rõ hơn.
-- Kỹ năng lập trình đã cải thiện.
-- Cách thiết kế hệ thống.
-- Cách kiểm thử.
-- Cách phân tích yêu cầu.
-- Cách làm việc nhóm.
-- Cách giải quyết lỗi.
-- Cách trình bày sản phẩm.
-- Cách đọc và hiểu tài liệu kỹ thuật.
-
 ---
 
 ## 12. Bài học về sử dụng AI có trách nhiệm
@@ -271,36 +225,23 @@ Gợi ý:
 Sau bài tập/project này, em/nhóm học được gì về việc sử dụng AI một cách minh bạch, có trách nhiệm?
 
 ```text
-Viết tại đây...
-```
-
-Gợi ý:
-
-- Không nên copy nguyên kết quả AI.
-- Cần kiểm tra lại mọi kết quả AI.
-- Cần hiểu nội dung trước khi nộp.
-- Cần ghi nhận việc sử dụng AI.
-- Cần biết AI có thể sai.
-- Cần tự chịu trách nhiệm với sản phẩm cuối cùng.
-- Cần dùng AI như công cụ hỗ trợ học tập, không thay thế hoàn toàn việc học.
-
+Em học được rằng không nên copy nguyên kết quả AI mà cần tự kiểm tra lại, hiểu logic code trước khi sử dụng và cần ghi nhận trung thực việc sử dụng AI trong project.
 ---
 
 ## 13. Điều em/nhóm sẽ không làm khi sử dụng AI
 
 Đánh dấu các cam kết phù hợp.
 
-- [ ] Không dùng AI để làm toàn bộ bài mà không hiểu nội dung.
-- [ ] Không nộp nguyên văn kết quả AI nếu chưa kiểm tra.
-- [ ] Không che giấu việc sử dụng AI trong các phần quan trọng.
-- [ ] Không dùng AI để tạo nội dung sai lệch hoặc gian lận.
-- [ ] Không dùng AI thay thế hoàn toàn quá trình học.
-- [ ] Không bỏ qua yêu cầu, rubric hoặc hướng dẫn của giảng viên.
+- [x ] Không dùng AI để làm toàn bộ bài mà không hiểu nội dung.
+- [x ] Không nộp nguyên văn kết quả AI nếu chưa kiểm tra.
+- [x ] Không che giấu việc sử dụng AI trong các phần quan trọng.
+- [x ] Không dùng AI để tạo nội dung sai lệch hoặc gian lận.
+- [x ] Không dùng AI thay thế hoàn toàn quá trình học.
+- [x ] Không bỏ qua yêu cầu, rubric hoặc hướng dẫn của giảng viên.
 
 ### Giải thích thêm nếu có
 
-```text
-Viết tại đây...
+AI chỉ là công cụ hỗ trợ, kết quả cuối cùng vẫn cần do sinh viên tự hiểu và chịu trách nhiệm.
 ```
 
 ---
@@ -310,36 +251,23 @@ Viết tại đây...
 Lần sau em/nhóm sẽ sử dụng AI tốt hơn bằng cách nào?
 
 ```text
-Viết tại đây...
+Lần sau em sẽ viết prompt rõ ràng hơn, cung cấp đầy đủ bối cảnh project và kiểm tra kết quả AI kỹ hơn trước khi áp dụng.
 ```
 
-Gợi ý:
-
-- Viết prompt rõ hơn.
-- Cung cấp nhiều ngữ cảnh hơn cho AI.
-- Không hỏi AI làm toàn bộ bài.
-- Tập trung hỏi AI giải thích, gợi ý, review.
-- Tự kiểm tra kỹ hơn.
-- Ghi log thường xuyên hơn.
-- Liên kết log với commit/screenshot rõ hơn.
-- Thảo luận với nhóm trước khi áp dụng kết quả AI.
-- Đối chiếu kết quả AI với tài liệu môn học.
 
 ---
 
 ## 15. Tự đánh giá mức độ hoàn thành
 
-Sinh viên/nhóm tự đánh giá theo thang 1-5.
-
-| Tiêu chí | Điểm tự đánh giá 1-5 | Ghi chú |
-|---|:---:|---|
-| Ghi nhận việc dùng AI trung thực |  |  |
-| Prompt có mục tiêu rõ ràng |  |  |
-| Kiểm chứng kết quả AI |  |  |
-| Tự chỉnh sửa/cải tiến |  |  |
-| Hiểu nội dung đã nộp |  |  |
-| Reflection có chiều sâu |  |  |
-| Sử dụng AI có trách nhiệm |  |  |
+| Tiêu chí                         | Điểm tự đánh giá 1-5 | Ghi chú |
+| -------------------------------- | :------------------: | ------- |
+| Ghi nhận việc dùng AI trung thực |           5          |         |
+| Prompt có mục tiêu rõ ràng       |           4          |         |
+| Kiểm chứng kết quả AI            |           5          |         |
+| Tự chỉnh sửa/cải tiến            |           5          |         |
+| Hiểu nội dung đã nộp             |           5          |         |
+| Reflection có chiều sâu          |           4          |         |
+| Sử dụng AI có trách nhiệm        |           5          |         |
 
 ---
 
@@ -350,26 +278,25 @@ Trả lời ngắn gọn các câu hỏi sau.
 ### 16.1. Nếu giảng viên hỏi về phần AI đã hỗ trợ, em/nhóm có giải thích lại được không?
 
 ```text
-Viết tại đây...
+Có, vì em đã tự chỉnh sửa và hiểu cách hoạt động của các phần đã sử dụng.
 ```
 
 ### 16.2. Nếu không có AI, em/nhóm có thể tự làm lại phần quan trọng nhất không?
 
 ```text
-Viết tại đây...
+Có, nhưng sẽ mất nhiều thời gian hơn để tìm hiểu và debug.
 ```
 
 ### 16.3. Phần nào trong bài thể hiện rõ nhất năng lực thật sự của em/nhóm?
 
 ```text
-Viết tại đây...
+Phần debug route và tự tìm ra nguyên nhân do app-tabs-web.tsx chưa được cập nhật.
 ```
 
 ### 16.4. Em/nhóm muốn cải thiện kỹ năng nào sau bài này?
 
 ```text
-Viết tại đây...
-```
+Kỹ năng React Native, Expo Router và cách viết prompt rõ ràng hơn.
 
 ---
 
@@ -386,4 +313,4 @@ Sinh viên/nhóm hiểu rằng:
 
 | Đại diện sinh viên/nhóm | Ngày xác nhận |
 |---|---|
-|  |  |
+| Le Hai Nam |21/05/2026  |
