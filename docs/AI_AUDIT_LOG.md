@@ -27,7 +27,7 @@
 - [ ] Claude
 - [ ] GitHub Copilot
 - [ ] Cursor
-- [ ] Antigravity
+- [x] Antigravity
 - [ ] Perplexity
 - [ ] Microsoft Copilot
 - [ ] Công cụ khác: ....................................

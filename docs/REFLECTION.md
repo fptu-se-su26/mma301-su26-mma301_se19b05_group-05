@@ -2,17 +2,17 @@
 
 ## 1. Thông tin chung
 
-| Thông tin | Nội dung |
-|---|---|
-| Môn học |MMA301|
-| Mã môn học |MMA301|
-| Lớp |SE19D05|
-| Học kỳ |SU26|
-| Tên bài tập / Project |bai1|
-| Tên sinh viên / Nhóm |Nguyen Chau Quang/Nhóm 5|
-| MSSV / Danh sách MSSV |DE170490|
-| Giảng viên hướng dẫn |QuangLTN3|
-| Ngày hoàn thành reflection |21/5/2026|
+| Thông tin                  | Nội dung                 |
+| -------------------------- | ------------------------ |
+| Môn học                    | MMA301                   |
+| Mã môn học                 | MMA301                   |
+| Lớp                        | SE19D05                  |
+| Học kỳ                     | SU26                     |
+| Tên bài tập / Project      | bai1                     |
+| Tên sinh viên / Nhóm       | Nguyen Chau Quang/Nhóm 5 |
+| MSSV / Danh sách MSSV      | DE170490                 |
+| Giảng viên hướng dẫn       | QuangLTN3                |
+| Ngày hoàn thành reflection | 21/5/2026                |
 
 ---
 
@@ -34,11 +34,11 @@ Reflection cần thể hiện:
 
 Mô tả ngắn gọn quá trình sử dụng AI trong bài tập/project này.
 
-```text
-Trong project này, em sử dụng AI chủ yếu ở giai đoạn frontend implementation và debug. 
+````text
+Trong project này, em sử dụng AI chủ yếu ở giai đoạn frontend implementation và debug.
 AI hỗ trợ gợi ý thiết kế giao diện settings, giải thích lỗi route trong Expo Router và giải thích sự khác nhau giữa Expo SDK 54 và 55.
 
-Công cụ được sử dụng nhiều nhất là ChatGPT. 
+Công cụ được sử dụng nhiều nhất là ChatGPT.
 AI giúp tiết kiệm thời gian tìm hiểu công nghệ mới và hỗ trợ debug nhanh hơn.
 
 Một số phần AI gợi ý nhưng em không sử dụng nguyên bản mà tự chỉnh sửa lại để phù hợp với project thực tế.
@@ -53,7 +53,7 @@ Một số phần AI gợi ý nhưng em không sử dụng nguyên bản mà t�
 - [ ] Claude
 - [ ] GitHub Copilot
 - [ ] Cursor
-- [ ] Antigravity
+- [x] Antigravity
 - [ ] Microsoft Copilot
 - [ ] Perplexity
 - [ ] Công cụ khác: ....................................
@@ -61,8 +61,8 @@ Một số phần AI gợi ý nhưng em không sử dụng nguyên bản mà t�
 ### Công cụ được sử dụng nhiều nhất
 
 ```text
-Viết tại đây...
-```
+Antigravity / Gemini
+````
 
 ### Lý do sử dụng công cụ đó
 
@@ -76,17 +76,17 @@ ChatGPT hỗ trợ giải thích lỗi nhanh, dễ hiểu và có thể gợi ý
 
 Đánh dấu các nội dung phù hợp.
 
-- [X] Hiểu yêu cầu đề bài
-- [X] Phân tích bài toán
-- [X] Tìm ý tưởng giải pháp
+- [x] Hiểu yêu cầu đề bài
+- [x] Phân tích bài toán
+- [x] Tìm ý tưởng giải pháp
 - [ ] Thiết kế database
-- [X] Thiết kế giao diện
+- [x] Thiết kế giao diện
 - [ ] Thiết kế kiến trúc hệ thống
 - [x ] Viết code mẫu
 - [x ] Debug lỗi
 - [ ] Viết test case
-- [X] Review code
-- [X] Tối ưu code
+- [x] Review code
+- [x] Tối ưu code
 - [ ] Kiểm tra bảo mật
 - [x ] Viết báo cáo
 - [ ] Chuẩn bị thuyết trình
@@ -106,22 +106,21 @@ AI hỗ trợ sinh code frontend cho settings.tsx, giải thích route trong Exp
 ### 6.1. Những điểm AI giúp em/nhóm học tốt hơn
 
 ```text
-AI giúp em hiểu nhanh hơn về Expo Router, navigation và SDK compatibility. 
+AI giúp em hiểu nhanh hơn về Expo Router, navigation và SDK compatibility.
 Ngoài ra AI còn giúp debug lỗi nhanh hơn và cung cấp ví dụ code để tham khảo.
 ```
-
 
 ### 6.2. Những điểm AI chưa giúp tốt hoặc gây khó khăn
 
 ```text
-Một số lần AI chưa hiểu đúng cấu trúc project thực tế nên đưa ra hướng xử lý chưa phù hợp. 
+Một số lần AI chưa hiểu đúng cấu trúc project thực tế nên đưa ra hướng xử lý chưa phù hợp.
 Em cần cung cấp thêm bối cảnh và tự kiểm tra lại kết quả.
 ```
-
 
 ### 6.3. Em/nhóm có bị phụ thuộc vào AI không?
 
 - [ ] Không phụ thuộc
+- [x] Phụ thuộc ít
 - [x] Phụ thuộc ít
 - [ ] Phụ thuộc trung bình
 - [ ] Phụ thuộc nhiều
@@ -166,7 +165,6 @@ Sau khi nhận code hoặc hướng dẫn từ AI, em chạy thử project bằn
 | Kết quả kiểm tra                   | Cần chỉnh sửa                                                    |
 | Em/nhóm đã xử lý tiếp như thế nào? | Tìm ra app-tabs-web.tsx chưa được cập nhật và sửa lại TabTrigger |
 
-
 ---
 
 ## 8. Ví dụ AI gợi ý sai hoặc chưa phù hợp
@@ -178,7 +176,6 @@ Sau khi nhận code hoặc hướng dẫn từ AI, em chạy thử project bằn
 | Em/nhóm phát hiện bằng cách nào?  | Route không hoạt động sau khi chạy thử                          |
 | Em/nhóm đã sửa như thế nào?       | Tự kiểm tra project structure và cập nhật app-tabs-web.tsx      |
 | Bài học rút ra                    | Cần cung cấp đầy đủ bối cảnh project khi hỏi AI                 |
-
 
 Nếu không có trường hợp AI gợi ý sai, hãy ghi rõ:
 
@@ -217,6 +214,7 @@ Sau bài tập/project này, em/nhóm học được gì về kiến thức môn
 ```text
 Sau project này, em hiểu rõ hơn về Expo Router, navigation trong React Native, cách hoạt động của Expo SDK và cách debug frontend trên Expo Web.
 ```
+
 ---
 
 ## 12. Bài học về sử dụng AI có trách nhiệm
@@ -253,20 +251,19 @@ Lần sau em/nhóm sẽ sử dụng AI tốt hơn bằng cách nào?
 Lần sau em sẽ viết prompt rõ ràng hơn, cung cấp đầy đủ bối cảnh project và kiểm tra kết quả AI kỹ hơn trước khi áp dụng.
 ```
 
-
 ---
 
 ## 15. Tự đánh giá mức độ hoàn thành
 
 | Tiêu chí                         | Điểm tự đánh giá 1-5 | Ghi chú |
 | -------------------------------- | :------------------: | ------- |
-| Ghi nhận việc dùng AI trung thực |           5          |         |
-| Prompt có mục tiêu rõ ràng       |           4          |         |
-| Kiểm chứng kết quả AI            |           5          |         |
-| Tự chỉnh sửa/cải tiến            |           5          |         |
-| Hiểu nội dung đã nộp             |           5          |         |
-| Reflection có chiều sâu          |           4          |         |
-| Sử dụng AI có trách nhiệm        |           5          |         |
+| Ghi nhận việc dùng AI trung thực |          5           |         |
+| Prompt có mục tiêu rõ ràng       |          4           |         |
+| Kiểm chứng kết quả AI            |          5           |         |
+| Tự chỉnh sửa/cải tiến            |          5           |         |
+| Hiểu nội dung đã nộp             |          5           |         |
+| Reflection có chiều sâu          |          4           |         |
+| Sử dụng AI có trách nhiệm        |          5           |         |
 
 ---
 
@@ -313,3 +310,4 @@ Sinh viên/nhóm hiểu rằng:
 | Đại diện sinh viên/nhóm | Ngày xác nhận |
 |---|---|
 | Le Hai Nam |21/05/2026  |
+```

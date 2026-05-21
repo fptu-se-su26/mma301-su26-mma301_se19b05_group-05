@@ -17,32 +17,32 @@ Nguyên tắc ghi changelog:
 
 ## 2. Thông tin project
 
-| Thông tin | Nội dung |
-|---|---|
-| Môn học | Mobile Programming |
-| Mã môn học | MMA301 |
-| Lớp | SE19D05 |
-| Học kỳ | SU25 |
-| Tên bài tập / Project | bai1 |
-| Tên sinh viên / Nhóm | Nguyen Tuan Thanh/ nhóm 5 |
-| MSSV / Danh sách MSSV | DE180010 |
-| Giảng viên hướng dẫn | QuangLTN3 |
-| Repository URL | MMA301-Su26-MMA301-SE19b05-group-05 |
-| Ngày bắt đầu | 21/5/2026 |
-| Ngày hoàn thành | 21/5/2026 |
+| Thông tin             | Nội dung                            |
+| --------------------- | ----------------------------------- |
+| Môn học               | Mobile Programming                  |
+| Mã môn học            | MMA301                              |
+| Lớp                   | SE19D05                             |
+| Học kỳ                | SU25                                |
+| Tên bài tập / Project | bai1                                |
+| Tên sinh viên / Nhóm  | Nguyen Tuan Thanh/ nhóm 5           |
+| MSSV / Danh sách MSSV | DE180010                            |
+| Giảng viên hướng dẫn  | QuangLTN3                           |
+| Repository URL        | MMA301-Su26-MMA301-SE19b05-group-05 |
+| Ngày bắt đầu          | 21/5/2026                           |
+| Ngày hoàn thành       | 21/5/2026                           |
 
 ---
 
 ## 3. Tổng quan các phiên bản/giai đoạn
 
-| Phiên bản/Giai đoạn | Thời gian | Nội dung chính | Trạng thái |
-|---|---|---|---|
-| Phase 01 | 20/05/2026 | Khởi tạo project Expo React Native | / Completed |
-| Phase 02 |  | Phân tích yêu cầu | Not Started / In Progress / Completed |
-| Phase 03 |  | Thiết kế hệ thống | Not Started / In Progress / Completed |
-| Phase 04 |  | Implementation | Not Started / In Progress / Completed |
-| Phase 05 |  | Testing & Debug | Not Started / In Progress / Completed |
-| Phase 06 |  | Hoàn thiện báo cáo và demo | Not Started / In Progress / Completed |
+| Phiên bản/Giai đoạn | Thời gian  | Nội dung chính                     | Trạng thái                            |
+| ------------------- | ---------- | ---------------------------------- | ------------------------------------- |
+| Phase 01            | 20/05/2026 | Khởi tạo project Expo React Native | / Completed                           |
+| Phase 02            |            | Phân tích yêu cầu                  | Not Started / In Progress / Completed |
+| Phase 03            |            | Thiết kế hệ thống                  | Not Started / In Progress / Completed |
+| Phase 04            |            | Implementation                     | Not Started / In Progress / Completed |
+| Phase 05            |            | Testing & Debug                    | Not Started / In Progress / Completed |
+| Phase 06            |            | Hoàn thiện báo cáo và demo         | Not Started / In Progress / Completed |
 
 ---
 
@@ -53,7 +53,9 @@ Nguyên tắc ghi changelog:
 ```text
 20/5/2026
 ```
+
 21/5/2026
+
 ## Đã hoàn thành
 
 - [x ] Tạo repository
@@ -70,11 +72,11 @@ Nguyên tắc ghi changelog:
 
 ## Thay đổi chi tiết
 
-| STT | Nội dung thay đổi | Người thực hiện | File/Module liên quan | Minh chứng |
-|---:|---|---|---|---|
-| 1 | Khởi tạo project bằng Expo Router | nguyen tuan thanh | package.json | Project chạy thành công |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
+| STT | Nội dung thay đổi                 | Người thực hiện   | File/Module liên quan | Minh chứng              |
+| --: | --------------------------------- | ----------------- | --------------------- | ----------------------- |
+|   1 | Khởi tạo project bằng Expo Router | nguyen tuan thanh | package.json          | Project chạy thành công |
+|   2 |                                   |                   |                       |                         |
+|   3 |                                   |                   |                       |                         |
 
 ## AI có hỗ trợ không?
 
@@ -183,8 +185,7 @@ Tập trung vào Expo Router và giao diện React Native.
 | --: | ------------------------ | --------------- | --------------------- | ---------- |
 |   1 | Thiết kế Home Screen     | Le Hai Nam      | index.tsx             |            |
 |   2 | Thiết kế Settings Screen | Le Hai Nam      | settings.tsx          |            |
-|   3 | Thiết kế navigation tabs | Le Hai Nam      | app-tabs.web.tsx          |            |
-
+|   3 | Thiết kế navigation tabs | Le Hai Nam      | app-tabs.web.tsx      |            |
 
 ## AI có hỗ trợ không?
 
@@ -236,12 +237,12 @@ Thiết kế theo phong cách mobile UI đơn giản.
 
 ## Thay đổi chi tiết
 
-| STT | Nội dung thay đổi           | Người thực hiện | File/Module liên quan | Minh chứng |
-| --: | --------------------------- | --------------- | --------------------- | ---------- |
-|   1 | Xây dựng Home Screen        | Le Hai Nam      | index.tsx             |            |
-|   2 | Xây dựng Settings Screen    | Le Hai Nam      | settings.tsx          |            |
-|   3 | Sửa lỗi web route           | Le Hai Nam      | app-tabs.web.tsx      |            |
-|   4 | Tối ưu giao diện và style   | Le Hai Nam      | styles                |            |
+| STT | Nội dung thay đổi         | Người thực hiện | File/Module liên quan | Minh chứng |
+| --: | ------------------------- | --------------- | --------------------- | ---------- |
+|   1 | Xây dựng Home Screen      | Le Hai Nam      | index.tsx             |            |
+|   2 | Xây dựng Settings Screen  | Le Hai Nam      | settings.tsx          |            |
+|   3 | Sửa lỗi web route         | Le Hai Nam      | app-tabs.web.tsx      |            |
+|   4 | Tối ưu giao diện và style | Le Hai Nam      | styles                |            |
 
 ## AI có hỗ trợ không?
 
@@ -257,7 +258,8 @@ AI hỗ trợ tạo code giao diện frontend cơ bản.
 ## Commit/Screenshot minh chứng
 
 ```text
-Dán link commit, screenshot hoặc mô tả minh chứng tại đây...
+- Link Commit: [Commit Hash / URL trên GitHub]
+- File liên quan: src/app/wishlist.tsx, src/components/app-tabs.tsx, src/components/app-tabs.web.tsx
 ```
 
 ## Ghi chú
@@ -299,7 +301,6 @@ Sử dụng Expo Router SDK 55.
 |   3 | Lỗi type ThemedText             | Sai type hỗ trợ           | Đổi type phù hợp               | Fixed      |
 |   4 | Lỗi Expo Router cache           | Cache cũ                  | Clear cache bằng expo start -c | Fixed      |
 
-
 ## Thay đổi chi tiết
 
 | STT | Nội dung thay đổi     | Người thực hiện | File/Module liên quan | Minh chứng |
@@ -307,7 +308,6 @@ Sử dụng Expo Router SDK 55.
 |   1 | Debug Expo Router     | Le Hai Nam      | app-tabs.web.tsx      |            |
 |   2 | Sửa lỗi điều hướng    | Le Hai Nam      | settings.tsx          |            |
 |   3 | Test route web/mobile | Le Hai Nam      | Expo Web              |            |
-
 
 ## AI có hỗ trợ không?
 
@@ -323,7 +323,8 @@ AI hỗ trợ phân tích lỗi route và đưa ra hướng debug Expo Router.
 ## Commit/Screenshot minh chứng
 
 ```text
-Dán link commit, screenshot hoặc mô tả minh chứng tại đây...
+- Link Commit: [Commit Hash / URL trên GitHub]
+- Screenshot: ![Wishlist Demo](../bai1/images/wishlist_demo.png)
 ```
 
 ## Ghi chú
@@ -362,7 +363,6 @@ Dán link commit, screenshot hoặc mô tả minh chứng tại đây...
 |   1 | Hoàn thiện AI Audit Log | Le Hai Nam      | AI_AUDIT_LOG.md       |            |
 |   2 | Hoàn thiện Changelog    | Le Hai Nam      | CHANGELOG.md          |            |
 |   3 | Kiểm tra lại project    | Le Hai Nam      | Source code           |            |
-
 
 ## AI có hỗ trợ không?
 
@@ -411,7 +411,6 @@ Viết tại đây...
 |   2 | Authentication | Chưa triển khai       | Thêm login/register       |
 |   3 | Database       | Chưa triển khai       | Tích hợp backend/database |
 
-
 ---
 
 ## 4.3. Tổng hợp AI hỗ trợ trong project
@@ -450,5 +449,5 @@ Phát triển backend, thêm authentication, tích hợp database và tối ưu 
 Sinh viên/nhóm cam kết rằng nội dung changelog phản ánh đúng các thay đổi đã thực hiện trong quá trình làm bài tập/project.
 
 | Đại diện sinh viên/nhóm | Ngày xác nhận |
-|---|---|
-| Le Hai Nam | 21/05/2026 |
+| ----------------------- | ------------- |
+| Le Hai Nam              | 21/05/2026    |

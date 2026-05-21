@@ -2,18 +2,18 @@
 
 ## 1. Thông tin chung
 
-| Thông tin | Nội dung |
-|---|---|
-| Môn học | Mobile Programming |
-| Mã môn học | MMA301 |
-| Lớp | SE19D05 |
-| Học kỳ | SU26 |
-| Tên bài tập / Project | bai1 |
-| Tên sinh viên / Nhóm | nguyen tuan thanh/ nhom 5 |
-| MSSV / Danh sách MSSV | de180010 |
-| Giảng viên hướng dẫn | QuangLTN3 |
-| Ngày bắt đầu | 20/5/2026 |
-| Ngày cập nhật gần nhất | 21/05/2026 |
+| Thông tin              | Nội dung                  |
+| ---------------------- | ------------------------- |
+| Môn học                | Mobile Programming        |
+| Mã môn học             | MMA301                    |
+| Lớp                    | SE19D05                   |
+| Học kỳ                 | SU26                      |
+| Tên bài tập / Project  | bai1                      |
+| Tên sinh viên / Nhóm   | nguyen tuan thanh/ nhom 5 |
+| MSSV / Danh sách MSSV  | de180010                  |
+| Giảng viên hướng dẫn   | QuangLTN3                 |
+| Ngày bắt đầu           | 20/5/2026                 |
+| Ngày cập nhật gần nhất | 21/05/2026                |
 
 ---
 
@@ -42,7 +42,7 @@ Sinh viên/nhóm cần ghi lại:
 - [ ] Claude
 - [ ] GitHub Copilot
 - [ ] Cursor
-- [ ] Antigravity
+- [x] Antigravity
 - [ ] Microsoft Copilot
 - [ ] Perplexity
 - [ ] Công cụ khác: ....................................
@@ -51,18 +51,18 @@ Sinh viên/nhóm cần ghi lại:
 
 ## 4. Bảng tổng hợp prompt đã sử dụng
 
-| STT | Ngày | Công cụ AI | Mục đích | Prompt tóm tắt | Kết quả chính | Có sử dụng vào bài không? | Minh chứng |
-|---:|---|---|---|---|---|---|---|
-| 1 | 20/05/2026 | ChatGPT | Navigation | Sửa navigation Expo Router |  | Có  | index.tsx  |
-| 2 |  |  |  |  |  | Có / Không |  |
-| 3 |  |  |  |  |  | Có / Không |  |
-| 4 |  |  |  |  |  | Có / Không |  |
-| 5 |  |  |  |  |  | Có / Không |  |
-| 6 |  |  |  |  |  | Có / Không |  |
-| 7 |  |  |  |  |  | Có / Không |  |
-| 8 |  |  |  |  |  | Có / Không |  |
-| 9 |  |  |  |  |  | Có / Không |  |
-| 10 |  |  |  |  |  | Có / Không |  |
+| STT | Ngày       | Công cụ AI | Mục đích   | Prompt tóm tắt             | Kết quả chính | Có sử dụng vào bài không? | Minh chứng |
+| --: | ---------- | ---------- | ---------- | -------------------------- | ------------- | ------------------------- | ---------- |
+|   1 | 20/05/2026 | ChatGPT    | Navigation | Sửa navigation Expo Router |               | Có                        | index.tsx  |
+|   2 |            |            |            |                            |               | Có / Không                |            |
+|   3 |            |            |            |                            |               | Có / Không                |            |
+|   4 |            |            |            |                            |               | Có / Không                |            |
+|   5 |            |            |            |                            |               | Có / Không                |            |
+|   6 |            |            |            |                            |               | Có / Không                |            |
+|   7 |            |            |            |                            |               | Có / Không                |            |
+|   8 |            |            |            |                            |               | Có / Không                |            |
+|   9 |            |            |            |                            |               | Có / Không                |            |
+|  10 |            |            |            |                            |               | Có / Không                |            |
 
 ---
 
@@ -74,13 +74,13 @@ Sinh viên/nhóm cần ghi lại:
 
 ### Prompt số 1
 
-| Nội dung | Thông tin |
-|---|---|
-| Ngày sử dụng | 20/05/2026 |
-| Công cụ AI | ChatGPT |
-| Mục đích | Sửa navigation giữa các màn hình |
-| Phần việc liên quan | Coding |
-| Mức độ sử dụng | Hỏi debug |
+| Nội dung            | Thông tin                        |
+| ------------------- | -------------------------------- |
+| Ngày sử dụng        | 20/05/2026                       |
+| Công cụ AI          | ChatGPT                          |
+| Mục đích            | Sửa navigation giữa các màn hình |
+| Phần việc liên quan | Coding                           |
+| Mức độ sử dụng      | Hỏi debug                        |
 
 #### 5.1. Prompt nguyên văn
 
@@ -136,14 +136,14 @@ Tự chỉnh sửa tên screen, tối ưu UI và test lại navigation trên Exp
 
 #### 5.7. Minh chứng liên quan
 
-| Loại minh chứng | Nội dung |
-|---|---|
-| Link commit |  |
-| File liên quan | app/profile.tsx |
-| Screenshot | Profile Screen |
-| Kết quả chạy/test | UI hiển thị đúng |
-| Link tài liệu/báo cáo |  |
-| Ghi chú khác | Responsive UI |
+| Loại minh chứng       | Nội dung         |
+| --------------------- | ---------------- |
+| Link commit           |                  |
+| File liên quan        | app/profile.tsx  |
+| Screenshot            | Profile Screen   |
+| Kết quả chạy/test     | UI hiển thị đúng |
+| Link tài liệu/báo cáo |                  |
+| Ghi chú khác          | Responsive UI    |
 
 #### 5.8. Ghi chú thêm
 
@@ -162,7 +162,6 @@ UI được chỉnh sửa lại để phù hợp với thiết kế tổng thể
 | Mục đích            | Giải thích SDK |
 | Phần việc liên quan | Other          |
 | Mức độ sử dụng      | Hỏi giải thích |
-
 
 #### 5.1. Prompt nguyên văn
 
@@ -207,14 +206,14 @@ Tự quyết định tiếp tục dùng SDK 55 cho web development.
 
 #### 5.7. Minh chứng liên quan
 
-| Loại minh chứng | Nội dung |
-|---|---|
-| Link commit |  |
-| File liên quan |  package.json|
-| Screenshot |  |
-| Kết quả chạy/test |Expo Web hoạt động  |
-| Link tài liệu/báo cáo |  |
-| Ghi chú khác | SDK compatibility |
+| Loại minh chứng       | Nội dung           |
+| --------------------- | ------------------ |
+| Link commit           |                    |
+| File liên quan        | package.json       |
+| Screenshot            |                    |
+| Kết quả chạy/test     | Expo Web hoạt động |
+| Link tài liệu/báo cáo |                    |
+| Ghi chú khác          | SDK compatibility  |
 
 #### 5.8. Ghi chú thêm
 
@@ -226,81 +225,82 @@ Hiểu rõ hơn về cách Expo SDK hoạt động.
 
 ### Prompt số 3
 
-| Nội dung | Thông tin |
-|---|---|
-| Ngày sử dụng |  |
-| Công cụ AI | ChatGPT / Gemini / Claude / GitHub Copilot / Cursor / Antigravity / Khác |
-| Mục đích |  |
-| Phần việc liên quan | Requirement / Design / Database / Coding / Testing / Debug / Report / Presentation / Other |
-| Mức độ sử dụng | Hỏi ý tưởng / Hỏi giải thích / Hỏi review / Hỏi debug / Hỏi sinh code / Hỏi tối ưu |
+| Nội dung            | Thông tin                                 |
+| ------------------- | ----------------------------------------- |
+| Ngày sử dụng        | 2026-05-21                                |
+| Công cụ AI          | Antigravity / Gemini                      |
+| Mục đích            | Sửa lỗi đè header trên Web và đổi màu nền |
+| Phần việc liên quan | Coding / Debug / Testing                  |
+| Mức độ sử dụng      | Hỏi tối ưu                                |
 
 #### 5.1. Prompt nguyên văn
 
 ```text
-Dán nguyên văn prompt đã hỏi AI tại đây.
+làm sao để trang wishlist có nền màu trắng, nút back hoạt động chuẩn xác không bị đè bởi thanh header trên Web?
 ```
 
 #### 5.2. Bối cảnh khi viết prompt
 
 ```text
-Viết tại đây...
+Tiêu đề trang Wishlist và nút Back bị đè mất bởi header bar tuyệt đối của Expo Starter trên trình duyệt Web, đồng thời màu nền trang bị mặc định tối màu chưa đẹp.
 ```
 
 #### 5.3. Kết quả AI trả về
 
 ```text
-Viết tại đây...
+Đề xuất sử dụng thuộc tính kiểm tra nền tảng `Platform.OS === 'web'` để cộng thêm `paddingTop: 80` cho safe area view khi chạy trên trình duyệt Web, đồng thời đổi nền container thành `#fff`.
 ```
 
 #### 5.4. Kết quả đã áp dụng vào bài
 
 ```text
-Viết tại đây...
+Áp dụng thuộc tính padding thích ứng và thay đổi màu nền trắng sáng cho safe area và container.
 ```
 
 #### 5.5. Phần sinh viên/nhóm đã chỉnh sửa hoặc cải tiến
 
 ```text
-Viết tại đây...
+Tự phát hiện nhược điểm của `router.back()` (bị lỗi khi người dùng truy cập trực tiếp bằng link hoặc tải lại trang do stack trống) và nâng cấp thành `router.push("/")` để đảm bảo nút Back luôn hoạt động chính xác.
 ```
 
 #### 5.6. Đánh giá chất lượng prompt
 
-- [ ] Prompt rõ ràng
-- [ ] Prompt có đủ bối cảnh
+- [x] Prompt rõ ràng
+- [x] Prompt có đủ bối cảnh
 - [ ] Prompt còn thiếu thông tin
-- [ ] Prompt tạo ra kết quả tốt
+- [x] Prompt tạo ra kết quả tốt
 - [ ] Prompt tạo ra kết quả chưa phù hợp
 - [ ] Cần hỏi lại AI nhiều lần
-- [ ] Cần tự kiểm tra và chỉnh sửa nhiều
+- [x] Cần tự kiểm tra và chỉnh sửa nhiều
 - [ ] Kết quả AI có lỗi hoặc chưa chính xác
 
 #### 5.7. Minh chứng liên quan
 
-| Loại minh chứng | Nội dung |
-|---|---|
-| Link commit |  |
-| File liên quan |  |
-| Screenshot |  |
-| Kết quả chạy/test |  |
-| Link tài liệu/báo cáo |  |
-| Ghi chú khác |  |
+| Loại minh chứng       | Nội dung                                                 |
+| --------------------- | -------------------------------------------------------- |
+| Link commit           | [Tối ưu giao diện và điều hướng Wishlist]                |
+| File liên quan        | `src/app/wishlist.tsx`                                   |
+| Screenshot            | ![Wishlist Demo](../bai1/images/wishlist_demo.png)       |
+| Kết quả chạy/test     | Đã sửa dứt điểm lỗi đè layout Web và lỗi điều hướng Back |
+| Link tài liệu/báo cáo |                                                          |
+| Ghi chú khác          |                                                          |
 
 #### 5.8. Ghi chú thêm
 
 ```text
-Viết tại đây...
+Giao diện và trải nghiệm điều hướng đã đạt chuẩn UX/UI.
 ```
 
 ---
 
 ## 6. Prompt quan trọng nhất
+
 Nếu giữ SDK 55 thì Expo Go không hoạt động vì Expo Go của tôi chỉ hỗ trợ 54 thôi
 
 ### 6.1. Prompt được chọn
 
 ```text
-Dán prompt quan trọng nhất tại đây.
+Unexpected text node:  . A text node cannot be a child of a <View>.
 ```
 
 ### 6.2. Vì sao prompt này quan trọng?
@@ -353,14 +353,14 @@ Cần mô tả rõ project đang sử dụng Expo Router SDK 55, chạy trên Ex
 
 ### 7.4. Prompt sau khi cải tiến
 
-```text
+````text
 Project của tôi đang dùng Expo Router SDK 55 và chạy bằng Expo Web. Tôi có file app-tabs-web.tsx quản lý navigation tabs. Hãy hướng dẫn thêm route /settings và cấu hình tab để điều hướng hoạt động đúng.
 
 ### 7.5. Kết quả sau khi cải tiến prompt
 
 ```text
 AI giải thích nguyên nhân route không hoạt động do app-tabs-web.tsx chưa được cập nhật và hướng dẫn thêm TabTrigger cho settings.
-```
+````
 
 ---
 
@@ -371,7 +371,6 @@ AI giải thích nguyên nhân route không hoạt động do app-tabs-web.tsx c
 ```text
 Cần cung cấp framework đang sử dụng, phiên bản SDK, cấu trúc project, lỗi gặp phải và mục tiêu mong muốn.
 ```
-
 
 ### 8.2. Em/nhóm đã học được gì về cách đặt câu hỏi cho AI?
 
@@ -404,7 +403,6 @@ Sẽ mô tả đầy đủ lỗi, môi trường phát triển, công nghệ s�
 | Prompt chuẩn bị thuyết trình |        0 |                                 |
 | Prompt khác                  |        1 | Git branch và clone branch      |
 
-
 ---
 
 ## 10. Checklist chất lượng prompt
@@ -435,5 +433,5 @@ Sinh viên/nhóm cam kết rằng:
 - Chịu trách nhiệm với sản phẩm cuối cùng.
 
 | Đại diện sinh viên/nhóm | Ngày xác nhận |
-|---|---|
-| Le Hai Nam   |21/05/2026  |
+| ----------------------- | ------------- |
+| Le Hai Nam              | 21/05/2026    |
