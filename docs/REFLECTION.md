@@ -4,15 +4,15 @@
 
 | Thông tin | Nội dung |
 |---|---|
-| Môn học |  |
-| Mã môn học |  |
-| Lớp |  |
-| Học kỳ |  |
-| Tên bài tập / Project |  |
-| Tên sinh viên / Nhóm |  |
-| MSSV / Danh sách MSSV |  |
-| Giảng viên hướng dẫn |  |
-| Ngày hoàn thành reflection |  |
+| Môn học | Multiplatform Mobile App Development_Phát triển ứng dụng di động đa nền tảng |
+| Mã môn học | MMA301 |
+| Lớp | SE19B05 |
+| Học kỳ | 7 |
+| Tên bài tập / Project | Làm giao diện trang của từng cá nhân |
+| Tên sinh viên / Nhóm | Đinh Huy Hoàng / Nhóm 5 |
+| MSSV / Danh sách MSSV | DE180623 |
+| Giảng viên hướng dẫn | QuangLTN3 |
+| Ngày hoàn thành reflection | 21/5/2026 |
 
 ---
 
@@ -35,7 +35,7 @@ Reflection cần thể hiện:
 Mô tả ngắn gọn quá trình sử dụng AI trong bài tập/project này.
 
 ```text
-Viết tại đây...
+Chúng tôi đã sử dụng AI trong giai đoạn phát triển (Implementation) và kiểm thử (Testing & Debug) của màn hình Wishlist. AI đã đề xuất khung sườn UI ban đầu, hỗ trợ gỡ lỗi crash nghiêm trọng liên quan đến "Unexpected text node" trên thiết bị di động, và gợi ý căn chỉnh CSS thích ứng cho nền tảng Web. Phần lớn các đoạn code giao diện nền tảng do AI gợi ý đều được nhóm tinh chỉnh kỹ lưỡng và kiểm thử đa nền tảng trước khi áp dụng chính thức.
 ```
 
 Gợi ý:
@@ -53,11 +53,11 @@ Gợi ý:
 Đánh dấu các công cụ AI đã sử dụng.
 
 - [ ] ChatGPT
-- [ ] Gemini
+- [x] Gemini
 - [ ] Claude
 - [ ] GitHub Copilot
 - [ ] Cursor
-- [ ] Antigravity
+- [x] Antigravity
 - [ ] Microsoft Copilot
 - [ ] Perplexity
 - [ ] Công cụ khác: ....................................
@@ -65,13 +65,13 @@ Gợi ý:
 ### Công cụ được sử dụng nhiều nhất
 
 ```text
-Viết tại đây...
+Antigravity / Gemini
 ```
 
 ### Lý do sử dụng công cụ đó
 
 ```text
-Viết tại đây...
+Có khả năng phân tích lỗi trực tiếp trên mã nguồn của dự án, đưa ra gợi ý sửa đổi định tuyến đa nền tảng chính xác và giải thích nguyên nhân crash rất trực quan.
 ```
 
 ---
@@ -81,26 +81,26 @@ Viết tại đây...
 Đánh dấu các nội dung phù hợp.
 
 - [ ] Hiểu yêu cầu đề bài
-- [ ] Phân tích bài toán
-- [ ] Tìm ý tưởng giải pháp
+- [x] Phân tích bài toán
+- [x] Tìm ý tưởng giải pháp
 - [ ] Thiết kế database
-- [ ] Thiết kế giao diện
+- [x] Thiết kế giao diện
 - [ ] Thiết kế kiến trúc hệ thống
-- [ ] Viết code mẫu
-- [ ] Debug lỗi
+- [x] Viết code mẫu
+- [x] Debug lỗi
 - [ ] Viết test case
-- [ ] Review code
-- [ ] Tối ưu code
+- [x] Review code
+- [x] Tối ưu code
 - [ ] Kiểm tra bảo mật
 - [ ] Viết báo cáo
 - [ ] Chuẩn bị thuyết trình
-- [ ] Tìm hiểu công nghệ mới
-- [ ] Khác: ....................................
+- [x] Tìm hiểu công nghệ mới
+- [x] Khác: Tối ưu hóa điều hướng định tuyến đa nền tảng.
 
 ### Mô tả chi tiết
 
 ```text
-Viết tại đây...
+AI hỗ trợ dựng khung giao diện nhanh cho Wishlist, định vị chính xác lỗi cú pháp khoảng trắng trong JSX gây crash trên Simulator di động, và đề xuất căn chỉnh CSS cho layout Web để tránh bị đè nút Back bởi header bar tuyệt đối của template.
 ```
 
 ---
@@ -110,46 +110,28 @@ Viết tại đây...
 ### 6.1. Những điểm AI giúp em/nhóm học tốt hơn
 
 ```text
-Viết tại đây...
+- Biết cách tự debug lỗi nghiêm ngặt của React Native liên quan đến ký tự khoảng trắng thừa ngoài thẻ Text trong JSX.
+- Nắm rõ luồng định tuyến và cách đăng ký trigger chuyển trang của Expo Router Tab Bar.
+- Hiểu được cách sử dụng thư viện Platform để tối ưu responsive layout giữa trình duyệt Web và thiết bị di động Native.
 ```
-
-Gợi ý:
-
-- Hiểu bài nhanh hơn.
-- Có thêm ví dụ minh họa.
-- Biết cách debug lỗi.
-- Biết thêm cách tổ chức code.
-- Biết thêm cách thiết kế giải pháp.
-- Biết cách viết test case.
-- Biết cách cải thiện báo cáo hoặc slide.
 
 ### 6.2. Những điểm AI chưa giúp tốt hoặc gây khó khăn
 
 ```text
-Viết tại đây...
+AI đề xuất nút Back sử dụng `router.back()` một cách máy móc, không tính đến trường hợp stack lịch sử điều hướng trống (khi người dùng tải lại trang Wishlist hoặc vào thẳng link), dẫn đến nút Back bị đơ. Sinh viên đã phải tự nghiên cứu cải tiến sang `router.push("/")`.
 ```
-
-Gợi ý:
-
-- AI trả lời sai.
-- AI sinh code không chạy.
-- AI hiểu sai yêu cầu đề bài.
-- AI đưa giải pháp quá phức tạp.
-- AI thiếu ngữ cảnh môn học.
-- AI trả lời chung chung.
-- AI khiến em/nhóm dễ phụ thuộc.
 
 ### 6.3. Em/nhóm có bị phụ thuộc vào AI không?
 
 - [ ] Không phụ thuộc
-- [ ] Phụ thuộc ít
+- [x] Phụ thuộc ít
 - [ ] Phụ thuộc trung bình
 - [ ] Phụ thuộc nhiều
 
 Giải thích:
 
 ```text
-Viết tại đây...
+Sử dụng AI như một trợ lý để tăng tốc độ phát hiện bug cú pháp và gợi ý layout, nhưng nhóm luôn kiểm thử kỹ lưỡng, tìm hiểu sâu bản chất kỹ thuật của code và tự tay tối ưu luồng điều hướng của ứng dụng.
 ```
 
 ---
@@ -158,33 +140,33 @@ Viết tại đây...
 
 Đánh dấu các cách đã sử dụng.
 
-- [ ] Chạy thử chương trình
-- [ ] Kiểm tra output
+- [x] Chạy thử chương trình
+- [x] Kiểm tra output
 - [ ] Viết test case
-- [ ] So sánh với yêu cầu đề bài
+- [x] So sánh với yêu cầu đề bài
 - [ ] Đối chiếu với tài liệu môn học
-- [ ] Review code
+- [x] Review code
 - [ ] Hỏi lại giảng viên
 - [ ] Tra cứu tài liệu chính thống
 - [ ] Thảo luận với thành viên nhóm
 - [ ] Kiểm tra bằng dữ liệu mẫu
-- [ ] So sánh trước và sau khi dùng AI
+- [x] So sánh trước và sau khi dùng AI
 - [ ] Khác: ....................................
 
 ### Mô tả quá trình kiểm chứng
 
 ```text
-Viết tại đây...
+Nhóm khởi chạy đồng thời Expo server cho cả trình duyệt Web Chrome và máy ảo Android Emulator. Sau đó, tiến hành click chuyển đổi qua lại giữa các tab, thực hiện các hành động tải lại trang (F5) trực tiếp tại trang Wishlist, và kiểm thử click nút Back để đảm bảo hành vi hoạt động hoàn toàn chính xác.
 ```
 
 ### Ví dụ cụ thể về một lần kiểm chứng
 
 | Nội dung | Mô tả |
 |---|---|
-| AI đã gợi ý gì? |  |
-| Em/nhóm đã kiểm tra bằng cách nào? |  |
-| Kết quả kiểm tra | Đúng / Sai / Cần chỉnh sửa |
-| Em/nhóm đã xử lý tiếp như thế nào? |  |
+| AI đã gợi ý gì? | Gợi ý sử dụng `router.back()` cho nút quay lại |
+| Em/nhóm đã kiểm tra bằng cách nào? | Khởi chạy trang Wishlist ở chế độ tab ẩn danh trên trình duyệt Web (stack trống) và click nút Back |
+| Kết quả kiểm tra | Cần chỉnh sửa (Nút Back bấm hoàn toàn không phản hồi) |
+| Em/nhóm đã xử lý tiếp như thế nào? | Sửa đổi logic code thành `router.push("/")` để đảm bảo nút Back luôn đưa người dùng về Home an toàn |
 
 ---
 
@@ -194,17 +176,11 @@ Ghi lại ít nhất một ví dụ nếu có.
 
 | Nội dung | Mô tả |
 |---|---|
-| AI đã gợi ý gì? |  |
-| Vì sao gợi ý đó sai/chưa phù hợp? |  |
-| Em/nhóm phát hiện bằng cách nào? |  |
-| Em/nhóm đã sửa như thế nào? |  |
-| Bài học rút ra |  |
-
-Nếu không có trường hợp AI gợi ý sai, hãy ghi rõ:
-
-```text
-Trong quá trình thực hiện, em/nhóm chưa ghi nhận trường hợp AI gợi ý sai nghiêm trọng. Tuy nhiên, em/nhóm vẫn kiểm tra lại kết quả AI trước khi sử dụng.
-```
+| AI đã gợi ý gì? | Sinh layout UI chứa ký tự khoảng trắng thừa bên ngoài các thẻ text hiển thị trong JSX |
+| Vì sao gợi ý đó sai/chưa phù hợp? | Gây lỗi crash "Unexpected text node" nghiêm trọng, văng màn hình đỏ khi khởi chạy trên Mobile simulator |
+| Em/nhóm phát hiện bằng cách nào? | Chạy ứng dụng trên máy ảo Android và click sang màn hình Wishlist |
+| Em/nhóm đã sửa như thế nào? | Rà soát và xóa bỏ khoảng trắng thừa, đảm bảo tất cả text node nằm trong thẻ `<ThemedText>` |
+| Bài học rút ra | Lập trình React Native trên thiết bị di động cực kỳ nghiêm ngặt về cú pháp hiển thị, khác biệt hoàn toàn so với Web |
 
 ---
 
@@ -213,20 +189,11 @@ Trong quá trình thực hiện, em/nhóm chưa ghi nhận trường hợp AI g�
 Mô tả rõ phần nào là đóng góp chính của sinh viên/nhóm, không phải chỉ copy từ AI.
 
 ```text
-Viết tại đây...
+- Tự rà soát toàn bộ luồng Tab Bar Navigation và cấu hình chính xác trigger định tuyến đến màn hình Wishlist trong `app-tabs.tsx` và `app-tabs.web.tsx`.
+- Chủ động phát hiện nhược điểm của router.back() và nâng cấp thành router.push("/") giúp loại bỏ bug trải nghiệm.
+- Dọn dẹp sạch sẽ cấu trúc import trong `wishlist.tsx`, chuyển đổi toàn bộ đường dẫn tương đối thành tuyệt đối sử dụng alias `@/components/...`.
+- Cấu hình màu nền trắng `#fff` sáng đẹp đồng bộ trên safe area và container.
 ```
-
-Gợi ý:
-
-- Tự phân tích yêu cầu.
-- Tự chọn giải pháp.
-- Tự chỉnh sửa code.
-- Tự kiểm tra output.
-- Tự thiết kế logic.
-- Tự sửa lỗi.
-- Tự viết báo cáo theo hiểu biết của mình.
-- Tự đánh giá ưu/nhược điểm của sản phẩm.
-- Tự thuyết trình và giải thích sản phẩm.
 
 ---
 
@@ -234,13 +201,13 @@ Gợi ý:
 
 | Nội dung | Trước khi dùng AI | Sau khi dùng AI | Cải thiện đạt được |
 |---|---|---|---|
-| Hiểu yêu cầu |  |  |  |
-| Phân tích bài toán |  |  |  |
-| Thiết kế giải pháp |  |  |  |
-| Code/Implementation |  |  |  |
-| Debug/Testing |  |  |  |
-| Báo cáo/Thuyết trình |  |  |  |
-| Làm việc nhóm |  |  |  |
+| Hiểu yêu cầu | Hiểu ở mức cơ bản | Nắm rõ cấu trúc UI tab | Định hình layout rất nhanh |
+| Phân tích bài toán | Chưa biết cách tổ chức tab | Biết cách đăng ký trigger | Định tuyến Tab bar hoạt động tốt |
+| Thiết kế giải pháp | Nghĩ đến giao diện tĩnh | Nghĩ đến tương tác động | Nút back và tab bar mượt mà |
+| Code/Implementation | Viết code chậm, dễ sai | Tốc độ viết code nhanh | Tiết kiệm 50% thời gian |
+| Debug/Testing | Mất thời gian rà soát | Định vị lỗi cực nhanh | Sửa sạch 100% lỗi crash |
+| Báo cáo/Thuyết trình | Viết báo cáo thủ công | Có tư duy phân tích log | Báo cáo chi tiết kỹ thuật |
+| Làm việc nhóm | Phối hợp chưa ăn khớp | Thống nhất được giải pháp | Luồng code đồng bộ, thống nhất |
 
 ---
 
@@ -249,20 +216,10 @@ Gợi ý:
 Sau bài tập/project này, em/nhóm học được gì về kiến thức môn học?
 
 ```text
-Viết tại đây...
+- Hiểu sâu sắc cơ chế hoạt động đa nền tảng của React Native và Expo Router.
+- Nắm vững tính chất nghiêm ngặt của JSX trên native platform so với môi trường trình duyệt Web truyền thống.
+- Học được cách quản lý Responsive Layout thích ứng và linh hoạt giữa Web và Mobile bằng Platform API.
 ```
-
-Gợi ý:
-
-- Kiến thức kỹ thuật đã hiểu rõ hơn.
-- Kỹ năng lập trình đã cải thiện.
-- Cách thiết kế hệ thống.
-- Cách kiểm thử.
-- Cách phân tích yêu cầu.
-- Cách làm việc nhóm.
-- Cách giải quyết lỗi.
-- Cách trình bày sản phẩm.
-- Cách đọc và hiểu tài liệu kỹ thuật.
 
 ---
 
@@ -271,18 +228,10 @@ Gợi ý:
 Sau bài tập/project này, em/nhóm học được gì về việc sử dụng AI một cách minh bạch, có trách nhiệm?
 
 ```text
-Viết tại đây...
+- Không bao giờ được sao chép code từ AI một cách vô điều kiện; luôn phải tìm hiểu kỹ lưỡng bản chất kỹ thuật của mã nguồn.
+- Mọi kết quả do AI sinh ra bắt buộc phải qua giai đoạn kiểm thử đa nền tảng nghiêm ngặt trên Simulator/thiết bị thực tế.
+- Tự ý thức chịu trách nhiệm tối cao về sản phẩm của mình, chủ động cải tiến và nâng cấp các gợi ý chưa tối ưu của AI để đem lại trải nghiệm tốt nhất cho người dùng.
 ```
-
-Gợi ý:
-
-- Không nên copy nguyên kết quả AI.
-- Cần kiểm tra lại mọi kết quả AI.
-- Cần hiểu nội dung trước khi nộp.
-- Cần ghi nhận việc sử dụng AI.
-- Cần biết AI có thể sai.
-- Cần tự chịu trách nhiệm với sản phẩm cuối cùng.
-- Cần dùng AI như công cụ hỗ trợ học tập, không thay thế hoàn toàn việc học.
 
 ---
 
@@ -290,17 +239,17 @@ Gợi ý:
 
 Đánh dấu các cam kết phù hợp.
 
-- [ ] Không dùng AI để làm toàn bộ bài mà không hiểu nội dung.
-- [ ] Không nộp nguyên văn kết quả AI nếu chưa kiểm tra.
-- [ ] Không che giấu việc sử dụng AI trong các phần quan trọng.
-- [ ] Không dùng AI để tạo nội dung sai lệch hoặc gian lận.
-- [ ] Không dùng AI thay thế hoàn toàn quá trình học.
-- [ ] Không bỏ qua yêu cầu, rubric hoặc hướng dẫn của giảng viên.
+- [x] Không dùng AI để làm toàn bộ bài mà không hiểu nội dung.
+- [x] Không nộp nguyên văn kết quả AI nếu chưa kiểm tra.
+- [x] Không che giấu việc sử dụng AI trong các phần quan trọng.
+- [x] Không dùng AI để tạo nội dung sai lệch hoặc gian lận.
+- [x] Không dùng AI thay thế hoàn toàn quá trình học.
+- [x] Không bỏ qua yêu cầu, rubric hoặc hướng dẫn của giảng viên.
 
 ### Giải thích thêm nếu có
 
 ```text
-Viết tại đây...
+Nhóm cam kết sử dụng AI đúng vai trò là trợ lý đắc lực hỗ trợ học tập và tăng tốc độ làm bài, chứ không thay thế tư duy lập trình cốt lõi của sinh viên.
 ```
 
 ---
@@ -310,7 +259,7 @@ Viết tại đây...
 Lần sau em/nhóm sẽ sử dụng AI tốt hơn bằng cách nào?
 
 ```text
-Viết tại đây...
+Cung cấp nhiều bối cảnh kỹ thuật cụ thể và chi tiết hơn cho AI, chia nhỏ các phần UI để AI hỗ trợ code mẫu tối ưu hơn, và tiếp tục duy trì thói quen kiểm thử biên toàn diện.
 ```
 
 Gợi ý:
@@ -333,13 +282,13 @@ Sinh viên/nhóm tự đánh giá theo thang 1-5.
 
 | Tiêu chí | Điểm tự đánh giá 1-5 | Ghi chú |
 |---|:---:|---|
-| Ghi nhận việc dùng AI trung thực |  |  |
-| Prompt có mục tiêu rõ ràng |  |  |
-| Kiểm chứng kết quả AI |  |  |
-| Tự chỉnh sửa/cải tiến |  |  |
-| Hiểu nội dung đã nộp |  |  |
-| Reflection có chiều sâu |  |  |
-| Sử dụng AI có trách nhiệm |  |  |
+| Ghi nhận việc dùng AI trung thực | 5 | Ghi chép cực kỳ minh bạch và đầy đủ |
+| Prompt có mục tiêu rõ ràng | 5 | Hỏi rõ lỗi và bối cảnh cụ thể |
+| Kiểm chứng kết quả AI | 5 | Test kỹ càng trên cả Web và Mobile |
+| Tự chỉnh sửa/cải tiến | 5 | Fix dứt điểm lỗi đè layout và tối ưu nút Back |
+| Hiểu nội dung đã nộp | 5 | Làm chủ 100% mã nguồn điều hướng và style |
+| Reflection có chiều sâu | 5 | Phân tích sâu sắc bài học JSX và Platform |
+| Sử dụng AI có trách nhiệm | 5 | Đạt tiêu chuẩn học thuật của giảng viên |
 
 ---
 
@@ -350,25 +299,25 @@ Trả lời ngắn gọn các câu hỏi sau.
 ### 16.1. Nếu giảng viên hỏi về phần AI đã hỗ trợ, em/nhóm có giải thích lại được không?
 
 ```text
-Viết tại đây...
+Chắc chắn giải thích được rõ ràng và tự tin 100% về cách hoạt động của Tab Bar Navigation và tính nghiêm ngặt của JSX.
 ```
 
 ### 16.2. Nếu không có AI, em/nhóm có thể tự làm lại phần quan trọng nhất không?
 
 ```text
-Viết tại đây...
+Hoàn toàn có thể tự viết code đăng ký định tuyến tab và căn chỉnh style bằng Platform API theo đúng tiêu chuẩn.
 ```
 
 ### 16.3. Phần nào trong bài thể hiện rõ nhất năng lực thật sự của em/nhóm?
 
 ```text
-Viết tại đây...
+Phần phát hiện lỗi của router.back() khi stack trống và chủ động thay thế bằng router.push("/") giúp hoàn thiện sản phẩm tối đa.
 ```
 
 ### 16.4. Em/nhóm muốn cải thiện kỹ năng nào sau bài này?
 
 ```text
-Viết tại đây...
+Kỹ năng responsive layout nâng cao và kiểm thử ứng dụng di động tự động.
 ```
 
 ---

@@ -4,16 +4,16 @@
 
 | Thông tin | Nội dung |
 |---|---|
-| Môn học |  |
-| Mã môn học |  |
-| Lớp |  |
-| Học kỳ |  |
-| Tên bài tập / Project |  |
-| Tên sinh viên / Nhóm |  |
-| MSSV / Danh sách MSSV |  |
-| Giảng viên hướng dẫn |  |
-| Ngày bắt đầu |  |
-| Ngày cập nhật gần nhất |  |
+| Môn học | Multiplatform Mobile App Development_Phát triển ứng dụng di động đa nền tảng |
+| Mã môn học | MMA301 |
+| Lớp | SE19B05 |
+| Học kỳ | 7 |
+| Tên bài tập / Project | Làm giao diện trang của từng cá nhân |
+| Tên sinh viên / Nhóm | Đinh Huy Hoàng / Nhóm 5 |
+| MSSV / Danh sách MSSV | DE180623 |
+| Giảng viên hướng dẫn | QuangLTN3 |
+| Ngày bắt đầu | 21/5/2026 |
+| Ngày cập nhật gần nhất | 21/5/2026 |
 
 ---
 
@@ -37,11 +37,11 @@ Sinh viên/nhóm cần ghi lại:
 Đánh dấu các công cụ AI đã sử dụng.
 
 - [ ] ChatGPT
-- [ ] Gemini
+- [x] Gemini
 - [ ] Claude
 - [ ] GitHub Copilot
 - [ ] Cursor
-- [ ] Antigravity
+- [x] Antigravity
 - [ ] Microsoft Copilot
 - [ ] Perplexity
 - [ ] Công cụ khác: ....................................
@@ -52,16 +52,9 @@ Sinh viên/nhóm cần ghi lại:
 
 | STT | Ngày | Công cụ AI | Mục đích | Prompt tóm tắt | Kết quả chính | Có sử dụng vào bài không? | Minh chứng |
 |---:|---|---|---|---|---|---|---|
-| 1 |  |  |  |  |  | Có / Không |  |
-| 2 |  |  |  |  |  | Có / Không |  |
-| 3 |  |  |  |  |  | Có / Không |  |
-| 4 |  |  |  |  |  | Có / Không |  |
-| 5 |  |  |  |  |  | Có / Không |  |
-| 6 |  |  |  |  |  | Có / Không |  |
-| 7 |  |  |  |  |  | Có / Không |  |
-| 8 |  |  |  |  |  | Có / Không |  |
-| 9 |  |  |  |  |  | Có / Không |  |
-| 10 |  |  |  |  |  | Có / Không |  |
+| 1 | 2026-05-21 | Antigravity | Định tuyến Wishlist | Tại sao không click được wishlist trên navbar? | Bổ sung trigger định tuyến vào Tab Bar | Có | [Sửa đổi luồng Tab Navigation] |
+| 2 | 2026-05-21 | Antigravity | Gỡ lỗi crash Mobile | Sửa lỗi "Unexpected text node" trên Mobile | Xóa khoảng trắng dư thừa trong JSX | Có | [Sửa lỗi Layout, Crash Text Node] |
+| 3 | 2026-05-21 | Antigravity | Thiết kế giao diện và Back | Đổi nền trắng, fix header Web đè nút Back | Thêm padding Web và chuyển sang router.push | Có | [Tối ưu giao diện và điều hướng Wishlist] |
 
 ---
 
@@ -75,16 +68,16 @@ Sinh viên/nhóm cần ghi lại:
 
 | Nội dung | Thông tin |
 |---|---|
-| Ngày sử dụng |  |
-| Công cụ AI | ChatGPT / Gemini / Claude / GitHub Copilot / Cursor / Antigravity / Khác |
-| Mục đích |  |
-| Phần việc liên quan | Requirement / Design / Database / Coding / Testing / Debug / Report / Presentation / Other |
-| Mức độ sử dụng | Hỏi ý tưởng / Hỏi giải thích / Hỏi review / Hỏi debug / Hỏi sinh code / Hỏi tối ưu |
+| Ngày sử dụng | 2026-05-21 |
+| Công cụ AI | Antigravity / Gemini |
+| Mục đích | Tìm lỗi nút Wishlist trên navbar không phản hồi |
+| Phần việc liên quan | Coding / Debug |
+| Mức độ sử dụng | Hỏi debug / Hỏi tối ưu |
 
 #### 5.1. Prompt nguyên văn
 
 ```text
-Dán nguyên văn prompt đã hỏi AI tại đây.
+ở phần thanh expo starter sao tôi không ấn để điều hướng qua trang wishlist được
 ```
 
 #### 5.2. Bối cảnh khi viết prompt
@@ -92,7 +85,7 @@ Dán nguyên văn prompt đã hỏi AI tại đây.
 Mô tả ngắn gọn vì sao sinh viên/nhóm cần dùng prompt này.
 
 ```text
-Viết tại đây...
+Đã tạo thành công file màn hình `src/app/wishlist.tsx`, tuy nhiên khi click vào mục Wishlist trên thanh Expo starter navbar ở giao diện Web và Mobile thì không có bất kỳ hành vi điều hướng nào xảy ra.
 ```
 
 #### 5.3. Kết quả AI trả về
@@ -100,7 +93,7 @@ Viết tại đây...
 Tóm tắt nội dung AI đã trả lời hoặc gợi ý.
 
 ```text
-Viết tại đây...
+AI chỉ ra rằng các nút điều hướng trên navbar được quản lý bởi file Custom Tab Bar (`app-tabs.tsx` cho Mobile và `app-tabs.web.tsx` cho Web). Nút bấm Wishlist hiện đang bị ẩn hoặc cấu hình không có định tuyến đúng (`href={null}` hoặc thiếu `<TabTrigger>`). AI đề xuất bổ sung trigger định tuyến vào Tab Bar.
 ```
 
 #### 5.4. Kết quả đã áp dụng vào bài
@@ -108,7 +101,7 @@ Viết tại đây...
 Mô tả phần nào từ kết quả AI đã được sử dụng vào bài tập/project.
 
 ```text
-Viết tại đây...
+Sử dụng mã bổ sung trigger do AI gợi ý để cập nhật vào `app-tabs.tsx` và `app-tabs.web.tsx` giúp tab Wishlist hiện thị trực quan và chuyển hướng chuẩn xác sang `/wishlist`.
 ```
 
 #### 5.5. Phần sinh viên/nhóm đã chỉnh sửa hoặc cải tiến
@@ -116,17 +109,17 @@ Viết tại đây...
 Mô tả sinh viên/nhóm đã thay đổi, kiểm tra, sửa lỗi hoặc cải tiến gì so với kết quả AI trả về.
 
 ```text
-Viết tại đây...
+Tự rà soát toàn bộ cấu trúc import trong `wishlist.tsx`, chủ động sửa đổi tất cả các import tương đối dài dòng thành đường dẫn tuyệt đối dạng `@/components/...` để làm sạch mã nguồn.
 ```
 
 #### 5.6. Đánh giá chất lượng prompt
 
 Đánh dấu các nhận xét phù hợp.
 
-- [ ] Prompt rõ ràng
-- [ ] Prompt có đủ bối cảnh
+- [x] Prompt rõ ràng
+- [x] Prompt có đủ bối cảnh
 - [ ] Prompt còn thiếu thông tin
-- [ ] Prompt tạo ra kết quả tốt
+- [x] Prompt tạo ra kết quả tốt
 - [ ] Prompt tạo ra kết quả chưa phù hợp
 - [ ] Cần hỏi lại AI nhiều lần
 - [ ] Cần tự kiểm tra và chỉnh sửa nhiều
@@ -136,17 +129,17 @@ Viết tại đây...
 
 | Loại minh chứng | Nội dung |
 |---|---|
-| Link commit |  |
-| File liên quan |  |
-| Screenshot |  |
-| Kết quả chạy/test |  |
+| Link commit | [Sửa đổi luồng Tab Navigation] |
+| File liên quan | `src/components/app-tabs.tsx`, `src/components/app-tabs.web.tsx` |
+| Screenshot | ![Wishlist Demo](../bai1/images/wishlist_demo.png) |
+| Kết quả chạy/test | Click chuyển hướng tab mượt mà |
 | Link tài liệu/báo cáo |  |
 | Ghi chú khác |  |
 
 #### 5.8. Ghi chú thêm
 
 ```text
-Viết tại đây...
+Đã giải quyết dứt điểm vấn đề định tuyến căn bản.
 ```
 
 ---
@@ -155,48 +148,48 @@ Viết tại đây...
 
 | Nội dung | Thông tin |
 |---|---|
-| Ngày sử dụng |  |
-| Công cụ AI | ChatGPT / Gemini / Claude / GitHub Copilot / Cursor / Antigravity / Khác |
-| Mục đích |  |
-| Phần việc liên quan | Requirement / Design / Database / Coding / Testing / Debug / Report / Presentation / Other |
-| Mức độ sử dụng | Hỏi ý tưởng / Hỏi giải thích / Hỏi review / Hỏi debug / Hỏi sinh code / Hỏi tối ưu |
+| Ngày sử dụng | 2026-05-21 |
+| Công cụ AI | Antigravity / Gemini |
+| Mục đích | Khắc phục lỗi crash hiển thị trên Mobile simulator |
+| Phần việc liên quan | Debug |
+| Mức độ sử dụng | Hỏi debug |
 
 #### 5.1. Prompt nguyên văn
 
 ```text
-Dán nguyên văn prompt đã hỏi AI tại đây.
+Unexpected text node:  . A text node cannot be a child of a <View>.
 ```
 
 #### 5.2. Bối cảnh khi viết prompt
 
 ```text
-Viết tại đây...
+Ứng dụng chạy tốt trên Web, tuy nhiên khi khởi chạy trên Android Emulator/iOS Simulator thì bị crash lập tức tại trang Wishlist với màn hình đỏ báo lỗi Unexpected text node.
 ```
 
 #### 5.3. Kết quả AI trả về
 
 ```text
-Viết tại đây...
+Giải thích rằng React Native quản lý hiển thị rất nghiêm ngặt, không cho phép bất kỳ ký tự khoảng trắng hoặc chữ tự do nào nằm ngoài thẻ chữ hiển thị (phải nằm trong thẻ text). AI định vị lỗi do có khoảng trắng thừa ngay sát chú thích JSX trong `src/app/wishlist.tsx`.
 ```
 
 #### 5.4. Kết quả đã áp dụng vào bài
 
 ```text
-Viết tại đây...
+Sử dụng gợi ý để rà soát file `wishlist.tsx` và xóa bỏ ký tự trắng thừa.
 ```
 
 #### 5.5. Phần sinh viên/nhóm đã chỉnh sửa hoặc cải tiến
 
 ```text
-Viết tại đây...
+Tự loại bỏ các chú thích JSX không chuẩn cú pháp khác trong file để đảm bảo code chạy ổn định lâu dài.
 ```
 
 #### 5.6. Đánh giá chất lượng prompt
 
-- [ ] Prompt rõ ràng
-- [ ] Prompt có đủ bối cảnh
+- [x] Prompt rõ ràng
+- [x] Prompt có đủ bối cảnh
 - [ ] Prompt còn thiếu thông tin
-- [ ] Prompt tạo ra kết quả tốt
+- [x] Prompt tạo ra kết quả tốt
 - [ ] Prompt tạo ra kết quả chưa phù hợp
 - [ ] Cần hỏi lại AI nhiều lần
 - [ ] Cần tự kiểm tra và chỉnh sửa nhiều
@@ -206,17 +199,17 @@ Viết tại đây...
 
 | Loại minh chứng | Nội dung |
 |---|---|
-| Link commit |  |
-| File liên quan |  |
-| Screenshot |  |
-| Kết quả chạy/test |  |
+| Link commit | [Sửa lỗi Layout, Crash Text Node] |
+| File liên quan | `src/app/wishlist.tsx` |
+| Screenshot | ![Wishlist Demo](../bai1/images/wishlist_demo.png) |
+| Kết quả chạy/test | Ứng dụng khởi động ổn định không còn bị crash màn hình đỏ |
 | Link tài liệu/báo cáo |  |
 | Ghi chú khác |  |
 
 #### 5.8. Ghi chú thêm
 
 ```text
-Viết tại đây...
+Học được cơ chế render cực kỳ nghiêm ngặt của native engine trong React Native.
 ```
 
 ---
@@ -225,68 +218,68 @@ Viết tại đây...
 
 | Nội dung | Thông tin |
 |---|---|
-| Ngày sử dụng |  |
-| Công cụ AI | ChatGPT / Gemini / Claude / GitHub Copilot / Cursor / Antigravity / Khác |
-| Mục đích |  |
-| Phần việc liên quan | Requirement / Design / Database / Coding / Testing / Debug / Report / Presentation / Other |
-| Mức độ sử dụng | Hỏi ý tưởng / Hỏi giải thích / Hỏi review / Hỏi debug / Hỏi sinh code / Hỏi tối ưu |
+| Ngày sử dụng | 2026-05-21 |
+| Công cụ AI | Antigravity / Gemini |
+| Mục đích | Sửa lỗi đè header trên Web và đổi màu nền |
+| Phần việc liên quan | Coding / Debug / Testing |
+| Mức độ sử dụng | Hỏi tối ưu |
 
 #### 5.1. Prompt nguyên văn
 
 ```text
-Dán nguyên văn prompt đã hỏi AI tại đây.
+làm sao để trang wishlist có nền màu trắng, nút back hoạt động chuẩn xác không bị đè bởi thanh header trên Web?
 ```
 
 #### 5.2. Bối cảnh khi viết prompt
 
 ```text
-Viết tại đây...
+Tiêu đề trang Wishlist và nút Back bị đè mất bởi header bar tuyệt đối của Expo Starter trên trình duyệt Web, đồng thời màu nền trang bị mặc định tối màu chưa đẹp.
 ```
 
 #### 5.3. Kết quả AI trả về
 
 ```text
-Viết tại đây...
+Đề xuất sử dụng thuộc tính kiểm tra nền tảng `Platform.OS === 'web'` để cộng thêm `paddingTop: 80` cho safe area view khi chạy trên trình duyệt Web, đồng thời đổi nền container thành `#fff`.
 ```
 
 #### 5.4. Kết quả đã áp dụng vào bài
 
 ```text
-Viết tại đây...
+Áp dụng thuộc tính padding thích ứng và thay đổi màu nền trắng sáng cho safe area và container.
 ```
 
 #### 5.5. Phần sinh viên/nhóm đã chỉnh sửa hoặc cải tiến
 
 ```text
-Viết tại đây...
+Tự phát hiện nhược điểm của `router.back()` (bị lỗi khi người dùng truy cập trực tiếp bằng link hoặc tải lại trang do stack trống) và nâng cấp thành `router.push("/")` để đảm bảo nút Back luôn hoạt động chính xác.
 ```
 
 #### 5.6. Đánh giá chất lượng prompt
 
-- [ ] Prompt rõ ràng
-- [ ] Prompt có đủ bối cảnh
+- [x] Prompt rõ ràng
+- [x] Prompt có đủ bối cảnh
 - [ ] Prompt còn thiếu thông tin
-- [ ] Prompt tạo ra kết quả tốt
+- [x] Prompt tạo ra kết quả tốt
 - [ ] Prompt tạo ra kết quả chưa phù hợp
 - [ ] Cần hỏi lại AI nhiều lần
-- [ ] Cần tự kiểm tra và chỉnh sửa nhiều
+- [x] Cần tự kiểm tra và chỉnh sửa nhiều
 - [ ] Kết quả AI có lỗi hoặc chưa chính xác
 
 #### 5.7. Minh chứng liên quan
 
 | Loại minh chứng | Nội dung |
 |---|---|
-| Link commit |  |
-| File liên quan |  |
-| Screenshot |  |
-| Kết quả chạy/test |  |
+| Link commit | [Tối ưu giao diện và điều hướng Wishlist] |
+| File liên quan | `src/app/wishlist.tsx` |
+| Screenshot | ![Wishlist Demo](../bai1/images/wishlist_demo.png) |
+| Kết quả chạy/test | Đã sửa dứt điểm lỗi đè layout Web và lỗi điều hướng Back |
 | Link tài liệu/báo cáo |  |
 | Ghi chú khác |  |
 
 #### 5.8. Ghi chú thêm
 
 ```text
-Viết tại đây...
+Giao diện và trải nghiệm điều hướng đã đạt chuẩn UX/UI.
 ```
 
 ---
@@ -298,31 +291,31 @@ Chọn một prompt có ảnh hưởng lớn nhất đến bài tập/project.
 ### 6.1. Prompt được chọn
 
 ```text
-Dán prompt quan trọng nhất tại đây.
+Unexpected text node:  . A text node cannot be a child of a <View>.
 ```
 
 ### 6.2. Vì sao prompt này quan trọng?
 
 ```text
-Viết tại đây...
+Vì nó giải quyết dứt điểm lỗi crash nghiêm trọng trên nền tảng Native Mobile (Android/iOS). Lỗi này thường rất khó nhận diện thủ công bằng mắt thường của lập trình viên mới học do các ký tự trắng thừa vô hình, và AI đã chỉ ra vô cùng chính xác giúp tiết kiệm thời gian phát triển dự án.
 ```
 
 ### 6.3. Kết quả prompt này mang lại
 
 ```text
-Viết tại đây...
+Ứng dụng chạy mượt mà trên môi trường Mobile Native không còn lỗi màn hình đỏ, giao diện hiển thị chuyên nghiệp và ổn định.
 ```
 
 ### 6.4. Sinh viên/nhóm đã kiểm tra kết quả như thế nào?
 
 ```text
-Viết tại đây...
+Khởi chạy Android Emulator, truy cập vào tab Wishlist và kiểm tra xem component có hiển thị đầy đủ và không bị văng ứng dụng nữa.
 ```
 
 ### 6.5. Sinh viên/nhóm đã cải tiến gì từ kết quả AI?
 
 ```text
-Viết tại đây...
+Tự chuẩn hóa cấu trúc JSX sạch đẹp, đảm bảo tất cả các text node được bao bọc cẩn thận bởi thẻ `<ThemedText>`, tránh lặp lại lỗi render này ở các component khác.
 ```
 
 ---
@@ -334,42 +327,31 @@ Ghi lại ít nhất một prompt chưa tạo ra kết quả tốt hoặc chưa 
 ### 7.1. Prompt chưa hiệu quả
 
 ```text
-Dán prompt chưa hiệu quả tại đây.
+Làm cách nào để nút Back hoạt động quay lại trang trước?
 ```
 
 ### 7.2. Vì sao prompt này chưa hiệu quả?
 
 ```text
-Viết tại đây...
+Prompt quá ngắn, thiếu bối cảnh cụ thể của luồng duyệt trang trong ứng dụng. AI đã đề xuất sử dụng `router.back()` một cách máy móc, dẫn đến việc nút Back bị vô hiệu hóa hoàn toàn khi người dùng tải lại trang ( stack lịch sử trang bị trống ).
 ```
-
-Gợi ý nguyên nhân:
-
-- Prompt quá ngắn.
-- Thiếu bối cảnh bài toán.
-- Không nêu rõ yêu cầu đầu ra.
-- Không cung cấp ngôn ngữ lập trình/công nghệ đang dùng.
-- Không đưa lỗi cụ thể.
-- Không đưa ví dụ input/output.
-- Không yêu cầu AI giải thích.
-- Hỏi AI làm toàn bộ thay vì hỏi từng phần.
 
 ### 7.3. Cách cải thiện prompt
 
 ```text
-Viết tại đây...
+Cần cung cấp bối cảnh điều hướng đa nền tảng và ràng buộc cụ thể của Tab bar.
 ```
 
 ### 7.4. Prompt sau khi cải tiến
 
 ```text
-Dán prompt đã được cải tiến tại đây.
+Nút quay lại dùng router.back() bị lỗi khi người dùng tải lại trang Wishlist do stack lịch sử trống. Có cách nào làm nút này hoạt động an toàn và luôn đưa về Home không?
 ```
 
 ### 7.5. Kết quả sau khi cải tiến prompt
 
 ```text
-Viết tại đây...
+AI đề xuất sử dụng `router.push("/")` hoặc `router.replace("/")` để luôn điều hướng an toàn và chắc chắn đưa người dùng về trang chủ Home Screen trong mọi trường hợp stack trống.
 ```
 
 ---
@@ -379,30 +361,23 @@ Viết tại đây...
 ### 8.1. Khi viết prompt, em/nhóm cần cung cấp thông tin gì để AI trả lời tốt hơn?
 
 ```text
-Viết tại đây...
+- Nền tảng và công nghệ sử dụng (Expo, React Native, TypeScript).
+- Chi tiết log lỗi chính xác kèm Component Stack.
+- Bối cảnh duyệt trang và luồng người dùng thực tế.
+- Đoạn mã nguồn hiện tại cần gỡ lỗi hoặc tối ưu.
+- Tiêu chuẩn giao diện mong muốn (ví dụ màu nền trắng sáng).
 ```
-
-Gợi ý:
-
-- Mục tiêu cần đạt.
-- Bối cảnh bài toán.
-- Công nghệ/ngôn ngữ lập trình đang dùng.
-- Input/output mong muốn.
-- Ràng buộc của đề bài.
-- Lỗi đang gặp.
-- Format kết quả mong muốn.
-- Yêu cầu AI giải thích từng bước.
 
 ### 8.2. Em/nhóm đã học được gì về cách đặt câu hỏi cho AI?
 
 ```text
-Viết tại đây...
+Nên hỏi chi tiết từng lỗi kỹ thuật và chia nhỏ phần việc để AI hỗ trợ, tránh việc bắt AI viết cả file lớn dẫn đến các lỗi cú pháp JSX không mong muốn. Luôn đặt câu hỏi mang tính chất phản biện và tìm hiểu nguyên nhân cốt lõi.
 ```
 
 ### 8.3. Lần sau em/nhóm sẽ cải thiện prompt như thế nào?
 
 ```text
-Viết tại đây...
+Cung cấp đầy đủ ngữ cảnh dự án và đính kèm trực tiếp file code hiện tại để AI hiểu cấu trúc luồng dữ liệu chính xác nhất trước khi đưa ra gợi ý.
 ```
 
 ---
@@ -413,18 +388,18 @@ Viết tại đây...
 
 | Loại prompt | Số lượng | Ví dụ prompt tiêu biểu |
 |---|---:|---|
-| Prompt phân tích yêu cầu |  |  |
-| Prompt giải thích kiến thức |  |  |
-| Prompt thiết kế giải pháp |  |  |
-| Prompt thiết kế database |  |  |
-| Prompt sinh code mẫu |  |  |
-| Prompt debug lỗi |  |  |
-| Prompt viết test case |  |  |
-| Prompt review code |  |  |
-| Prompt tối ưu code |  |  |
-| Prompt viết báo cáo |  |  |
-| Prompt chuẩn bị thuyết trình |  |  |
-| Prompt khác |  |  |
+| Prompt phân tích yêu cầu | 0 |  |
+| Prompt giải thích kiến thức | 0 |  |
+| Prompt thiết kế giải pháp | 1 | Prompt định tuyến Wishlist Screen trong cấu hình Custom Tab Bar |
+| Prompt thiết kế database | 0 |  |
+| Prompt sinh code mẫu | 1 | Prompt sinh layout giao diện Wishlist |
+| Prompt debug lỗi | 1 | Prompt sửa lỗi crash Unexpected Text Node trên simulator |
+| Prompt viết test case | 0 |  |
+| Prompt review code | 0 |  |
+| Prompt tối ưu code | 1 | Prompt tối ưu padding trên Web và màu nền |
+| Prompt viết báo cáo | 0 |  |
+| Prompt chuẩn bị thuyết trình | 0 |  |
+| Prompt khác | 0 |  |
 
 ---
 
@@ -434,16 +409,16 @@ Sinh viên/nhóm tự kiểm tra chất lượng prompt đã dùng.
 
 | Tiêu chí | Đã đạt? | Ghi chú |
 |---|:---:|---|
-| Prompt có mục tiêu rõ ràng |  |  |
-| Prompt có đủ bối cảnh |  |  |
-| Prompt có nêu công nghệ/ngôn ngữ sử dụng |  |  |
-| Prompt có nêu yêu cầu đầu ra |  |  |
-| Prompt không yêu cầu AI làm toàn bộ bài một cách máy móc |  |  |
-| Prompt có yêu cầu AI giải thích hoặc phân tích |  |  |
-| Kết quả AI được kiểm tra lại |  |  |
-| Kết quả AI được chỉnh sửa trước khi sử dụng |  |  |
-| Prompt quan trọng được ghi lại đầy đủ |  |  |
-| Prompt sai/chưa hiệu quả được rút kinh nghiệm |  |  |
+| Prompt có mục tiêu rõ ràng | [x] | Xác định đúng lỗi hiển thị và định tuyến |
+| Prompt có đủ bối cảnh | [x] | Mô tả chi tiết hành vi trên Web và Mobile |
+| Prompt có nêu công nghệ/ngôn ngữ sử dụng | [x] | Rõ ràng về nền tảng Expo/React Native |
+| Prompt có nêu yêu cầu đầu ra | [x] | Mong muốn giao diện không bị đè và nền trắng |
+| Prompt không yêu cầu AI làm toàn bộ bài một cách máy móc | [x] | Chia nhỏ việc thiết kế, định tuyến và sửa lỗi |
+| Prompt có yêu cầu AI giải thích hoặc phân tích | [x] | Hỏi rõ nguyên nhân lỗi text node |
+| Kết quả AI được kiểm tra lại | [x] | Kiểm thử trực tiếp trên simulator |
+| Kết quả AI được chỉnh sửa trước khi sử dụng | [x] | Tối ưu nút Back và alias import |
+| Prompt quan trọng được ghi lại đầy đủ | [x] | Đã ghi đầy đủ 3 prompt kỹ thuật |
+| Prompt sai/chưa hiệu quả được rút kinh nghiệm | [x] | Rút ra bài học về nút Back |
 
 ---
 

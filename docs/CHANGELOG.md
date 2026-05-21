@@ -19,17 +19,17 @@ Nguyên tắc ghi changelog:
 
 | Thông tin | Nội dung |
 |---|---|
-| Môn học |  |
-| Mã môn học |  |
-| Lớp |  |
-| Học kỳ |  |
-| Tên bài tập / Project |  |
-| Tên sinh viên / Nhóm |  |
-| MSSV / Danh sách MSSV |  |
-| Giảng viên hướng dẫn |  |
-| Repository URL |  |
-| Ngày bắt đầu |  |
-| Ngày hoàn thành |  |
+| Môn học | Multiplatform Mobile App Development_Phát triển ứng dụng di động đa nền tảng |
+| Mã môn học | MMA301 |
+| Lớp | SE19B05 |
+| Học kỳ | 7 |
+| Tên bài tập / Project | Làm giao diện trang của từng cá nhân |
+| Tên sinh viên / Nhóm | Đinh Huy Hoàng / Nhóm 5 |
+| MSSV / Danh sách MSSV | DE180623 |
+| Giảng viên hướng dẫn | QuangLTN3 |
+| Repository URL | https://github.com/fptu-se-su26/mma301-su26-mma301_se19b05_group-05 |
+| Ngày bắt đầu | 21/5/2026 |
+| Ngày hoàn thành | 21/5/2026 |
 
 ---
 
@@ -37,12 +37,12 @@ Nguyên tắc ghi changelog:
 
 | Phiên bản/Giai đoạn | Thời gian | Nội dung chính | Trạng thái |
 |---|---|---|---|
-| Phase 01 |  | Khởi tạo project | Not Started / In Progress / Completed |
-| Phase 02 |  | Phân tích yêu cầu | Not Started / In Progress / Completed |
-| Phase 03 |  | Thiết kế hệ thống | Not Started / In Progress / Completed |
-| Phase 04 |  | Implementation | Not Started / In Progress / Completed |
-| Phase 05 |  | Testing & Debug | Not Started / In Progress / Completed |
-| Phase 06 |  | Hoàn thiện báo cáo và demo | Not Started / In Progress / Completed |
+| Phase 01 | 2026-05-12 | Khởi tạo project | Completed |
+| Phase 02 | 2026-05-14 | Phân tích yêu cầu | Completed |
+| Phase 03 | 2026-05-16 | Thiết kế hệ thống | Completed |
+| Phase 04 | 2026-05-21 | Implementation | Completed |
+| Phase 05 | 2026-05-21 | Testing & Debug | Completed |
+| Phase 06 | 2026-05-22 | Hoàn thiện báo cáo và demo | In Progress |
 
 ---
 
@@ -214,55 +214,54 @@ Viết tại đây...
 ## Ngày thực hiện
 
 ```text
-DD/MM/YYYY
+2026-05-21
 ```
 
 ## Đã hoàn thành
 
-- [ ] Tạo project structure
+- [x] Tạo project structure
 - [ ] Cài đặt database connection
 - [ ] Xây dựng backend
-- [ ] Xây dựng frontend
+- [x] Xây dựng frontend
 - [ ] Xây dựng authentication/authorization
 - [ ] Xử lý CRUD
 - [ ] Xử lý validation
 - [ ] Tích hợp API
 - [ ] Xử lý upload/download file
 - [ ] Xử lý lỗi
-- [ ] Tối ưu giao diện
+- [x] Tối ưu giao diện
 - [ ] Cập nhật README hướng dẫn chạy
 
 ## Thay đổi chi tiết
 
 | STT | Nội dung thay đổi | Người thực hiện | File/Module liên quan | Minh chứng |
 |---:|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1 | Tạo mới giao diện màn hình Wishlist sáng sủa, sạch đẹp | Sinh viên | `src/app/wishlist.tsx` | Commit [Thêm Wishlist Screen] |
+| 2 | Đăng ký và hiển thị tab Wishlist trên thanh Tab Bar giao diện Web | Sinh viên | `src/components/app-tabs.web.tsx` | Commit [Cập nhật Tab Bar Web] |
+| 3 | Đăng ký tab Wishlist trên thanh điều hướng giao diện Mobile | Sinh viên | `src/components/app-tabs.tsx` | Commit [Cập nhật Tab Bar Mobile] |
 
 ## AI có hỗ trợ không?
 
-- [ ] Có
+- [x] Có
 - [ ] Không
 
 Nếu có, mô tả AI đã hỗ trợ phần nào:
 
 ```text
-Viết tại đây...
+AI hỗ trợ viết cấu trúc mã nguồn ban đầu cho giao diện `wishlist.tsx`, và chỉ ra vị trí cần thêm trigger đăng ký tab trong cấu hình Expo Router Tab Bar.
 ```
 
 ## Commit/Screenshot minh chứng
 
 ```text
-Dán link commit, screenshot hoặc mô tả minh chứng tại đây...
+- Link Commit: [Commit Hash / URL trên GitHub]
+- File liên quan: src/app/wishlist.tsx, src/components/app-tabs.tsx, src/components/app-tabs.web.tsx
 ```
 
 ## Ghi chú
 
 ```text
-Viết tại đây...
+Giao diện đã hiển thị đầy đủ trên cả hai phiên bản Web và Mobile nhưng cần qua giai đoạn kiểm thử để căn chỉnh layout và fix lỗi.
 ```
 
 ---
@@ -272,62 +271,63 @@ Viết tại đây...
 ## Ngày thực hiện
 
 ```text
-DD/MM/YYYY
+2026-05-21
 ```
 
 ## Đã hoàn thành
 
 - [ ] Viết test case
-- [ ] Chạy test chức năng chính
-- [ ] Kiểm tra output
+- [x] Chạy test chức năng chính
+- [x] Kiểm tra output
 - [ ] Kiểm tra validation
-- [ ] Kiểm tra lỗi giao diện
+- [x] Kiểm tra lỗi giao diện
 - [ ] Kiểm tra lỗi database
 - [ ] Kiểm tra phân quyền
 - [ ] Kiểm tra bảo mật cơ bản
-- [ ] Fix bug
-- [ ] Chạy lại sau khi fix bug
+- [x] Fix bug
+- [x] Chạy lại sau khi fix bug
 - [ ] Ghi nhận kết quả test
 
 ## Danh sách lỗi đã xử lý
 
 | STT | Lỗi phát hiện | Nguyên nhân | Cách xử lý | Trạng thái |
 |---:|---|---|---|---|
-| 1 |  |  |  | Open / Fixed / Pending |
-| 2 |  |  |  | Open / Fixed / Pending |
-| 3 |  |  |  | Open / Fixed / Pending |
-| 4 |  |  |  | Open / Fixed / Pending |
-| 5 |  |  |  | Open / Fixed / Pending |
+| 1 | Click tab Wishlist không thể điều hướng sang trang | Cấu hình tab bar bị ẩn (`href={null}` hoặc thiếu `<TabTrigger>`) | Bổ sung đầy đủ trigger định tuyến đến `/wishlist` | Fixed |
+| 2 | Crash ứng dụng Mobile với lỗi "Unexpected text node" | Có ký tự khoảng trắng dư thừa nằm ngoài các thẻ chữ trong JSX | Xóa ký tự trắng thừa và chuẩn hóa cú pháp chú thích JSX | Fixed |
+| 3 | Header Expo Starter đè mất tiêu đề trang Wishlist trên Web | Header sử dụng absolute layout đè lên vùng hiển thị thông thường trên trình duyệt | Bổ sung padding-top 80px thích ứng khi chạy trên Web | Fixed |
+| 4 | Nút quay lại (Back) không phản hồi | Sử dụng `router.back()` trong khi stack lịch sử trang bị trống | Thay thế bằng `router.push("/")` để luôn điều hướng về trang chủ an toàn | Fixed |
+| 5 | Trang Wishlist hiển thị màu nền không nhất quán | Chưa set cứng background color cho safe area và container | Định dạng thuộc tính background màu trắng tinh tế `#fff` | Fixed |
 
 ## Thay đổi chi tiết
 
 | STT | Nội dung thay đổi | Người thực hiện | File/Module liên quan | Minh chứng |
 |---:|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
+| 1 | Tối ưu nút Back, cấu trúc import tuyệt đối, padding Web và đổi màu nền | Sinh viên | `src/app/wishlist.tsx` | Commit [Tối ưu giao diện và điều hướng Wishlist] |
+| 2 | Sửa đổi trigger điều hướng Web | Sinh viên | `src/components/app-tabs.web.tsx` | Commit [Sửa điều hướng Web] |
+| 3 | Sửa đổi trigger điều hướng Mobile | Sinh viên | `src/components/app-tabs.tsx` | Commit [Sửa điều hướng Mobile] |
 
 ## AI có hỗ trợ không?
 
-- [ ] Có
+- [x] Có
 - [ ] Không
 
 Nếu có, mô tả AI đã hỗ trợ phần nào:
 
 ```text
-Viết tại đây...
+AI hỗ trợ phân tích nguyên nhân gây lỗi nghiêm ngặt của React Native đối với các khoảng trắng ngoài thẻ text, và gợi ý giải pháp padding động thông qua thư viện Platform.
 ```
 
 ## Commit/Screenshot minh chứng
 
 ```text
-Dán link commit, screenshot hoặc mô tả minh chứng tại đây...
+- Link Commit: [Commit Hash / URL trên GitHub]
+- Screenshot: ![Wishlist Demo](../bai1/images/wishlist_demo.png)
 ```
 
 ## Ghi chú
 
 ```text
-Viết tại đây...
+Toàn bộ các lỗi nghiêm trọng đã được fix triệt để. Giao diện chạy mượt mà, phản hồi nhạy bén và đồng bộ trên cả Web và Mobile.
 ```
 
 ---
