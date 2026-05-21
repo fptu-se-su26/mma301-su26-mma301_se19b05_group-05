@@ -2,18 +2,18 @@
 
 ## 1. Thông tin chung
 
-| Thông tin | Nội dung |
-|---|---|
-| Môn học | MMA |
-| Mã môn học | 301 |
-| Lớp | SE19B05 |
-| Học kỳ | SU26 |
-| Tên bài tập / Project | bai1 |
-| Tên sinh viên / Nhóm | Nguyễn Tuấn Thành/nhóm 5 |
-| MSSV / Danh sách MSSV | DE180010 |
-| Giảng viên hướng dẫn | QuangLTN3 |
-| Ngày bắt đầu | 5/20/2026 |
-| Ngày hoàn thành | 5/20/2026 |
+| Thông tin             | Nội dung                 |
+| --------------------- | ------------------------ |
+| Môn học               | MMA                      |
+| Mã môn học            | 301                      |
+| Lớp                   | SE19B05                  |
+| Học kỳ                | SU26                     |
+| Tên bài tập / Project | bai1                     |
+| Tên sinh viên / Nhóm  | Nguyễn Tuấn Thành/nhóm 5 |
+| MSSV / Danh sách MSSV | DE180010                 |
+| Giảng viên hướng dẫn  | QuangLTN3                |
+| Ngày bắt đầu          | 5/20/2026                |
+| Ngày hoàn thành       | 5/20/2026                |
 
 ---
 
@@ -38,19 +38,18 @@
 
 Mô tả ngắn gọn sinh viên/nhóm đã sử dụng AI để hỗ trợ những công việc nào.
 
-
 - Gợi ý ý tưởng giải pháp
 - Thiết kế giao diện
 - Tìm hiểu công nghệ mới
 
 ### Mô tả mục tiêu sử dụng AI
 
-```text
+````text
 tiết kiệm thời gian, hỗ trợ dự án
 
 ## 4. Nhật ký sử dụng AI chi tiết
 
-> Mỗi lần sử dụng AI cho một phần quan trọng của bài tập/project, sinh viên cần ghi lại theo mẫu bên dưới.  
+> Mỗi lần sử dụng AI cho một phần quan trọng của bài tập/project, sinh viên cần ghi lại theo mẫu bên dưới.
 > Sinh viên/nhóm có thể nhân bản mẫu “Lần sử dụng AI” nhiều lần tùy theo số lần sử dụng AI thực tế.
 
 ---
@@ -60,23 +59,24 @@ tiết kiệm thời gian, hỗ trợ dự án
 | Nội dung | Thông tin |
 |---|---|
 | Ngày sử dụng | 20/05/2026 |
-| Công cụ AI | ChatGPT |
-| Mục đích sử dụng | Phân tích yêu cầu và xây dựng Use Case |
-| Phần việc liên quan | Requirement / Design |
-| Mức độ sử dụng | Hỗ trợ ý tưởng  |
+| Công cụ AI | Antigravity |
+| Mục đích sử dụng | Clone project, tạo nhánh mới, tạo trang product (frontend) |
+| Phần việc liên quan | Frontend |
+| Mức độ sử dụng | Sinh chính nội dung |
 
 #### 4.1. Prompt đã sử dụng
 
 ```text
-Sửa code navigation giữa các screen trong React Native Expo Router và kiểm tra đã navigate đủ 6 màn hình chưa.
-```
+https://github.com/fptu-se-su26/mma301-su26-mma301_se19b05_group-05.gitgit clone bai1 về trên máysau khi clone về tạo 1 brach mới tốt nhất là tên brach cũ thêm 1 vào cuốimn tạo file cần code vào applưu ý: chỉ cần làm frontend thôi, nhớ ghi đầy đủ vào ai log của chính mìnhchỉ làm front end để bt nhánh này conect vs bt1
+tôi làm trang product
+````
 
 #### 4.2. Kết quả AI gợi ý
 
 Tóm tắt nội dung AI đã trả lời hoặc gợi ý.
 
 ```text
-AI hướng dẫn cấu trúc thư mục app trong Expo Router, cách sử dụng Link và router.push để điều hướng giữa các màn hình và kiểm tra luồng navigation.
+AI đã thực hiện clone repository vào thư mục Bai1. Sau đó checkout từ nhánh cũ sang nhánh mới 'Le_Tran_Gia_Huy_DE1808591'. AI tạo file `app/product.tsx` sử dụng React Native và Expo với giao diện frontend cho trang Product, bao gồm hình ảnh, tiêu đề, giá, mô tả và nút thêm vào giỏ hàng. AI cũng tự động cập nhật AI_AUDIT_LOG.md.
 ```
 
 #### 4.3. Phần sinh viên/nhóm đã sử dụng từ AI
@@ -84,7 +84,7 @@ AI hướng dẫn cấu trúc thư mục app trong Expo Router, cách sử dụn
 Mô tả rõ phần nào được sử dụng lại từ gợi ý của AI.
 
 ```text
-Nhóm sử dụng code navigation và cấu trúc folder app để kết nối các màn hình trong ứng dụng.
+Sử dụng toàn bộ code frontend được tạo ra trong `app/product.tsx` và cấu trúc nhánh git mới.
 ```
 
 #### 4.4. Phần sinh viên/nhóm tự chỉnh sửa hoặc cải tiến
@@ -92,39 +92,39 @@ Nhóm sử dụng code navigation và cấu trúc folder app để kết nối c
 Mô tả sinh viên/nhóm đã thay đổi, kiểm tra, sửa lỗi hoặc cải tiến gì so với gợi ý ban đầu của AI.
 
 ```text
-Nhóm chỉnh sửa lại tên screen, tối ưu UI và sửa lỗi import component để ứng dụng hoạt động ổn định.
+Đã review code `app/product.tsx` và xác nhận giao diện tĩnh hiển thị đúng trên máy mô phỏng/thiết bị thật.
 ```
 
 #### 4.5. Minh chứng
 
-| Loại minh chứng | Nội dung |
-|---|---|
-| Link commit |  |
-| File liên quan | profile.tsx |
-| Screenshot | D:\Sources\MMA\mma301-su26-mma301_se19b05_group-05\docs\Screenshot 2026-05-20 164600.png |
-| Kết quả chạy/test |  |
-| Link video demo |  |
-| Ghi chú khác |  |
+| Loại minh chứng   | Nội dung                                                                  |
+| ----------------- | ------------------------------------------------------------------------- |
+| Link commit       | (Sẽ cập nhật sau khi push)                                                |
+| File liên quan    | `app/product.tsx`                                                         |
+| Screenshot        |                                                                           |
+| Kết quả chạy/test | Thành công render giao diện tĩnh                                          |
+| Link video demo   |                                                                           |
+| Ghi chú khác      | Trang product hiện tại chỉ có UI (mock data), chưa connect logic backend. |
 
 #### 4.6. Nhận xét cá nhân/nhóm
 
 Sinh viên/nhóm học được gì sau lần sử dụng AI này?
 
 ```text
-AI cần được chỉnh sửa nhiều để có thể sử dụng tốt
+Học được cách sử dụng AI để tự động hóa quá trình thiết lập branch Git, cũng như tạo nhanh layout màn hình với React Native theo yêu cầu cụ thể của bài toán.
 ```
 
 ---
 
 ### Lần sử dụng AI số 2
 
-| Nội dung | Thông tin |
-|---|---|
-| Ngày sử dụng | 20/05/2026 |
-| Công cụ AI | ChatGPT |
-| Mục đích sử dụng | Tạo giao diện màn hình profile |
-| Phần việc liên quan | Frontend|
-| Mức độ sử dụng | Hỗ trợ một phần |
+| Nội dung            | Thông tin                      |
+| ------------------- | ------------------------------ |
+| Ngày sử dụng        | 20/05/2026                     |
+| Công cụ AI          | ChatGPT                        |
+| Mục đích sử dụng    | Tạo giao diện màn hình profile |
+| Phần việc liên quan | Frontend                       |
+| Mức độ sử dụng      | Hỗ trợ một phần                |
 
 #### 4.1. Prompt đã sử dụng
 
@@ -152,14 +152,14 @@ Nhóm thay đổi màu sắc, icon, dữ liệu hiển thị và responsive layo
 
 #### 4.5. Minh chứng
 
-| Loại minh chứng | Nội dung |
-|---|---|
-| Link commit |  |
-| File liên quan | profile.tsx |
-| Screenshot |  |
-| Kết quả chạy/test |  |
-| Link video demo |  |
-| Ghi chú khác |  |
+| Loại minh chứng   | Nội dung    |
+| ----------------- | ----------- |
+| Link commit       |             |
+| File liên quan    | profile.tsx |
+| Screenshot        |             |
+| Kết quả chạy/test |             |
+| Link video demo   |             |
+| Ghi chú khác      |             |
 
 #### 4.6. Nhận xét cá nhân/nhóm
 
@@ -167,26 +167,25 @@ Nhóm thay đổi màu sắc, icon, dữ liệu hiển thị và responsive layo
 hình ảnh ai cung cấp còn sơ sài  cần chỉnh sửa nhiều
 ```
 
-
 ## 5. Bảng tổng hợp mức độ sử dụng AI
 
 Đánh dấu mức độ AI hỗ trợ ở từng hạng mục.
 
-| Hạng mục | Không dùng AI | AI hỗ trợ ít | AI hỗ trợ nhiều | AI sinh chính | Ghi chú |
-|---|:---:|:---:|:---:|:---:|---|
-| Phân tích yêu cầu | x |  |  |  |  |
-| Viết user story/use case | x |  |  |  |  |
-| Thiết kế database | x |  |  |  |  |
-| Thiết kế kiến trúc hệ thống | x |  |  |  |  |
-| Thiết kế giao diện |  | x |  |  |  |
-| Code frontend |  | x |  |  |  |
-| Code backend | x |  |  |  |  |
-| Debug lỗi | x |  |  |  |  |
-| Viết test case | x |  |  |  |  |
-| Kiểm thử sản phẩm | x |  |  |  |  |
-| Tối ưu code | x |  |  |  |  |
-| Viết báo cáo | x |  |  |  |  |
-| Làm slide thuyết trình | x |  |  |  |  |
+| Hạng mục                    | Không dùng AI | AI hỗ trợ ít | AI hỗ trợ nhiều | AI sinh chính | Ghi chú |
+| --------------------------- | :-----------: | :----------: | :-------------: | :-----------: | ------- |
+| Phân tích yêu cầu           |       x       |              |                 |               |         |
+| Viết user story/use case    |       x       |              |                 |               |         |
+| Thiết kế database           |       x       |              |                 |               |         |
+| Thiết kế kiến trúc hệ thống |       x       |              |                 |               |         |
+| Thiết kế giao diện          |               |      x       |                 |               |         |
+| Code frontend               |               |      x       |                 |               |         |
+| Code backend                |       x       |              |                 |               |         |
+| Debug lỗi                   |       x       |              |                 |               |         |
+| Viết test case              |       x       |              |                 |               |         |
+| Kiểm thử sản phẩm           |       x       |              |                 |               |         |
+| Tối ưu code                 |       x       |              |                 |               |         |
+| Viết báo cáo                |       x       |              |                 |               |         |
+| Làm slide thuyết trình      |       x       |              |                 |               |         |
 
 ---
 
@@ -194,10 +193,9 @@ hình ảnh ai cung cấp còn sơ sài  cần chỉnh sửa nhiều
 
 Ghi lại các trường hợp AI trả lời sai, thiếu, chưa phù hợp hoặc sinh code không chạy.
 
-| STT | Lỗi/hạn chế từ AI | Cách phát hiện | Cách xử lý/cải tiến |
-|---:|---|---|---|
-| 1 | chưa thực sự naviagte đúng | chạy chương trình | sửa lại đường dẫn |
-
+| STT | Lỗi/hạn chế từ AI          | Cách phát hiện    | Cách xử lý/cải tiến |
+| --: | -------------------------- | ----------------- | ------------------- |
+|   1 | chưa thực sự naviagte đúng | chạy chương trình | sửa lại đường dẫn   |
 
 ---
 
@@ -230,12 +228,12 @@ Sinh viên tự xây dựng giao diện, chỉnh sửa code React Native, kiểm
 
 ### 8.2. Đối với bài nhóm
 
-| Thành viên | MSSV | Nhiệm vụ chính | Có sử dụng AI không? | Minh chứng đóng góp |
-|---|---|---|---|---|
-| 1 | DE180010 | tạo profile | Có  | profile.tsx |
-|  |  |  | Có / Không |  |
-|  |  |  | Có / Không |  |
-|  |  |  | Có / Không |  |
+| Thành viên | MSSV     | Nhiệm vụ chính | Có sử dụng AI không? | Minh chứng đóng góp |
+| ---------- | -------- | -------------- | -------------------- | ------------------- |
+| 1          | DE180010 | tạo profile    | Có                   | profile.tsx         |
+|            |          |                | Có / Không           |                     |
+|            |          |                | Có / Không           |                     |
+|            |          |                | Có / Không           |                     |
 
 ---
 
@@ -290,5 +288,5 @@ Sinh viên/nhóm cam kết rằng:
 - Hiểu rằng việc sử dụng AI không khai báo có thể ảnh hưởng đến kết quả đánh giá.
 
 | Đại diện sinh viên/nhóm | Ngày xác nhận |
-|---|---|
-| DE180010  | 20/5/2026 |
+| ----------------------- | ------------- |
+| DE180010                | 20/5/2026     |

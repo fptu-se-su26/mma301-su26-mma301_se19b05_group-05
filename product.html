@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editorial Product Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-black: #000000;
+            --color-white: #ffffff;
+            --color-gray-light: #e5e5e5;
+            --color-gray-dark: #333333;
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--color-white);
+            color: var(--color-black);
+            font-family: var(--font-body);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* Utility Classes */
+        .uppercase-label {
+            font-family: var(--font-body);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-weight: 500;
+            color: var(--color-gray-dark);
+        }
+
+        .divider {
+            height: 1px;
+            background-color: var(--color-black);
+            width: 100%;
+            margin: 2rem 0;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header */
+        header {
+            border-bottom: 1px solid var(--color-black);
+            padding: 1.5rem 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--color-black);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 500;
+        }
+
+        /* Main Asymmetric Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: 65% 35%;
+            min-height: calc(100vh - 80px);
+            border-bottom: 1px solid var(--color-black);
+        }
+
+        /* Left Column - Image */
+        .product-image-container {
+            border-right: 1px solid var(--color-black);
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%) contrast(1.2);
+        }
+
+        .image-caption {
+            position: absolute;
+            bottom: 2rem;
+            left: 2rem;
+            background: var(--color-white);
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--color-black);
+        }
+
+        /* Right Column - Details */
+        .product-details {
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .product-title {
+            font-family: var(--font-heading);
+            font-size: 4.5rem;
+            line-height: 1.1;
+            margin: 1rem 0;
+            font-weight: 400;
+        }
+
+        .product-title i {
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        .product-price {
+            font-family: var(--font-body);
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+
+        .product-description {
+            font-size: 1rem;
+            color: var(--color-gray-dark);
+            font-weight: 300;
+            margin-bottom: 2.5rem;
+            max-width: 90%;
+        }
+
+        .product-meta {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .meta-item {
+            border-top: 1px solid var(--color-gray-light);
+            padding-top: 0.5rem;
+        }
+
+        .btn-black {
+            background-color: var(--color-black);
+            color: var(--color-white);
+            border: none;
+            padding: 1.2rem 2rem;
+            font-family: var(--font-body);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        .btn-black:hover {
+            background-color: var(--color-gray-dark);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+            .product-image-container {
+                border-right: none;
+                border-bottom: 1px solid var(--color-black);
+                height: 60vh;
+            }
+            .product-title {
+                font-size: 3.5rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">Maison</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Collection</a></li>
+                    <li><a href="#">Editorials</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="product-grid">
+        <!-- 65% Column -->
+        <section class="product-image-container">
+            <div class="image-caption uppercase-label">No. 01 / Signature Series</div>
+            <img class="product-image" src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=1000&auto=format&fit=crop" alt="Fashion Editorial Sneaker">
+        </section>
+
+        <!-- 35% Column -->
+        <section class="product-details">
+            <span class="uppercase-label">Footwear Archive</span>
+            
+            <h1 class="product-title">
+                The Noir <br>
+                <i>Classic</i>
+            </h1>
+            
+            <div class="divider"></div>
+            
+            <div class="product-price">$ 450.00</div>
+            
+            <p class="product-description">
+                A study in absolute minimalism. Crafted from premium full-grain Italian leather with a deconstructed silhouette. Stripped of excess, leaving only essential form and function.
+            </p>
+
+            <div class="product-meta">
+                <div class="meta-item">
+                    <div class="uppercase-label">Material</div>
+                    <p style="font-size: 0.9rem; margin-top: 0.2rem;">Italian Leather</p>
+                </div>
+                <div class="meta-item">
+                    <div class="uppercase-label">Origin</div>
+                    <p style="font-size: 0.9rem; margin-top: 0.2rem;">Handmade in Milan</p>
+                </div>
+            </div>
+
+            <button class="btn-black">Add to Collection</button>
+        </section>
+    </main>
+
+</body>
+</html>

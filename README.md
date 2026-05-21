@@ -105,9 +105,14 @@ feat, fix, docs, test, refactor, style, chore
 
 ## 8. How to Run
 
-```text
-Students write project running instructions here.
-```
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the app:
+   ```bash
+   npx expo start
+   ```
 
 ---
 
