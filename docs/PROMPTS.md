@@ -37,6 +37,7 @@ Sinh viên/nhóm cần ghi lại:
 Đánh dấu các công cụ AI đã sử dụng.
 
 - [x ] ChatGPT
+- [x ] ChatGPT
 - [ ] Gemini
 - [ ] Claude
 - [ ] GitHub Copilot
@@ -127,6 +128,7 @@ Tự chỉnh sửa tên screen, tối ưu UI và test lại navigation trên Exp
 - [x ] Prompt có đủ bối cảnh
 - [ ] Prompt còn thiếu thông tin
 - [ x] Prompt tạo ra kết quả tốt
+- [ x] Prompt tạo ra kết quả tốt
 - [ ] Prompt tạo ra kết quả chưa phù hợp
 - [x ] Cần hỏi lại AI nhiều lần
 - [ x] Cần tự kiểm tra và chỉnh sửa nhiều
@@ -153,53 +155,54 @@ UI được chỉnh sửa lại để phù hợp với thiết kế tổng thể
 
 ### Prompt số 2
 
-| Nội dung | Thông tin |
-|---|---|
-| Ngày sử dụng |  |
-| Công cụ AI | ChatGPT / Gemini / Claude / GitHub Copilot / Cursor / Antigravity / Khác |
-| Mục đích |  |
-| Phần việc liên quan | Requirement / Design / Database / Coding / Testing / Debug / Report / Presentation / Other |
-| Mức độ sử dụng | Hỏi ý tưởng / Hỏi giải thích / Hỏi review / Hỏi debug / Hỏi sinh code / Hỏi tối ưu |
+| Nội dung            | Thông tin      |
+| ------------------- | -------------- |
+| Ngày sử dụng        | 21/5/2026      |
+| Công cụ AI          | ChatGPT        |
+| Mục đích            | Giải thích SDK |
+| Phần việc liên quan | Other          |
+| Mức độ sử dụng      | Hỏi giải thích |
+
 
 #### 5.1. Prompt nguyên văn
 
 ```text
-Dán nguyên văn prompt đã hỏi AI tại đây.
+Nếu giữ SDK 55 thì Expo Go không hoạt động vì Expo Go của tôi chỉ hỗ trợ 54 thôi
 ```
 
 #### 5.2. Bối cảnh khi viết prompt
 
 ```text
-Viết tại đây...
+Cần hiểu nguyên nhân Expo Go không chạy được project.
 ```
 
 #### 5.3. Kết quả AI trả về
 
 ```text
-Viết tại đây...
+AI giải thích sự khác biệt giữa Expo SDK 54 và 55 và hướng downgrade SDK.
 ```
 
 #### 5.4. Kết quả đã áp dụng vào bài
 
 ```text
-Viết tại đây...
+Hiểu nguyên nhân compatibility giữa Expo Go và SDK.
 ```
 
 #### 5.5. Phần sinh viên/nhóm đã chỉnh sửa hoặc cải tiến
 
 ```text
-Viết tại đây...
+Tự quyết định tiếp tục dùng SDK 55 cho web development.
 ```
 
 #### 5.6. Đánh giá chất lượng prompt
 
 - [ ] Prompt rõ ràng
-- [ ] Prompt có đủ bối cảnh
+- [x ] Prompt có đủ bối cảnh
 - [ ] Prompt còn thiếu thông tin
-- [ ] Prompt tạo ra kết quả tốt
+- [x ] Prompt tạo ra kết quả tốt
 - [ ] Prompt tạo ra kết quả chưa phù hợp
-- [ ] Cần hỏi lại AI nhiều lần
-- [ ] Cần tự kiểm tra và chỉnh sửa nhiều
+- [ x] Cần hỏi lại AI nhiều lần
+- [ x] Cần tự kiểm tra và chỉnh sửa nhiều
 - [ ] Kết quả AI có lỗi hoặc chưa chính xác
 
 #### 5.7. Minh chứng liên quan
@@ -207,16 +210,16 @@ Viết tại đây...
 | Loại minh chứng | Nội dung |
 |---|---|
 | Link commit |  |
-| File liên quan |  |
+| File liên quan |  package.json|
 | Screenshot |  |
-| Kết quả chạy/test |  |
+| Kết quả chạy/test |Expo Web hoạt động  |
 | Link tài liệu/báo cáo |  |
-| Ghi chú khác |  |
+| Ghi chú khác | SDK compatibility |
 
 #### 5.8. Ghi chú thêm
 
 ```text
-Viết tại đây...
+Hiểu rõ hơn về cách Expo SDK hoạt động.
 ```
 
 ---
@@ -292,8 +295,7 @@ Viết tại đây...
 ---
 
 ## 6. Prompt quan trọng nhất
-
-Chọn một prompt có ảnh hưởng lớn nhất đến bài tập/project.
+Nếu giữ SDK 55 thì Expo Go không hoạt động vì Expo Go của tôi chỉ hỗ trợ 54 thôi
 
 ### 6.1. Prompt được chọn
 
@@ -304,25 +306,25 @@ Dán prompt quan trọng nhất tại đây.
 ### 6.2. Vì sao prompt này quan trọng?
 
 ```text
-Viết tại đây...
+Prompt này giúp hiểu nguyên nhân project không chạy được trên Expo Go và ảnh hưởng trực tiếp đến quá trình phát triển ứng dụng.
 ```
 
 ### 6.3. Kết quả prompt này mang lại
 
 ```text
-Viết tại đây...
+Hiểu rõ sự khác nhau giữa Expo SDK 54 và 55, compatibility với Expo Go và cách xử lý phù hợp.
 ```
 
 ### 6.4. Sinh viên/nhóm đã kiểm tra kết quả như thế nào?
 
 ```text
-Viết tại đây...
+Kiểm tra package.json, chạy thử Expo Web và kiểm tra compatibility với Expo Go.
 ```
 
 ### 6.5. Sinh viên/nhóm đã cải tiến gì từ kết quả AI?
 
 ```text
-Viết tại đây...
+Tự cấu hình lại môi trường phát triển và quyết định tiếp tục sử dụng Expo Web thay vì downgrade SDK.
 ```
 
 ---
@@ -334,42 +336,30 @@ Ghi lại ít nhất một prompt chưa tạo ra kết quả tốt hoặc chưa 
 ### 7.1. Prompt chưa hiệu quả
 
 ```text
-Dán prompt chưa hiệu quả tại đây.
+Tạo route /settings cho tôi
 ```
 
 ### 7.2. Vì sao prompt này chưa hiệu quả?
 
 ```text
-Viết tại đây...
+Prompt chưa cung cấp đầy đủ bối cảnh về cấu trúc project Expo Router, môi trường đang chạy là web hay mobile và file app-tabs-web.tsx đang được sử dụng.
 ```
-
-Gợi ý nguyên nhân:
-
-- Prompt quá ngắn.
-- Thiếu bối cảnh bài toán.
-- Không nêu rõ yêu cầu đầu ra.
-- Không cung cấp ngôn ngữ lập trình/công nghệ đang dùng.
-- Không đưa lỗi cụ thể.
-- Không đưa ví dụ input/output.
-- Không yêu cầu AI giải thích.
-- Hỏi AI làm toàn bộ thay vì hỏi từng phần.
 
 ### 7.3. Cách cải thiện prompt
 
 ```text
-Viết tại đây...
+Cần mô tả rõ project đang sử dụng Expo Router SDK 55, chạy trên Expo Web, có sử dụng app-tabs-web.tsx và muốn thêm route /settings vào navigation.
 ```
 
 ### 7.4. Prompt sau khi cải tiến
 
 ```text
-Dán prompt đã được cải tiến tại đây.
-```
+Project của tôi đang dùng Expo Router SDK 55 và chạy bằng Expo Web. Tôi có file app-tabs-web.tsx quản lý navigation tabs. Hãy hướng dẫn thêm route /settings và cấu hình tab để điều hướng hoạt động đúng.
 
 ### 7.5. Kết quả sau khi cải tiến prompt
 
 ```text
-Viết tại đây...
+AI giải thích nguyên nhân route không hoạt động do app-tabs-web.tsx chưa được cập nhật và hướng dẫn thêm TabTrigger cho settings.
 ```
 
 ---
@@ -379,71 +369,58 @@ Viết tại đây...
 ### 8.1. Khi viết prompt, em/nhóm cần cung cấp thông tin gì để AI trả lời tốt hơn?
 
 ```text
-Viết tại đây...
+Cần cung cấp framework đang sử dụng, phiên bản SDK, cấu trúc project, lỗi gặp phải và mục tiêu mong muốn.
 ```
 
-Gợi ý:
-
-- Mục tiêu cần đạt.
-- Bối cảnh bài toán.
-- Công nghệ/ngôn ngữ lập trình đang dùng.
-- Input/output mong muốn.
-- Ràng buộc của đề bài.
-- Lỗi đang gặp.
-- Format kết quả mong muốn.
-- Yêu cầu AI giải thích từng bước.
 
 ### 8.2. Em/nhóm đã học được gì về cách đặt câu hỏi cho AI?
 
 ```text
-Viết tại đây...
+Câu hỏi càng rõ ràng và có đầy đủ bối cảnh thì AI càng trả lời chính xác và đúng với project thực tế.
 ```
 
 ### 8.3. Lần sau em/nhóm sẽ cải thiện prompt như thế nào?
 
 ```text
-Viết tại đây...
+Sẽ mô tả đầy đủ lỗi, môi trường phát triển, công nghệ sử dụng và file liên quan trước khi hỏi AI.
 ```
 
 ---
 
 ## 9. Phân loại prompt đã sử dụng
 
-Đánh dấu số lượng prompt theo từng nhóm.
+| Loại prompt                  | Số lượng | Ví dụ prompt tiêu biểu          |
+| ---------------------------- | -------: | ------------------------------- |
+| Prompt phân tích yêu cầu     |        0 |                                 |
+| Prompt giải thích kiến thức  |        1 | Giải thích SDK 54 và SDK 55     |
+| Prompt thiết kế giải pháp    |        1 | Tạo frontend settings           |
+| Prompt thiết kế database     |        0 |                                 |
+| Prompt sinh code mẫu         |        1 | Tạo settings.tsx                |
+| Prompt debug lỗi             |        1 | Route /settings không hoạt động |
+| Prompt viết test case        |        0 |                                 |
+| Prompt review code           |        0 |                                 |
+| Prompt tối ưu code           |        0 |                                 |
+| Prompt viết báo cáo          |        1 | Hoàn thiện AI Audit Log         |
+| Prompt chuẩn bị thuyết trình |        0 |                                 |
+| Prompt khác                  |        1 | Git branch và clone branch      |
 
-| Loại prompt | Số lượng | Ví dụ prompt tiêu biểu |
-|---|---:|---|
-| Prompt phân tích yêu cầu |  |  |
-| Prompt giải thích kiến thức |  |  |
-| Prompt thiết kế giải pháp |  |  |
-| Prompt thiết kế database |  |  |
-| Prompt sinh code mẫu |  |  |
-| Prompt debug lỗi |  |  |
-| Prompt viết test case |  |  |
-| Prompt review code |  |  |
-| Prompt tối ưu code |  |  |
-| Prompt viết báo cáo |  |  |
-| Prompt chuẩn bị thuyết trình |  |  |
-| Prompt khác |  |  |
 
 ---
 
 ## 10. Checklist chất lượng prompt
 
-Sinh viên/nhóm tự kiểm tra chất lượng prompt đã dùng.
-
-| Tiêu chí | Đã đạt? | Ghi chú |
-|---|:---:|---|
-| Prompt có mục tiêu rõ ràng |  |  |
-| Prompt có đủ bối cảnh |  |  |
-| Prompt có nêu công nghệ/ngôn ngữ sử dụng |  |  |
-| Prompt có nêu yêu cầu đầu ra |  |  |
-| Prompt không yêu cầu AI làm toàn bộ bài một cách máy móc |  |  |
-| Prompt có yêu cầu AI giải thích hoặc phân tích |  |  |
-| Kết quả AI được kiểm tra lại |  |  |
-| Kết quả AI được chỉnh sửa trước khi sử dụng |  |  |
-| Prompt quan trọng được ghi lại đầy đủ |  |  |
-| Prompt sai/chưa hiệu quả được rút kinh nghiệm |  |  |
+| Tiêu chí                                                 | Đã đạt? | Ghi chú                   |
+| -------------------------------------------------------- | :-----: | ------------------------- |
+| Prompt có mục tiêu rõ ràng                               |   [x]   |                           |
+| Prompt có đủ bối cảnh                                    |   [x]   |                           |
+| Prompt có nêu công nghệ/ngôn ngữ sử dụng                 |   [x]   | Expo Router, React Native |
+| Prompt có nêu yêu cầu đầu ra                             |   [x]   |                           |
+| Prompt không yêu cầu AI làm toàn bộ bài một cách máy móc |   [x]   |                           |
+| Prompt có yêu cầu AI giải thích hoặc phân tích           |   [x]   |                           |
+| Kết quả AI được kiểm tra lại                             |   [x]   | Chạy thử project          |
+| Kết quả AI được chỉnh sửa trước khi sử dụng              |   [x]   |                           |
+| Prompt quan trọng được ghi lại đầy đủ                    |   [x]   |                           |
+| Prompt sai/chưa hiệu quả được rút kinh nghiệm            |   [x]   |                           |
 
 ---
 
@@ -459,4 +436,4 @@ Sinh viên/nhóm cam kết rằng:
 
 | Đại diện sinh viên/nhóm | Ngày xác nhận |
 |---|---|
-|  |  |
+| Le Hai Nam   |21/05/2026  |

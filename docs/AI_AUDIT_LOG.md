@@ -22,6 +22,7 @@
 Đánh dấu các công cụ AI đã sử dụng trong quá trình thực hiện bài tập/project.
 
 - [x ] ChatGPT
+- [x ] ChatGPT
 - [ ] Gemini
 - [ ] Claude
 - [ ] GitHub Copilot

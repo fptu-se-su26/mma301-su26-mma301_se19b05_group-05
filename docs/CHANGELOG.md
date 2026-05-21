@@ -79,6 +79,7 @@ Nguyên tắc ghi changelog:
 ## AI có hỗ trợ không?
 
 - [ x] Có
+- [ x] Có
 - [ ] Không
 
 Nếu có, mô tả AI đã hỗ trợ phần nào:
@@ -106,7 +107,7 @@ Project sử dụng Expo Router để quản lý navigation giữa các màn hì
 ## Ngày thực hiện
 
 ```text
-DD/MM/YYYY
+21/05/2026
 ```
 
 ## Đã hoàn thành
@@ -124,11 +125,11 @@ DD/MM/YYYY
 
 ## Thay đổi chi tiết
 
-| STT | Nội dung thay đổi | Người thực hiện | File/Module liên quan | Minh chứng |
-|---:|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
+| STT | Nội dung thay đổi                           | Người thực hiện | File/Module liên quan | Minh chứng |
+| --: | ------------------------------------------- | --------------- | --------------------- | ---------- |
+|   1 | Xác định chức năng frontend furniture store | Le Hai Nam      | Requirement docs      |            |
+|   2 | Xác định các route cần xây dựng             | Le Hai Nam      | Route structure       |            |
+|   3 | Phân tích giao diện mobile/web              | Le Hai Nam      | UI planning           |            |
 
 ## AI có hỗ trợ không?
 
@@ -138,7 +139,7 @@ DD/MM/YYYY
 Nếu có, mô tả AI đã hỗ trợ phần nào:
 
 ```text
-Viết tại đây...
+AI hỗ trợ gợi ý hướng thiết kế giao diện frontend và cách tổ chức navigation.
 ```
 
 ## Commit/Screenshot minh chứng
@@ -150,7 +151,7 @@ Dán link commit, screenshot hoặc mô tả minh chứng tại đây...
 ## Ghi chú
 
 ```text
-Viết tại đây...
+Tập trung vào Expo Router và giao diện React Native.
 ```
 
 ---
@@ -160,39 +161,40 @@ Viết tại đây...
 ## Ngày thực hiện
 
 ```text
-DD/MM/YYYY
+21/05/2026
 ```
 
 ## Đã hoàn thành
 
-- [ ] Thiết kế kiến trúc tổng quan
+- [x ] Thiết kế kiến trúc tổng quan
 - [ ] Thiết kế database/ERD
 - [ ] Thiết kế API
-- [ ] Thiết kế giao diện/wireframe
-- [ ] Thiết kế flow xử lý
+- [x ] Thiết kế giao diện/wireframe
+- [x ] Thiết kế flow xử lý
 - [ ] Thiết kế class diagram
 - [ ] Thiết kế sequence diagram
 - [ ] Thiết kế security/authorization flow
-- [ ] Review thiết kế
-- [ ] Chỉnh sửa thiết kế sau feedback
+- [x ] Review thiết kế
+- [ x] Chỉnh sửa thiết kế sau feedback
 
 ## Thay đổi chi tiết
 
-| STT | Nội dung thay đổi | Người thực hiện | File/Module liên quan | Minh chứng |
-|---:|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
+| STT | Nội dung thay đổi        | Người thực hiện | File/Module liên quan | Minh chứng |
+| --: | ------------------------ | --------------- | --------------------- | ---------- |
+|   1 | Thiết kế Home Screen     | Le Hai Nam      | index.tsx             |            |
+|   2 | Thiết kế Settings Screen | Le Hai Nam      | settings.tsx          |            |
+|   3 | Thiết kế navigation tabs | Le Hai Nam      | app-tabs.web.tsx          |            |
+
 
 ## AI có hỗ trợ không?
 
-- [ ] Có
+- [x ] Có
 - [ ] Không
 
 Nếu có, mô tả AI đã hỗ trợ phần nào:
 
 ```text
-Viết tại đây...
+AI hỗ trợ sinh giao diện cơ bản cho Settings Screen và giải thích Expo Router.
 ```
 
 ## Commit/Screenshot minh chứng
@@ -204,7 +206,7 @@ Dán link commit, screenshot hoặc mô tả minh chứng tại đây...
 ## Ghi chú
 
 ```text
-Viết tại đây...
+Thiết kế theo phong cách mobile UI đơn giản.
 ```
 
 ---
@@ -214,43 +216,42 @@ Viết tại đây...
 ## Ngày thực hiện
 
 ```text
-DD/MM/YYYY
+21/05/2026
 ```
 
 ## Đã hoàn thành
 
-- [ ] Tạo project structure
+- [ x] Tạo project structure
 - [ ] Cài đặt database connection
 - [ ] Xây dựng backend
-- [ ] Xây dựng frontend
+- [x ] Xây dựng frontend
 - [ ] Xây dựng authentication/authorization
 - [ ] Xử lý CRUD
 - [ ] Xử lý validation
 - [ ] Tích hợp API
 - [ ] Xử lý upload/download file
 - [ ] Xử lý lỗi
-- [ ] Tối ưu giao diện
-- [ ] Cập nhật README hướng dẫn chạy
+- [ x] Tối ưu giao diện
+- [ x] Cập nhật README hướng dẫn chạy
 
 ## Thay đổi chi tiết
 
-| STT | Nội dung thay đổi | Người thực hiện | File/Module liên quan | Minh chứng |
-|---:|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| STT | Nội dung thay đổi           | Người thực hiện | File/Module liên quan | Minh chứng |
+| --: | --------------------------- | --------------- | --------------------- | ---------- |
+|   1 | Xây dựng Home Screen        | Le Hai Nam      | index.tsx             |            |
+|   2 | Xây dựng Settings Screen    | Le Hai Nam      | settings.tsx          |            |
+|   3 | Sửa lỗi web route           | Le Hai Nam      | app-tabs.web.tsx      |            |
+|   4 | Tối ưu giao diện và style   | Le Hai Nam      | styles                |            |
 
 ## AI có hỗ trợ không?
 
-- [ ] Có
+- [x ] Có
 - [ ] Không
 
 Nếu có, mô tả AI đã hỗ trợ phần nào:
 
 ```text
-Viết tại đây...
+AI hỗ trợ tạo code giao diện frontend cơ bản.
 ```
 
 ## Commit/Screenshot minh chứng
@@ -262,7 +263,7 @@ Dán link commit, screenshot hoặc mô tả minh chứng tại đây...
 ## Ghi chú
 
 ```text
-Viết tại đây...
+Sử dụng Expo Router SDK 55.
 ```
 
 ---
@@ -272,50 +273,51 @@ Viết tại đây...
 ## Ngày thực hiện
 
 ```text
-DD/MM/YYYY
+21/05/2026
 ```
 
 ## Đã hoàn thành
 
 - [ ] Viết test case
-- [ ] Chạy test chức năng chính
+- [ x] Chạy test chức năng chính
 - [ ] Kiểm tra output
 - [ ] Kiểm tra validation
-- [ ] Kiểm tra lỗi giao diện
+- [ x] Kiểm tra lỗi giao diện
 - [ ] Kiểm tra lỗi database
 - [ ] Kiểm tra phân quyền
 - [ ] Kiểm tra bảo mật cơ bản
-- [ ] Fix bug
-- [ ] Chạy lại sau khi fix bug
-- [ ] Ghi nhận kết quả test
+- [ x] Fix bug
+- [ x] Chạy lại sau khi fix bug
+- [ x] Ghi nhận kết quả test
 
 ## Danh sách lỗi đã xử lý
 
-| STT | Lỗi phát hiện | Nguyên nhân | Cách xử lý | Trạng thái |
-|---:|---|---|---|---|
-| 1 |  |  |  | Open / Fixed / Pending |
-| 2 |  |  |  | Open / Fixed / Pending |
-| 3 |  |  |  | Open / Fixed / Pending |
-| 4 |  |  |  | Open / Fixed / Pending |
-| 5 |  |  |  | Open / Fixed / Pending |
+| STT | Lỗi phát hiện                   | Nguyên nhân               | Cách xử lý                     | Trạng thái |
+| --: | ------------------------------- | ------------------------- | ------------------------------ | ---------- |
+|   1 | Route /settings không hoạt động | Chưa sửa app-tabs.web.tsx | Thêm TabTrigger cho web        | Fixed      |
+|   2 | Expo Go không hỗ trợ SDK 55     | SDK không tương thích     | Cân nhắc downgrade SDK         | Fixed      |
+|   3 | Lỗi type ThemedText             | Sai type hỗ trợ           | Đổi type phù hợp               | Fixed      |
+|   4 | Lỗi Expo Router cache           | Cache cũ                  | Clear cache bằng expo start -c | Fixed      |
+
 
 ## Thay đổi chi tiết
 
-| STT | Nội dung thay đổi | Người thực hiện | File/Module liên quan | Minh chứng |
-|---:|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
+| STT | Nội dung thay đổi     | Người thực hiện | File/Module liên quan | Minh chứng |
+| --: | --------------------- | --------------- | --------------------- | ---------- |
+|   1 | Debug Expo Router     | Le Hai Nam      | app-tabs.web.tsx      |            |
+|   2 | Sửa lỗi điều hướng    | Le Hai Nam      | settings.tsx          |            |
+|   3 | Test route web/mobile | Le Hai Nam      | Expo Web              |            |
+
 
 ## AI có hỗ trợ không?
 
-- [ ] Có
+- [ x] Có
 - [ ] Không
 
 Nếu có, mô tả AI đã hỗ trợ phần nào:
 
 ```text
-Viết tại đây...
+AI hỗ trợ phân tích lỗi route và đưa ra hướng debug Expo Router.
 ```
 
 ## Commit/Screenshot minh chứng
@@ -327,7 +329,7 @@ Dán link commit, screenshot hoặc mô tả minh chứng tại đây...
 ## Ghi chú
 
 ```text
-Viết tại đây...
+Đã kiểm tra bằng Expo Web.
 ```
 
 ---
@@ -337,39 +339,40 @@ Viết tại đây...
 ## Ngày thực hiện
 
 ```text
-DD/MM/YYYY
+21/05/2026
 ```
 
 ## Đã hoàn thành
 
-- [ ] Hoàn thiện source code
-- [ ] Hoàn thiện README.md
-- [ ] Hoàn thiện report
+- [x ] Hoàn thiện source code
+- [ x] Hoàn thiện README.md
+- [ x] Hoàn thiện report
 - [ ] Hoàn thiện slide
 - [ ] Hoàn thiện video demo
-- [ ] Kiểm tra lại `AI_AUDIT_LOG.md`
-- [ ] Kiểm tra lại `PROMPTS.md`
-- [ ] Hoàn thiện `REFLECTION.md`
-- [ ] Kiểm tra lại `CHANGELOG.md`
+- [x ] Kiểm tra lại `AI_AUDIT_LOG.md`
+- [ x] Kiểm tra lại `PROMPTS.md`
+- [ x] Hoàn thiện `REFLECTION.md`
+- [ x] Kiểm tra lại `CHANGELOG.md`
 - [ ] Đóng gói bài nộp
 
 ## Thay đổi chi tiết
 
-| STT | Nội dung thay đổi | Người thực hiện | File/Module liên quan | Minh chứng |
-|---:|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
+| STT | Nội dung thay đổi       | Người thực hiện | File/Module liên quan | Minh chứng |
+| --: | ----------------------- | --------------- | --------------------- | ---------- |
+|   1 | Hoàn thiện AI Audit Log | Le Hai Nam      | AI_AUDIT_LOG.md       |            |
+|   2 | Hoàn thiện Changelog    | Le Hai Nam      | CHANGELOG.md          |            |
+|   3 | Kiểm tra lại project    | Le Hai Nam      | Source code           |            |
+
 
 ## AI có hỗ trợ không?
 
-- [ ] Có
+- [ x] Có
 - [ ] Không
 
 Nếu có, mô tả AI đã hỗ trợ phần nào:
 
 ```text
-Viết tại đây...
+AI hỗ trợ format changelog và audit log.
 ```
 
 ## Commit/Screenshot minh chứng
@@ -390,45 +393,46 @@ Viết tại đây...
 
 ## 4.1. Các chức năng đã hoàn thành
 
-| STT | Chức năng | Trạng thái | Minh chứng | Ghi chú |
-|---:|---|---|---|---|
-| 1 |  | Completed / Partial / Not Completed |  |  |
-| 2 |  | Completed / Partial / Not Completed |  |  |
-| 3 |  | Completed / Partial / Not Completed |  |  |
-| 4 |  | Completed / Partial / Not Completed |  |  |
-| 5 |  | Completed / Partial / Not Completed |  |  |
+| STT | Chức năng              | Trạng thái | Minh chứng | Ghi chú |
+| --: | ---------------------- | ---------- | ---------- | ------- |
+|   1 | Home Screen            | Completed  |            |         |
+|   2 | Settings Screen        | Completed  |            |         |
+|   3 | Expo Router Navigation | Completed  |            |         |
+|   4 | Responsive Web Route   | Completed  |            |         |
+|   5 | UI Mobile Layout       | Completed  |            |         |
 
 ---
 
 ## 4.2. Các chức năng chưa hoàn thành
 
-| STT | Chức năng | Lý do chưa hoàn thành | Hướng cải thiện |
-|---:|---|---|---|
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
+| STT | Chức năng      | Lý do chưa hoàn thành | Hướng cải thiện           |
+| --: | -------------- | --------------------- | ------------------------- |
+|   1 | Backend API    | Chưa triển khai       | Tích hợp API sau          |
+|   2 | Authentication | Chưa triển khai       | Thêm login/register       |
+|   3 | Database       | Chưa triển khai       | Tích hợp backend/database |
+
 
 ---
 
 ## 4.3. Tổng hợp AI hỗ trợ trong project
 
-| Hạng mục | AI có hỗ trợ không? | Mức độ hỗ trợ | Ghi chú |
-|---|---|---|---|
-| Requirement | Có / Không | Ít / Trung bình / Nhiều |  |
-| Design | Có / Không | Ít / Trung bình / Nhiều |  |
-| Database | Có / Không | Ít / Trung bình / Nhiều |  |
-| Coding | Có / Không | Ít / Trung bình / Nhiều |  |
-| Debug | Có / Không | Ít / Trung bình / Nhiều |  |
-| Testing | Có / Không | Ít / Trung bình / Nhiều |  |
-| Report | Có / Không | Ít / Trung bình / Nhiều |  |
-| Presentation | Có / Không | Ít / Trung bình / Nhiều |  |
+| Hạng mục     | AI có hỗ trợ không? | Mức độ hỗ trợ | Ghi chú             |
+| ------------ | ------------------- | ------------- | ------------------- |
+| Requirement  | Có                  | Ít            | Gợi ý ý tưởng       |
+| Design       | Có                  | Trung bình    | UI và navigation    |
+| Database     | Không               |               |                     |
+| Coding       | Có                  | Trung bình    | Sinh code frontend  |
+| Debug        | Có                  | Trung bình    | Debug Expo Router   |
+| Testing      | Có                  | Ít            | Hỗ trợ kiểm tra lỗi |
+| Report       | Có                  | Trung bình    | Format tài liệu     |
+| Presentation | Không               |               |                     |
 
 ---
 
 ## 4.4. Bài học rút ra
 
 ```text
-Viết tại đây...
+Hiểu rõ hơn về Expo Router, React Native, navigation đa nền tảng và cách sử dụng AI để hỗ trợ phát triển frontend hiệu quả hơn.
 ```
 
 ---
@@ -436,7 +440,7 @@ Viết tại đây...
 ## 4.5. Hướng cải thiện tiếp theo
 
 ```text
-Viết tại đây...
+Phát triển backend, thêm authentication, tích hợp database và tối ưu UI/UX cho ứng dụng.
 ```
 
 ---
@@ -447,4 +451,4 @@ Sinh viên/nhóm cam kết rằng nội dung changelog phản ánh đúng các t
 
 | Đại diện sinh viên/nhóm | Ngày xác nhận |
 |---|---|
-|  |  |
+| Le Hai Nam | 21/05/2026 |
