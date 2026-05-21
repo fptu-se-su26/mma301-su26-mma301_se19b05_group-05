@@ -4,16 +4,16 @@
 
 | Thông tin | Nội dung |
 |---|---|
-| Môn học |  |
-| Mã môn học |  |
-| Lớp |  |
-| Học kỳ |  |
-| Tên bài tập / Project |  |
-| Tên sinh viên / Nhóm |  |
-| MSSV / Danh sách MSSV |  |
-| Giảng viên hướng dẫn |  |
-| Ngày bắt đầu |  |
-| Ngày hoàn thành |  |
+| Môn học |  MMA301 |
+| Mã môn học |  MMA301|
+| Lớp |  SE19D05|
+| Học kỳ | SU26 |
+| Tên bài tập / Project | bai1 |
+| Tên sinh viên / Nhóm | Le Hai Nam/ Nhom 5 |
+| MSSV / Danh sách MSSV | DE170688 |
+| Giảng viên hướng dẫn | QuangLTN3 |
+| Ngày bắt đầu | 20/5/2026 |
+| Ngày hoàn thành | 21/5/2026 |
 
 ---
 
@@ -21,7 +21,7 @@
 
 Đánh dấu các công cụ AI đã sử dụng trong quá trình thực hiện bài tập/project.
 
-- [ ] ChatGPT
+- [x ] ChatGPT
 - [ ] Gemini
 - [ ] Claude
 - [ ] GitHub Copilot
@@ -35,27 +35,10 @@
 
 ## 3. Mục tiêu sử dụng AI
 
-Mô tả ngắn gọn sinh viên/nhóm đã sử dụng AI để hỗ trợ những công việc nào.
-
-Ví dụ:
-
-- Phân tích yêu cầu bài toán
-- Gợi ý ý tưởng giải pháp
-- Thiết kế database
-- Thiết kế giao diện
-- Viết code mẫu
-- Debug lỗi
-- Tối ưu code
-- Viết test case
-- Kiểm tra bảo mật
-- Viết báo cáo
-- Chuẩn bị slide thuyết trình
-- Tìm hiểu công nghệ mới
-
 ### Mô tả mục tiêu sử dụng AI
 
 ```text
-Viết tại đây...
+Tiết kiệm thời gian trong quá trình phát triển frontend, hỗ trợ tạo giao diện cơ bản cho ứng dụng Expo React Native, tìm hiểu cách hoạt động của Expo Router, xử lý lỗi route và hỗ trợ debug trong quá trình build ứng dụng.
 
 ## 4. Nhật ký sử dụng AI chi tiết
 
@@ -68,16 +51,16 @@ Viết tại đây...
 
 | Nội dung | Thông tin |
 |---|---|
-| Ngày sử dụng |  |
-| Công cụ AI | ChatGPT / Gemini / Claude / GitHub Copilot / Cursor / Antigravity / Khác |
-| Mục đích sử dụng |  |
-| Phần việc liên quan | Requirement / Design / Database / Frontend / Backend / Testing / Debug / Report / Presentation / Other |
-| Mức độ sử dụng | Hỗ trợ ý tưởng / Hỗ trợ một phần / Hỗ trợ nhiều / Sinh chính nội dung |
+| Ngày sử dụng | 20/5/2026 |
+| Công cụ AI | ChatGPT |
+| Mục đích sử dụng | Gene tự động 1 trang frontend cơ bản cho Settings |
+| Phần việc liên quan | Frontend |
+| Mức độ sử dụng | Hỗ trợ ý tưởng|
 
 #### 4.1. Prompt đã sử dụng
 
 ```text
-Dán nguyên văn prompt đã hỏi AI tại đây.
+Sử dụng themed-test.tsx và themed-view.tsx, phân tích index.tsx. Gene cho tôi 1 trang frontend cơ bản cho settings.tsx
 ```
 
 #### 4.2. Kết quả AI gợi ý
@@ -85,7 +68,7 @@ Dán nguyên văn prompt đã hỏi AI tại đây.
 Tóm tắt nội dung AI đã trả lời hoặc gợi ý.
 
 ```text
-Viết tại đây...
+code của settings.tsx, cách để điều hướng tới route.
 ```
 
 #### 4.3. Phần sinh viên/nhóm đã sử dụng từ AI
@@ -93,7 +76,7 @@ Viết tại đây...
 Mô tả rõ phần nào được sử dụng lại từ gợi ý của AI.
 
 ```text
-Viết tại đây...
+Sử dụng phần code giao diện cơ bản của settings.tsx, cấu trúc layout, style và cách điều hướng route bằng expo-router.
 ```
 
 #### 4.4. Phần sinh viên/nhóm tự chỉnh sửa hoặc cải tiến
@@ -101,7 +84,7 @@ Viết tại đây...
 Mô tả sinh viên/nhóm đã thay đổi, kiểm tra, sửa lỗi hoặc cải tiến gì so với gợi ý ban đầu của AI.
 
 ```text
-Viết tại đây...
+Tự chỉnh sửa giao diện cho phù hợp với project, sửa lỗi route trên web và mobile, cấu hình lại app-tabs.tsx và app-tabs.web.tsx, thêm icon và tự tối ưu style cho giao diện settings.
 ```
 
 #### 4.5. Minh chứng
@@ -109,9 +92,9 @@ Viết tại đây...
 | Loại minh chứng | Nội dung |
 |---|---|
 | Link commit |  |
-| File liên quan |  |
-| Screenshot |  |
-| Kết quả chạy/test |  |
+| File liên quan | settings.tsx |
+| Screenshot | Ảnh chụp màn hình 2026-05-21 095624.png |
+| Kết quả chạy/test | Good |
 | Link video demo |  |
 | Ghi chú khác |  |
 
@@ -120,7 +103,7 @@ Viết tại đây...
 Sinh viên/nhóm học được gì sau lần sử dụng AI này?
 
 ```text
-Viết tại đây...
+Hiểu rõ hơn cách Expo Router hoạt động theo từng platform và biết cách debug route khi build ứng dụng Expo React Native.
 ```
 
 ---
@@ -237,19 +220,19 @@ Viết tại đây...
 
 | Hạng mục | Không dùng AI | AI hỗ trợ ít | AI hỗ trợ nhiều | AI sinh chính | Ghi chú |
 |---|:---:|:---:|:---:|:---:|---|
-| Phân tích yêu cầu |  |  |  |  |  |
-| Viết user story/use case |  |  |  |  |  |
-| Thiết kế database |  |  |  |  |  |
-| Thiết kế kiến trúc hệ thống |  |  |  |  |  |
-| Thiết kế giao diện |  |  |  |  |  |
-| Code frontend |  |  |  |  |  |
-| Code backend |  |  |  |  |  |
-| Debug lỗi |  |  |  |  |  |
-| Viết test case |  |  |  |  |  |
-| Kiểm thử sản phẩm |  |  |  |  |  |
-| Tối ưu code |  |  |  |  |  |
-| Viết báo cáo |  |  |  |  |  |
-| Làm slide thuyết trình |  |  |  |  |  |
+| Phân tích yêu cầu | x |  |  |  |  |
+| Viết user story/use case | x |  |  |  |  |
+| Thiết kế database | x |  |  |  |  |
+| Thiết kế kiến trúc hệ thống | x |  |  |  |  |
+| Thiết kế giao diện |  |  |  | x |  |
+| Code frontend |  |  |  |  | x |
+| Code backend | x |  |  |  |  |
+| Debug lỗi | x |  |  |  |  |
+| Viết test case | x |  |  |  |  |
+| Kiểm thử sản phẩm | x |  |  |  |  |
+| Tối ưu code | x |  |  |  |  |
+| Viết báo cáo | x |  |  |  |  |
+| Làm slide thuyết trình | x |  |  |  |  |
 
 ---
 
@@ -259,7 +242,7 @@ Ghi lại các trường hợp AI trả lời sai, thiếu, chưa phù hợp ho�
 
 | STT | Lỗi/hạn chế từ AI | Cách phát hiện | Cách xử lý/cải tiến |
 |---:|---|---|---|
-| 1 |  |  |  |
+| 1 | AI hướng dẫn sửa app-tabs.tsx nhưng project web sử dụng app-tabs.web.tsx | Route không hoạt động  |Chỉnh sửa đúng file app-tabs  |
 | 2 |  |  |  |
 | 3 |  |  |  |
 
@@ -269,23 +252,11 @@ Ghi lại các trường hợp AI trả lời sai, thiếu, chưa phù hợp ho�
 
 Mô tả cách sinh viên/nhóm kiểm tra lại kết quả do AI gợi ý.
 
-Có thể bao gồm:
-
-- Chạy thử chương trình
-- Viết test case
-- So sánh với yêu cầu đề bài
-- Kiểm tra output
-- Đối chiếu tài liệu môn học
-- Hỏi lại giảng viên
-- Review cùng thành viên nhóm
-- Kiểm tra lỗi bảo mật
-- Kiểm tra bằng dữ liệu mẫu
-- So sánh trước và sau khi dùng AI
 
 ### Nội dung kiểm chứng
 
 ```text
-Viết tại đây...
+Chạy thử ứng dụng bằng Expo Web và Expo Go, kiểm tra điều hướng route, đối chiếu với yêu cầu bài tập, sửa lỗi phát sinh và kiểm tra giao diện thực tế sau khi áp dụng code do AI gợi ý.
 ```
 
 ---
@@ -297,7 +268,7 @@ Viết tại đây...
 Mô tả phần sinh viên tự làm, phần AI hỗ trợ và phần đã tự cải tiến.
 
 ```text
-Viết tại đây...
+Tự xây dựng giao diện chính của ứng dụng, tự cấu hình Expo Router, xử lý lỗi routing và chỉnh sửa toàn bộ giao diện sau khi tham khảo code mẫu từ AI.
 ```
 
 ### 8.2. Đối với bài nhóm
@@ -316,37 +287,37 @@ Viết tại đây...
 ### 9.1. AI đã hỗ trợ em/nhóm ở điểm nào?
 
 ```text
-Viết tại đây...
+AI hỗ trợ tạo giao diện frontend nhanh hơn, giải thích lỗi Expo Router và hỗ trợ debug trong quá trình phát triển ứng dụng.
 ```
 
 ### 9.2. Phần nào em/nhóm không sử dụng theo gợi ý của AI? Vì sao?
 
 ```text
-Viết tại đây...
+Không sử dụng hoàn toàn phần style và cấu trúc route do AI gợi ý vì chưa phù hợp với cấu trúc project thực tế.
 ```
 
 ### 9.3. Em/nhóm đã kiểm tra tính đúng đắn của kết quả AI như thế nào?
 
 ```text
-Viết tại đây...
+Chạy thử ứng dụng trên Expo Web và Expo Go, kiểm tra điều hướng route và sửa lỗi phát sinh trong quá trình test.
 ```
 
 ### 9.4. Nếu không có AI, phần nào sẽ khó khăn nhất?
 
 ```text
-Viết tại đây...
+Khó khăn nhất là debug Expo Router SDK 55 và tìm nguyên nhân route không hoạt động trên web.
 ```
 
 ### 9.5. Sau bài tập/project này, em/nhóm học được gì về môn học?
 
 ```text
-Viết tại đây...
+Hiểu rõ hơn về React Native, Expo Router, cấu trúc route đa nền tảng và cách xây dựng giao diện frontend bằng Expo.
 ```
 
 ### 9.6. Sau bài tập/project này, em/nhóm học được gì về cách sử dụng AI có trách nhiệm?
 
 ```text
-Viết tại đây...
+Biết cách sử dụng AI để hỗ trợ phát triển phần mềm nhưng vẫn cần tự kiểm tra, debug và hiểu code trước khi sử dụng vào project thực tế.
 ```
 
 ---
@@ -363,4 +334,4 @@ Sinh viên/nhóm cam kết rằng:
 
 | Đại diện sinh viên/nhóm | Ngày xác nhận |
 |---|---|
-|  |  |
+| LeHainam  | 21/05/2026 |
