@@ -7,15 +7,18 @@ import {
   TouchableOpacity,
   ScrollView,
 } from "react-native";
+import { router } from "expo-router";
 
 export default function ProfileScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView showsVerticalScrollIndicator={false}>
         {/* Header */}
-        <Text style={styles.headerTitle}>My Profile</Text>
+        <View style={styles.header}>
+          <Text style={styles.headerTitle}>My Profile</Text>
+        </View>
 
-        {/* User Info */}
+        {/* User Card */}
         <View style={styles.profileCard}>
           <Image
             source={{
@@ -31,50 +34,75 @@ export default function ProfileScreen() {
           </Text>
         </View>
 
-        {/* Menu */}
+        {/* Menu Section */}
         <View style={styles.menuContainer}>
-          <TouchableOpacity style={styles.menuItem}>
+          {/* Orders */}
+          <TouchableOpacity
+            style={styles.menuItem}
+            onPress={() => router.push("/order")}
+          >
             <Text style={styles.menuEmoji}>📦</Text>
 
-            <View>
+            <View style={styles.menuTextContainer}>
               <Text style={styles.menuTitle}>My Orders</Text>
+
               <Text style={styles.menuSubtitle}>
                 View your order history
               </Text>
             </View>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.menuItem}>
+          {/* Wishlist */}
+          <TouchableOpacity
+            style={styles.menuItem}
+            onPress={() => router.push("/wishlist")}
+          >
             <Text style={styles.menuEmoji}>❤️</Text>
 
-            <View>
+            <View style={styles.menuTextContainer}>
               <Text style={styles.menuTitle}>Wishlist</Text>
+
               <Text style={styles.menuSubtitle}>
-                Your saved furniture items
+                Your favorite furniture items
               </Text>
             </View>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.menuItem}>
+          {/* Cart */}
+          <TouchableOpacity
+            style={styles.menuItem}
+            onPress={() => router.push("/cart")}
+          >
+            <Text style={styles.menuEmoji}>🛒</Text>
+
+            <View style={styles.menuTextContainer}>
+              <Text style={styles.menuTitle}>My Cart</Text>
+
+              <Text style={styles.menuSubtitle}>
+                Check your shopping cart
+              </Text>
+            </View>
+          </TouchableOpacity>
+
+          {/* Settings */}
+          <TouchableOpacity
+            style={styles.menuItem}
+            onPress={() => router.push("/settings")}
+          >
             <Text style={styles.menuEmoji}>⚙️</Text>
 
-            <View>
+            <View style={styles.menuTextContainer}>
               <Text style={styles.menuTitle}>Settings</Text>
+
               <Text style={styles.menuSubtitle}>
                 Manage app preferences
               </Text>
             </View>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.menuItem}>
-            <Text style={styles.menuEmoji}>🚪</Text>
-
-            <View>
-              <Text style={styles.menuTitle}>Logout</Text>
-              <Text style={styles.menuSubtitle}>
-                Sign out from your account
-              </Text>
-            </View>
+          {/* Logout */}
+          <TouchableOpacity style={styles.logoutButton}>
+            <Text style={styles.logoutText}>Logout</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
@@ -86,19 +114,23 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    padding: 20,
+    paddingHorizontal: 20,
   },
 
-  headerTitle: {
-    fontSize: 30,
-    fontWeight: "700",
+  header: {
     marginTop: 20,
     marginBottom: 30,
   },
 
+  headerTitle: {
+    fontSize: 32,
+    fontWeight: "700",
+    color: "#111",
+  },
+
   profileCard: {
     backgroundColor: "#f97316",
-    borderRadius: 24,
+    borderRadius: 28,
     alignItems: "center",
     paddingVertical: 35,
     marginBottom: 30,
@@ -108,11 +140,13 @@ const styles = StyleSheet.create({
     width: 110,
     height: 110,
     borderRadius: 55,
-    marginBottom: 16,
+    marginBottom: 18,
+    borderWidth: 4,
+    borderColor: "#fff",
   },
 
   userName: {
-    fontSize: 24,
+    fontSize: 26,
     fontWeight: "700",
     color: "#fff",
   },
@@ -124,7 +158,7 @@ const styles = StyleSheet.create({
   },
 
   menuContainer: {
-    marginTop: 10,
+    marginBottom: 40,
   },
 
   menuItem: {
@@ -143,18 +177,37 @@ const styles = StyleSheet.create({
   },
 
   menuEmoji: {
-    fontSize: 28,
+    fontSize: 30,
     marginRight: 18,
+  },
+
+  menuTextContainer: {
+    flex: 1,
   },
 
   menuTitle: {
     fontSize: 18,
     fontWeight: "600",
+    color: "#111",
   },
 
   menuSubtitle: {
     marginTop: 4,
     fontSize: 14,
     color: "#777",
+  },
+
+  logoutButton: {
+    backgroundColor: "#111",
+    paddingVertical: 18,
+    borderRadius: 18,
+    alignItems: "center",
+    marginTop: 10,
+  },
+
+  logoutText: {
+    color: "#fff",
+    fontSize: 18,
+    fontWeight: "700",
   },
 });

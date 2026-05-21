@@ -4,16 +4,16 @@
 
 | Thông tin | Nội dung |
 |---|---|
-| Môn học |  |
-| Mã môn học |  |
-| Lớp |  |
-| Học kỳ |  |
-| Tên bài tập / Project |  |
-| Tên sinh viên / Nhóm |  |
-| MSSV / Danh sách MSSV |  |
-| Giảng viên hướng dẫn |  |
-| Ngày bắt đầu |  |
-| Ngày cập nhật gần nhất |  |
+| Môn học | Mobile Programming |
+| Mã môn học | MMA301 |
+| Lớp | SE19D05 |
+| Học kỳ | SU26 |
+| Tên bài tập / Project | bai1 |
+| Tên sinh viên / Nhóm | nguyen tuan thanh/ nhom 5 |
+| MSSV / Danh sách MSSV | de180010 |
+| Giảng viên hướng dẫn | QuangLTN3 |
+| Ngày bắt đầu | 20/5/2026 |
+| Ngày cập nhật gần nhất | 21/05/2026 |
 
 ---
 
@@ -36,7 +36,7 @@ Sinh viên/nhóm cần ghi lại:
 
 Đánh dấu các công cụ AI đã sử dụng.
 
-- [ ] ChatGPT
+- [x ] ChatGPT
 - [ ] Gemini
 - [ ] Claude
 - [ ] GitHub Copilot
@@ -52,7 +52,7 @@ Sinh viên/nhóm cần ghi lại:
 
 | STT | Ngày | Công cụ AI | Mục đích | Prompt tóm tắt | Kết quả chính | Có sử dụng vào bài không? | Minh chứng |
 |---:|---|---|---|---|---|---|---|
-| 1 |  |  |  |  |  | Có / Không |  |
+| 1 | 20/05/2026 | ChatGPT | Navigation | Sửa navigation Expo Router |  | Có  | index.tsx  |
 | 2 |  |  |  |  |  | Có / Không |  |
 | 3 |  |  |  |  |  | Có / Không |  |
 | 4 |  |  |  |  |  | Có / Không |  |
@@ -75,16 +75,16 @@ Sinh viên/nhóm cần ghi lại:
 
 | Nội dung | Thông tin |
 |---|---|
-| Ngày sử dụng |  |
-| Công cụ AI | ChatGPT / Gemini / Claude / GitHub Copilot / Cursor / Antigravity / Khác |
-| Mục đích |  |
-| Phần việc liên quan | Requirement / Design / Database / Coding / Testing / Debug / Report / Presentation / Other |
-| Mức độ sử dụng | Hỏi ý tưởng / Hỏi giải thích / Hỏi review / Hỏi debug / Hỏi sinh code / Hỏi tối ưu |
+| Ngày sử dụng | 20/05/2026 |
+| Công cụ AI | ChatGPT |
+| Mục đích | Sửa navigation giữa các màn hình |
+| Phần việc liên quan | Coding |
+| Mức độ sử dụng | Hỏi debug |
 
 #### 5.1. Prompt nguyên văn
 
 ```text
-Dán nguyên văn prompt đã hỏi AI tại đây.
+Sửa code navigation giữa các screen trong React Native Expo Router và kiểm tra đã navigate đủ 6 màn hình chưa.
 ```
 
 #### 5.2. Bối cảnh khi viết prompt
@@ -92,7 +92,7 @@ Dán nguyên văn prompt đã hỏi AI tại đây.
 Mô tả ngắn gọn vì sao sinh viên/nhóm cần dùng prompt này.
 
 ```text
-Viết tại đây...
+Ứng dụng bị lỗi navigation giữa các màn hình và một số button không chuyển đúng screen.
 ```
 
 #### 5.3. Kết quả AI trả về
@@ -100,7 +100,7 @@ Viết tại đây...
 Tóm tắt nội dung AI đã trả lời hoặc gợi ý.
 
 ```text
-Viết tại đây...
+AI hướng dẫn cách sử dụng Expo Router, router.push và cấu trúc thư mục app đúng chuẩn.
 ```
 
 #### 5.4. Kết quả đã áp dụng vào bài
@@ -108,7 +108,7 @@ Viết tại đây...
 Mô tả phần nào từ kết quả AI đã được sử dụng vào bài tập/project.
 
 ```text
-Viết tại đây...
+Sử dụng code navigation và chỉnh sửa route path trong project React Native.
 ```
 
 #### 5.5. Phần sinh viên/nhóm đã chỉnh sửa hoặc cải tiến
@@ -116,20 +116,20 @@ Viết tại đây...
 Mô tả sinh viên/nhóm đã thay đổi, kiểm tra, sửa lỗi hoặc cải tiến gì so với kết quả AI trả về.
 
 ```text
-Viết tại đây...
+Tự chỉnh sửa tên screen, tối ưu UI và test lại navigation trên Expo Go.
 ```
 
 #### 5.6. Đánh giá chất lượng prompt
 
 Đánh dấu các nhận xét phù hợp.
 
-- [ ] Prompt rõ ràng
-- [ ] Prompt có đủ bối cảnh
+- [x ] Prompt rõ ràng
+- [x ] Prompt có đủ bối cảnh
 - [ ] Prompt còn thiếu thông tin
-- [ ] Prompt tạo ra kết quả tốt
+- [ x] Prompt tạo ra kết quả tốt
 - [ ] Prompt tạo ra kết quả chưa phù hợp
-- [ ] Cần hỏi lại AI nhiều lần
-- [ ] Cần tự kiểm tra và chỉnh sửa nhiều
+- [x ] Cần hỏi lại AI nhiều lần
+- [ x] Cần tự kiểm tra và chỉnh sửa nhiều
 - [ ] Kết quả AI có lỗi hoặc chưa chính xác
 
 #### 5.7. Minh chứng liên quan
@@ -137,16 +137,16 @@ Viết tại đây...
 | Loại minh chứng | Nội dung |
 |---|---|
 | Link commit |  |
-| File liên quan |  |
-| Screenshot |  |
-| Kết quả chạy/test |  |
+| File liên quan | app/profile.tsx |
+| Screenshot | Profile Screen |
+| Kết quả chạy/test | UI hiển thị đúng |
 | Link tài liệu/báo cáo |  |
-| Ghi chú khác |  |
+| Ghi chú khác | Responsive UI |
 
 #### 5.8. Ghi chú thêm
 
 ```text
-Viết tại đây...
+UI được chỉnh sửa lại để phù hợp với thiết kế tổng thể của ứng dụng.
 ```
 
 ---

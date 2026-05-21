@@ -19,17 +19,17 @@ Nguyên tắc ghi changelog:
 
 | Thông tin | Nội dung |
 |---|---|
-| Môn học |  |
-| Mã môn học |  |
-| Lớp |  |
-| Học kỳ |  |
-| Tên bài tập / Project |  |
-| Tên sinh viên / Nhóm |  |
-| MSSV / Danh sách MSSV |  |
-| Giảng viên hướng dẫn |  |
-| Repository URL |  |
-| Ngày bắt đầu |  |
-| Ngày hoàn thành |  |
+| Môn học | Mobile Programming |
+| Mã môn học | MMA301 |
+| Lớp | SE19D05 |
+| Học kỳ | SU25 |
+| Tên bài tập / Project | bai1 |
+| Tên sinh viên / Nhóm | Nguyen Tuan Thanh/ nhóm 5 |
+| MSSV / Danh sách MSSV | DE180010 |
+| Giảng viên hướng dẫn | QuangLTN3 |
+| Repository URL | MMA301-Su26-MMA301-SE19b05-group-05 |
+| Ngày bắt đầu | 21/5/2026 |
+| Ngày hoàn thành | 21/5/2026 |
 
 ---
 
@@ -37,7 +37,7 @@ Nguyên tắc ghi changelog:
 
 | Phiên bản/Giai đoạn | Thời gian | Nội dung chính | Trạng thái |
 |---|---|---|---|
-| Phase 01 |  | Khởi tạo project | Not Started / In Progress / Completed |
+| Phase 01 | 20/05/2026 | Khởi tạo project Expo React Native | / Completed |
 | Phase 02 |  | Phân tích yêu cầu | Not Started / In Progress / Completed |
 | Phase 03 |  | Thiết kế hệ thống | Not Started / In Progress / Completed |
 | Phase 04 |  | Implementation | Not Started / In Progress / Completed |
@@ -51,52 +51,52 @@ Nguyên tắc ghi changelog:
 ## Ngày thực hiện
 
 ```text
-DD/MM/YYYY
+20/5/2026
 ```
 
 ## Đã hoàn thành
 
-- [ ] Tạo repository
-- [ ] Tạo cấu trúc thư mục project
-- [ ] Tạo file README.md
-- [ ] Tạo thư mục `docs/`
-- [ ] Tạo file `AI_AUDIT_LOG.md`
-- [ ] Tạo file `PROMPTS.md`
-- [ ] Tạo file `REFLECTION.md`
-- [ ] Tạo file `CHANGELOG.md`
-- [ ] Khởi tạo source code ban đầu
-- [ ] Cài đặt thư viện/công cụ cần thiết
-- [ ] Cấu hình môi trường chạy project
+- [x ] Tạo repository
+- [ x] Tạo cấu trúc thư mục project
+- [ x] Tạo file README.md
+- [ x] Tạo thư mục `docs/`
+- [ x] Tạo file `AI_AUDIT_LOG.md`
+- [ x] Tạo file `PROMPTS.md`
+- [ x] Tạo file `REFLECTION.md`
+- [x ] Tạo file `CHANGELOG.md`
+- [x ] Khởi tạo source code ban đầu
+- [ x] Cài đặt thư viện/công cụ cần thiết
+- [ x] Cấu hình môi trường chạy project
 
 ## Thay đổi chi tiết
 
 | STT | Nội dung thay đổi | Người thực hiện | File/Module liên quan | Minh chứng |
 |---:|---|---|---|---|
-| 1 |  |  |  |  |
+| 1 | Khởi tạo project bằng Expo Router | nguyen tuan thanh | package.json | Project chạy thành công |
 | 2 |  |  |  |  |
 | 3 |  |  |  |  |
 
 ## AI có hỗ trợ không?
 
-- [ ] Có
+- [ x] Có
 - [ ] Không
 
 Nếu có, mô tả AI đã hỗ trợ phần nào:
 
 ```text
-Viết tại đây...
+AI hỗ trợ hướng dẫn tạo project React Native Expo và cài đặt thư viện cần thiết.
 ```
 
 ## Commit/Screenshot minh chứng
 
 ```text
-Dán link commit, screenshot hoặc mô tả minh chứng tại đây...
+Initial React Native Expo project setup completed.
 ```
 
 ## Ghi chú
 
 ```text
-Viết tại đây...
+Project sử dụng Expo Router để quản lý navigation giữa các màn hình.
 ```
 
 ---
@@ -111,11 +111,11 @@ DD/MM/YYYY
 
 ## Đã hoàn thành
 
-- [ ] Xác định problem statement
-- [ ] Xác định user roles
+- [ x] Xác định problem statement
+- [ x] Xác định user roles
 - [ ] Viết user stories
-- [ ] Viết use cases
-- [ ] Xác định functional requirements
+- [ x] Viết use cases
+- [ x] Xác định functional requirements
 - [ ] Xác định non-functional requirements
 - [ ] Xác định business rules
 - [ ] Xác định acceptance criteria
@@ -132,7 +132,7 @@ DD/MM/YYYY
 
 ## AI có hỗ trợ không?
 
-- [ ] Có
+- [x ] Có
 - [ ] Không
 
 Nếu có, mô tả AI đã hỗ trợ phần nào:
