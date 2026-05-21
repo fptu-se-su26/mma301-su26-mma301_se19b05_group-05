@@ -53,7 +53,7 @@ Nguyên tắc ghi changelog:
 ```text
 20/5/2026
 ```
-
+21/5/2026
 ## Đã hoàn thành
 
 - [x ] Tạo repository
