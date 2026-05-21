@@ -19,17 +19,17 @@ Nguyên tắc ghi changelog:
 
 | Thông tin | Nội dung |
 |---|---|
-| Môn học |  |
-| Mã môn học |  |
-| Lớp |  |
-| Học kỳ |  |
-| Tên bài tập / Project |  |
-| Tên sinh viên / Nhóm |  |
-| MSSV / Danh sách MSSV |  |
-| Giảng viên hướng dẫn |  |
+| Môn học |MMA301|
+| Mã môn học |MMA301|
+| Lớp |SE19D05|
+| Học kỳ |SU26|
+| Tên bài tập / Project |bai1|
+| Tên sinh viên / Nhóm |Nguyen Chau Quang/ Nhóm 5|
+| MSSV / Danh sách MSSV |DE170490|
+| Giảng viên hướng dẫn |QuangLTN3|
 | Repository URL |  |
-| Ngày bắt đầu |  |
-| Ngày hoàn thành |  |
+| Ngày bắt đầu |20/5/2026|
+| Ngày hoàn thành |21/5/2026|
 
 ---
 
@@ -37,12 +37,12 @@ Nguyên tắc ghi changelog:
 
 | Phiên bản/Giai đoạn | Thời gian | Nội dung chính | Trạng thái |
 |---|---|---|---|
-| Phase 01 |  | Khởi tạo project | Not Started / In Progress / Completed |
-| Phase 02 |  | Phân tích yêu cầu | Not Started / In Progress / Completed |
-| Phase 03 |  | Thiết kế hệ thống | Not Started / In Progress / Completed |
-| Phase 04 |  | Implementation | Not Started / In Progress / Completed |
-| Phase 05 |  | Testing & Debug | Not Started / In Progress / Completed |
-| Phase 06 |  | Hoàn thiện báo cáo và demo | Not Started / In Progress / Completed |
+| Phase 01 |  | Khởi tạo project | Completed |
+| Phase 02 |  | Phân tích yêu cầu |  Completed |
+| Phase 03 |  | Thiết kế hệ thống |  Completed |
+| Phase 04 |  | Implementation |  Completed |
+| Phase 05 |  | Testing & Debug |  Completed |
+| Phase 06 |  | Hoàn thiện báo cáo và demo | In Progress  |
 
 ---
 
@@ -53,20 +53,20 @@ Nguyên tắc ghi changelog:
 ```text
 DD/MM/YYYY
 ```
-
+21/5/2026
 ## Đã hoàn thành
 
-- [ ] Tạo repository
-- [ ] Tạo cấu trúc thư mục project
-- [ ] Tạo file README.md
-- [ ] Tạo thư mục `docs/`
-- [ ] Tạo file `AI_AUDIT_LOG.md`
-- [ ] Tạo file `PROMPTS.md`
-- [ ] Tạo file `REFLECTION.md`
-- [ ] Tạo file `CHANGELOG.md`
-- [ ] Khởi tạo source code ban đầu
-- [ ] Cài đặt thư viện/công cụ cần thiết
-- [ ] Cấu hình môi trường chạy project
+- [X] Tạo repository
+- [X] Tạo cấu trúc thư mục project
+- [X] Tạo file README.md
+- [X] Tạo thư mục `docs/`
+- [X] Tạo file `AI_AUDIT_LOG.md`
+- [X] Tạo file `PROMPTS.md`
+- [X] Tạo file `REFLECTION.md`
+- [X] Tạo file `CHANGELOG.md`
+- [X] Khởi tạo source code ban đầu
+- [X] Cài đặt thư viện/công cụ cần thiết
+- [X] Cấu hình môi trường chạy project
 
 ## Thay đổi chi tiết
 

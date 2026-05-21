@@ -4,16 +4,16 @@
 
 | Thông tin | Nội dung |
 |---|---|
-| Môn học |  |
-| Mã môn học |  |
-| Lớp |  |
-| Học kỳ |  |
-| Tên bài tập / Project |  |
-| Tên sinh viên / Nhóm |  |
-| MSSV / Danh sách MSSV |  |
-| Giảng viên hướng dẫn |  |
-| Ngày bắt đầu |  |
-| Ngày cập nhật gần nhất |  |
+| Môn học |MMA301|
+| Mã môn học |MMA301|
+| Lớp | SE19D05|
+| Học kỳ |SU26|
+| Tên bài tập / Project |bai1|
+| Tên sinh viên / Nhóm |Nguyen Chau Quang/Nhóm 5|
+| MSSV / Danh sách MSSV |DE170490|
+| Giảng viên hướng dẫn |QuangLTN3|
+| Ngày bắt đầu |20/5/2026|
+| Ngày cập nhật gần nhất |21/5/2026|
 
 ---
 
@@ -36,7 +36,7 @@ Sinh viên/nhóm cần ghi lại:
 
 Đánh dấu các công cụ AI đã sử dụng.
 
-- [ ] ChatGPT
+- [X] ChatGPT
 - [ ] Gemini
 - [ ] Claude
 - [ ] GitHub Copilot

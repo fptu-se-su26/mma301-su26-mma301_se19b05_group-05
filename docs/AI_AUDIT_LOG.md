@@ -4,16 +4,16 @@
 
 | Thông tin | Nội dung |
 |---|---|
-| Môn học |  |
-| Mã môn học |  |
-| Lớp |  |
-| Học kỳ |  |
-| Tên bài tập / Project |  |
-| Tên sinh viên / Nhóm |  |
-| MSSV / Danh sách MSSV |  |
-| Giảng viên hướng dẫn |  |
-| Ngày bắt đầu |  |
-| Ngày hoàn thành |  |
+| Môn học |MMA301|
+| Mã môn học |MMA301|
+| Lớp |SE19D05|
+| Học kỳ |SU26|
+| Tên bài tập / Project |bai1|
+| Tên sinh viên / Nhóm |Nguyen Chau Quang/ Nhóm 5|
+| MSSV / Danh sách MSSV |DE170490|
+| Giảng viên hướng dẫn |QuangLTN3|
+| Ngày bắt đầu |20/5/2026|
+| Ngày hoàn thành |21/5/2026|
 
 ---
 
@@ -21,7 +21,7 @@
 
 Đánh dấu các công cụ AI đã sử dụng trong quá trình thực hiện bài tập/project.
 
-- [ ] ChatGPT
+- [X] ChatGPT
 - [ ] Gemini
 - [ ] Claude
 - [ ] GitHub Copilot
@@ -56,6 +56,9 @@ Ví dụ:
 
 ```text
 Viết tại đây...
+
+- Gợi ý thiết kế UI Cart
+- debug Expo Router
 
 ## 4. Nhật ký sử dụng AI chi tiết
 
