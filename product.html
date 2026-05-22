@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editorial Product Page</title>
+    <title>Fashion Editorial Product Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --color-black: #000000;
+            --color-text: #2d2a26;
+            --color-text-light: #7c7267;
             --color-white: #ffffff;
-            --color-gray-light: #e5e5e5;
-            --color-gray-dark: #333333;
+            --color-accent: #c48c71;
+            --color-accent-hover: #a6735a;
             --font-heading: 'Playfair Display', serif;
-            --font-body: 'Inter', sans-serif;
+            --font-body: 'Outfit', sans-serif;
         }
 
         * {
@@ -23,121 +24,227 @@
             box-sizing: border-box;
         }
 
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
         body {
-            background-color: var(--color-white);
-            color: var(--color-black);
+            /* Smooth animated fashion gradient */
+            background: linear-gradient(-45deg, #f2efe9, #fdfbfb, #e6ded5, #f5efe6);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: var(--color-text);
             font-family: var(--font-body);
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
             overflow-x: hidden;
         }
 
-        /* Utility Classes */
-        .uppercase-label {
+        /* Marquee Ticker */
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            background-color: var(--color-text);
+            color: #ebdccc;
+            padding: 0.5rem 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .marquee-text {
+            display: flex;
+            white-space: nowrap;
+            animation: marquee 20s linear infinite;
             font-family: var(--font-body);
             font-size: 0.75rem;
             text-transform: uppercase;
-            letter-spacing: 0.15em;
+            letter-spacing: 0.2em;
             font-weight: 500;
-            color: var(--color-gray-dark);
         }
 
-        .divider {
-            height: 1px;
-            background-color: var(--color-black);
-            width: 100%;
-            margin: 2rem 0;
-        }
-
-        /* Layout */
-        .container {
-            max-width: 1440px;
-            margin: 0 auto;
+        .marquee-text span {
             padding: 0 2rem;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
         }
 
         /* Header */
         header {
-            border-bottom: 1px solid var(--color-black);
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
         }
 
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 2rem;
         }
 
         .logo {
             font-family: var(--font-heading);
-            font-size: 2rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            color: var(--color-accent);
         }
 
         nav ul {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 2.5rem;
         }
 
         nav a {
             text-decoration: none;
-            color: var(--color-black);
-            font-size: 0.85rem;
+            color: var(--color-text);
+            font-size: 0.8rem;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.15em;
             font-weight: 500;
+            transition: color 0.3s;
         }
 
-        /* Main Asymmetric Grid */
-        .product-grid {
+        nav a:hover {
+            color: var(--color-accent);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-family: var(--font-heading);
+            font-size: 4rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+            font-weight: 400;
+            color: var(--color-text);
+            animation: fadeInDown 1s ease-out forwards;
+        }
+
+        .hero-title i {
+            font-style: italic;
+            color: var(--color-accent);
+        }
+
+        .hero-subtitle {
+            color: var(--color-text-light);
+            max-width: 500px;
+            margin: 0 auto;
+            font-size: 1.05rem;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Main Grid */
+        .grid-container {
             display: grid;
-            grid-template-columns: 65% 35%;
-            min-height: calc(100vh - 80px);
-            border-bottom: 1px solid var(--color-black);
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            padding: 0 2rem 5rem 2rem;
+            max-width: 1440px;
+            margin: 0 auto;
         }
 
-        /* Left Column - Image */
-        .product-image-container {
-            border-right: 1px solid var(--color-black);
-            padding: 2rem;
+        /* Product Card */
+        .product-card {
+            background-color: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.8);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-direction: column;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .image-container {
             position: relative;
+            height: 420px;
+            overflow: hidden;
         }
 
         .product-image {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            filter: grayscale(100%) contrast(1.2);
+            transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
         }
 
-        .image-caption {
+        .product-card:hover .product-image {
+            transform: scale(1.08);
+        }
+
+        .image-overlay {
             position: absolute;
-            bottom: 2rem;
-            left: 2rem;
-            background: var(--color-white);
-            padding: 0.5rem 1rem;
-            border: 1px solid var(--color-black);
+            top: 1.5rem;
+            left: 1.5rem;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         }
 
-        /* Right Column - Details */
-        .product-details {
-            padding: 3rem;
+        .details-container {
+            padding: 2rem;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            flex-grow: 1;
+        }
+
+        .uppercase-label {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-weight: 500;
+            color: var(--color-text-light);
+            margin-bottom: 0.5rem;
         }
 
         .product-title {
             font-family: var(--font-heading);
-            font-size: 4.5rem;
-            line-height: 1.1;
-            margin: 1rem 0;
-            font-weight: 400;
+            font-size: 1.8rem;
+            margin: 0.2rem 0;
+            font-weight: 500;
+            color: var(--color-text);
         }
 
         .product-title i {
@@ -146,72 +253,104 @@
         }
 
         .product-price {
-            font-family: var(--font-body);
-            font-size: 1.5rem;
-            font-weight: 300;
+            font-size: 1.1rem;
+            color: var(--color-accent);
             margin-bottom: 2rem;
+            font-weight: 500;
         }
 
-        .product-description {
-            font-size: 1rem;
-            color: var(--color-gray-dark);
-            font-weight: 300;
-            margin-bottom: 2.5rem;
-            max-width: 90%;
-        }
-
-        .product-meta {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            margin-bottom: 3rem;
-        }
-
-        .meta-item {
-            border-top: 1px solid var(--color-gray-light);
-            padding-top: 0.5rem;
-        }
-
-        .btn-black {
-            background-color: var(--color-black);
+        .btn-fashion {
+            background-color: var(--color-text);
             color: var(--color-white);
             border: none;
-            padding: 1.2rem 2rem;
+            border-radius: 8px;
+            padding: 1.2rem;
             font-family: var(--font-body);
             text-transform: uppercase;
-            letter-spacing: 0.1em;
-            font-size: 0.85rem;
+            letter-spacing: 0.15em;
+            font-size: 0.75rem;
             font-weight: 600;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: all 0.3s ease;
             width: 100%;
+            margin-top: auto;
+            position: relative;
+            overflow: hidden;
         }
 
-        .btn-black:hover {
-            background-color: var(--color-gray-dark);
+        .btn-fashion::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .product-card:hover .btn-fashion::after {
+            left: 100%;
+        }
+
+        .btn-fashion:hover {
+            background-color: var(--color-accent);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(196, 140, 113, 0.4);
         }
 
         /* Responsive */
-        @media (max-width: 1024px) {
-            .product-grid {
-                grid-template-columns: 1fr;
-            }
-            .product-image-container {
-                border-right: none;
-                border-bottom: 1px solid var(--color-black);
-                height: 60vh;
-            }
-            .product-title {
-                font-size: 3.5rem;
+        @media (max-width: 1200px) {
+            .image-container {
+                height: 350px;
             }
         }
-
+        @media (max-width: 1024px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                padding: 0 1rem 3rem 1rem;
+            }
+            .hero-title {
+                font-size: 2.8rem;
+            }
+            .image-container {
+                height: 380px;
+            }
+        }
     </style>
 </head>
 <body>
 
+    <div class="marquee-container">
+        <div class="marquee-text">
+            <span>NEW ARRIVALS</span>
+            <span>•</span>
+            <span>SPRING COLLECTION</span>
+            <span>•</span>
+            <span>LIMITED EDITION</span>
+            <span>•</span>
+            <span>FREE SHIPPING WORLDWIDE</span>
+            <span>•</span>
+            <!-- Duplicate for infinite scroll -->
+            <span>NEW ARRIVALS</span>
+            <span>•</span>
+            <span>SPRING COLLECTION</span>
+            <span>•</span>
+            <span>LIMITED EDITION</span>
+            <span>•</span>
+            <span>FREE SHIPPING WORLDWIDE</span>
+            <span>•</span>
+        </div>
+    </div>
+
     <header>
-        <div class="container header-content">
+        <div class="header-content">
             <div class="logo">Maison</div>
             <nav>
                 <ul>
@@ -223,43 +362,140 @@
         </div>
     </header>
 
-    <main class="product-grid">
-        <!-- 65% Column -->
-        <section class="product-image-container">
-            <div class="image-caption uppercase-label">No. 01 / Signature Series</div>
-            <img class="product-image" src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=1000&auto=format&fit=crop" alt="Fashion Editorial Sneaker">
-        </section>
+    <div class="hero-section">
+        <h1 class="hero-title">Spring <i>Affair</i></h1>
+        <p class="hero-subtitle">A curated selection of vibrant, fashionable footwear designed to make a statement.</p>
+    </div>
 
-        <!-- 35% Column -->
-        <section class="product-details">
-            <span class="uppercase-label">Footwear Archive</span>
-            
-            <h1 class="product-title">
-                The Noir <br>
-                <i>Classic</i>
-            </h1>
-            
-            <div class="divider"></div>
-            
-            <div class="product-price">$ 450.00</div>
-            
-            <p class="product-description">
-                A study in absolute minimalism. Crafted from premium full-grain Italian leather with a deconstructed silhouette. Stripped of excess, leaving only essential form and function.
-            </p>
-
-            <div class="product-meta">
-                <div class="meta-item">
-                    <div class="uppercase-label">Material</div>
-                    <p style="font-size: 0.9rem; margin-top: 0.2rem;">Italian Leather</p>
-                </div>
-                <div class="meta-item">
-                    <div class="uppercase-label">Origin</div>
-                    <p style="font-size: 0.9rem; margin-top: 0.2rem;">Handmade in Milan</p>
-                </div>
+    <main class="grid-container">
+        
+        <!-- Product 1 -->
+        <article class="product-card">
+            <div class="image-container">
+                <div class="image-overlay">No. 01</div>
+                <!-- Grayscale removed, natural colors -->
+                <img class="product-image" src="https://images.unsplash.com/photo-1605733513597-a8f8341084e6?q=80&w=800&auto=format&fit=crop" alt="The Noir Classic">
             </div>
+            <div class="details-container">
+                <span class="uppercase-label">Footwear Archive</span>
+                <h2 class="product-title">The Noir <i>Classic</i></h2>
+                <div class="product-price">$ 450.00</div>
+                <button class="btn-fashion">Add to Collection</button>
+            </div>
+        </article>
 
-            <button class="btn-black">Add to Collection</button>
-        </section>
+        <!-- Product 2 -->
+        <article class="product-card">
+            <div class="image-container">
+                <div class="image-overlay">No. 02</div>
+                <img class="product-image" src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=800&auto=format&fit=crop" alt="The Blanc Oxford">
+            </div>
+            <div class="details-container">
+                <span class="uppercase-label">Structural Pieces</span>
+                <h2 class="product-title">The Blanc <i>Oxford</i></h2>
+                <div class="product-price">$ 520.00</div>
+                <button class="btn-fashion">Add to Collection</button>
+            </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card">
+            <div class="image-container">
+                <div class="image-overlay">No. 03</div>
+                <img class="product-image" src="https://images.unsplash.com/photo-1614252209318-49400ff5d3dc?q=80&w=800&auto=format&fit=crop" alt="The Slate Derby">
+            </div>
+            <div class="details-container">
+                <span class="uppercase-label">Everyday Uniform</span>
+                <h2 class="product-title">The Slate <i>Derby</i></h2>
+                <div class="product-price">$ 380.00</div>
+                <button class="btn-fashion">Add to Collection</button>
+            </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card">
+            <div class="image-container">
+                <div class="image-overlay">No. 04</div>
+                <img class="product-image" src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800&auto=format&fit=crop" alt="The Onyx Stiletto">
+            </div>
+            <div class="details-container">
+                <span class="uppercase-label">Sculptural Heels</span>
+                <h2 class="product-title">The Onyx <i>Stiletto</i></h2>
+                <div class="product-price">$ 650.00</div>
+                <button class="btn-fashion">Add to Collection</button>
+            </div>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="product-card">
+            <div class="image-container">
+                <div class="image-overlay">No. 05</div>
+                <img class="product-image" src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?q=80&w=800&auto=format&fit=crop" alt="The Crimson Loafer">
+            </div>
+            <div class="details-container">
+                <span class="uppercase-label">Modern Classic</span>
+                <h2 class="product-title">The Crimson <i>Loafer</i></h2>
+                <div class="product-price">$ 410.00</div>
+                <button class="btn-fashion">Add to Collection</button>
+            </div>
+        </article>
+
+        <!-- Product 6 -->
+        <article class="product-card">
+            <div class="image-container">
+                <div class="image-overlay">No. 06</div>
+                <img class="product-image" src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=800&auto=format&fit=crop" alt="The Ivory Sneaker">
+            </div>
+            <div class="details-container">
+                <span class="uppercase-label">Street Archive</span>
+                <h2 class="product-title">The Ivory <i>Sneaker</i></h2>
+                <div class="product-price">$ 350.00</div>
+                <button class="btn-fashion">Add to Collection</button>
+            </div>
+        </article>
+
+        <!-- Product 7 -->
+        <article class="product-card">
+            <div class="image-container">
+                <div class="image-overlay">No. 07</div>
+                <img class="product-image" src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?q=80&w=800&auto=format&fit=crop" alt="The Amber Boot">
+            </div>
+            <div class="details-container">
+                <span class="uppercase-label">Heavy Duty</span>
+                <h2 class="product-title">The Amber <i>Boot</i></h2>
+                <div class="product-price">$ 590.00</div>
+                <button class="btn-fashion">Add to Collection</button>
+            </div>
+        </article>
+
+        <!-- Product 8 -->
+        <article class="product-card">
+            <div class="image-container">
+                <div class="image-overlay">No. 08</div>
+                <img class="product-image" src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=800&auto=format&fit=crop" alt="The Cobalt Runner">
+            </div>
+            <div class="details-container">
+                <span class="uppercase-label">Athletic Research</span>
+                <h2 class="product-title">The Cobalt <i>Runner</i></h2>
+                <div class="product-price">$ 320.00</div>
+                <button class="btn-fashion">Add to Collection</button>
+            </div>
+        </article>
+
+        <!-- Product 9 -->
+        <article class="product-card">
+            <div class="image-container">
+                <div class="image-overlay">No. 09</div>
+                <img class="product-image" src="https://images.unsplash.com/photo-1535043934128-d8d0cfbc491f?q=80&w=800&auto=format&fit=crop" alt="The Jade Mule">
+            </div>
+            <div class="details-container">
+                <span class="uppercase-label">Resort Wear</span>
+                <h2 class="product-title">The Jade <i>Mule</i></h2>
+                <div class="product-price">$ 290.00</div>
+                <button class="btn-fashion">Add to Collection</button>
+            </div>
+        </article>
+
     </main>
 
 </body>
