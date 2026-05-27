@@ -8,8 +8,13 @@ import {
   ScrollView,
 } from "react-native";
 import { router } from "expo-router";
+import { getCartCount, useAppState } from "@/state/AppStateContext";
 
 export default function ProfileScreen() {
+  const { cartItems, wishlistItems } = useAppState();
+  const cartCount = getCartCount(cartItems);
+  const wishlistCount = wishlistItems.length;
+
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -60,7 +65,9 @@ export default function ProfileScreen() {
             <Text style={styles.menuEmoji}>❤️</Text>
 
             <View style={styles.menuTextContainer}>
-              <Text style={styles.menuTitle}>Wishlist</Text>
+              <Text style={styles.menuTitle}>
+                Wishlist ({wishlistCount})
+              </Text>
 
               <Text style={styles.menuSubtitle}>
                 Your favorite furniture items
@@ -76,7 +83,7 @@ export default function ProfileScreen() {
             <Text style={styles.menuEmoji}>🛒</Text>
 
             <View style={styles.menuTextContainer}>
-              <Text style={styles.menuTitle}>My Cart</Text>
+              <Text style={styles.menuTitle}>My Cart ({cartCount})</Text>
 
               <Text style={styles.menuSubtitle}>
                 Check your shopping cart
