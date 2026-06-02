@@ -41,3 +41,10 @@ app-example
 # generated native folders
 /ios
 /android
+
+# AI Audit Logs
+docs/AI_AUDIT_LOG.md
+docs/CHANGELOG.md
+docs/PROMPTS.md
+docs/REFLECTION.md
+

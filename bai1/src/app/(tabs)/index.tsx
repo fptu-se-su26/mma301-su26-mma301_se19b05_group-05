@@ -7,8 +7,14 @@ import {
   ScrollView,
 } from "react-native";
 import { router } from "expo-router";
+import { useApp } from "@/context/AppContext";
 
 export default function HomeScreen() {
+  const { cartItems, wishlistItems } = useApp();
+
+  const cartCount = cartItems.reduce((sum, item) => sum + (item.quantity || 1), 0);
+  const wishlistCount = wishlistItems.length;
+
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -47,6 +53,11 @@ export default function HomeScreen() {
           >
             <Text style={styles.cardEmoji}>🛒</Text>
             <Text style={styles.cardTitle}>Cart</Text>
+            {cartCount > 0 && (
+              <View style={styles.badge}>
+                <Text style={styles.badgeText}>{cartCount}</Text>
+              </View>
+            )}
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -63,6 +74,11 @@ export default function HomeScreen() {
           >
             <Text style={styles.cardEmoji}>❤️</Text>
             <Text style={styles.cardTitle}>Wishlist</Text>
+            {wishlistCount > 0 && (
+              <View style={styles.badge}>
+                <Text style={styles.badgeText}>{wishlistCount}</Text>
+              </View>
+            )}
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -156,6 +172,7 @@ const styles = StyleSheet.create({
     paddingVertical: 30,
     alignItems: "center",
     marginBottom: 18,
+    position: "relative",
 
     shadowColor: "#000",
     shadowOpacity: 0.05,
@@ -173,4 +190,24 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "600",
   },
+
+  badge: {
+    position: "absolute",
+    top: 10,
+    right: 15,
+    backgroundColor: "#d2691e",
+    borderRadius: 12,
+    minWidth: 24,
+    height: 24,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingHorizontal: 6,
+  },
+
+  badgeText: {
+    color: "#fff",
+    fontSize: 12,
+    fontWeight: "bold",
+  },
 });
+
