@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useReducer } from "react";
+import React from "react";
 import {
   Alert,
   FlatList,
@@ -12,105 +12,7 @@ import {
 import { Feather, Ionicons, MaterialIcons } from "@expo/vector-icons";
 import { router } from "expo-router";
 
-type CartItem = {
-  id: string;
-  name: string;
-  price: number;
-  quantity: number;
-  image: string;
-};
-
-type CartState = {
-  items: CartItem[];
-};
-
-type CartAction =
-  | { type: "INCREASE"; id: string }
-  | { type: "DECREASE"; id: string }
-  | { type: "REMOVE"; id: string }
-  | { type: "CLEAR" };
-
-const initialState: CartState = {
-  items: [
-    {
-      id: "1",
-      name: "Modern Chair",
-      price: 120,
-      quantity: 1,
-      image: "https://tse1.mm.bing.net/th/id/OIP.dEBSoPzPj1HInVior87AtwHaLy?pid=Api&P=0&h=180",
-    },
-    {
-      id: "2",
-      name: "Wood Table",
-      price: 250,
-      quantity: 2,
-      image: "https://tse1.mm.bing.net/th/id/OIP.Qn9OQK9IYgTqIKgpYJrlSQHaHa?pid=Api&P=0&h=180",
-    },
-    {
-      id: "3",
-      name: "Oil Lamp",
-      price: 400,
-      quantity: 10,
-      image: "https://tse1.mm.bing.net/th/id/OIP.fPgiVSEbYPbrI9K9RFpB-wHaEK?pid=Api&P=0&h=180",
-    },
-  ],
-};
-
-function cartReducer(state: CartState, action: CartAction): CartState {
-  switch (action.type) {
-    case "INCREASE":
-      return {
-        ...state,
-        items: state.items.map((item) =>
-          item.id === action.id
-            ? { ...item, quantity: item.quantity + 1 }
-            : item
-        ),
-      };
-
-    case "DECREASE":
-      return {
-        ...state,
-        items: state.items.map((item) =>
-          item.id === action.id
-            ? { ...item, quantity: item.quantity > 1 ? item.quantity - 1 : 1 }
-            : item
-        ),
-      };
-
-    case "REMOVE":
-      return {
-        ...state,
-        items: state.items.filter((item) => item.id !== action.id),
-      };
-
-    case "CLEAR":
-      return {
-        ...state,
-        items: [],
-      };
-
-    default:
-      return state;
-  }
-}
-
-type CartContextType = {
-  state: CartState;
-  dispatch: React.Dispatch<CartAction>;
-};
-
-const CartContext = createContext<CartContextType | null>(null);
-
-function useCart() {
-  const context = useContext(CartContext);
-
-  if (!context) {
-    throw new Error("useCart must be used inside CartContext.Provider");
-  }
-
-  return context;
-}
+import { CartItem, CartProvider, useCart } from "@/context/CartContext";
 
 function CartContent() {
   const { state, dispatch } = useCart();
@@ -123,7 +25,6 @@ function CartContent() {
   const shipping = state.items.length > 0 ? 15 : 0;
   const total = subtotal + shipping;
 
-  
   const handleCheckout = () => {
     if (state.items.length === 0) {
       if (typeof window !== "undefined") {
@@ -233,12 +134,10 @@ function CartContent() {
 }
 
 export default function CartScreen() {
-  const [state, dispatch] = useReducer(cartReducer, initialState);
-
   return (
-    <CartContext.Provider value={{ state, dispatch }}>
+    <CartProvider>
       <CartContent />
-    </CartContext.Provider>
+    </CartProvider>
   );
 }
 
