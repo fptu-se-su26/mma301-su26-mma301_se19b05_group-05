@@ -38,7 +38,7 @@ export default function LoginScreen() {
         if (users.length > 0) {
           login(users[0]);
           Alert.alert('Thành công', `Chào mừng ${users[0].name} quay trở lại!`);
-          router.replace('/home');
+          router.replace('/home' as any);
         } else {
           Alert.alert('Lỗi', 'Email hoặc mật khẩu không đúng!');
         }
