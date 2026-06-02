@@ -13,12 +13,14 @@ import {
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { router } from 'expo-router';
+import { useAuth } from '../context/AuthContext';
 
 export default function LoginScreen() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const { login } = useAuth();
 
   const API_URL = 'http://192.168.1.84:3000';
 
@@ -34,7 +36,9 @@ export default function LoginScreen() {
       if (response.ok) {
         const users = await response.json();
         if (users.length > 0) {
+          login(users[0]);
           Alert.alert('Thành công', `Chào mừng ${users[0].name} quay trở lại!`);
+          router.replace('/home');
         } else {
           Alert.alert('Lỗi', 'Email hoặc mật khẩu không đúng!');
         }

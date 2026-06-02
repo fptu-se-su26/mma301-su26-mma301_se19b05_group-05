@@ -37,10 +37,10 @@ Nguyên tắc ghi changelog:
 
 | Phiên bản/Giai đoạn | Thời gian | Nội dung chính | Trạng thái |
 |---|---|---|---|
-| Phase 01 |  | Khởi tạo project | Not Started / In Progress / Completed |
-| Phase 02 |  | Phân tích yêu cầu | Not Started / In Progress / Completed |
-| Phase 03 |  | Thiết kế hệ thống | Not Started / In Progress / Completed |
-| Phase 04 |  | Implementation | Not Started / In Progress / Completed |
+| Phase 01 |  | Khởi tạo project | Completed |
+| Phase 02 |  | Phân tích yêu cầu | Completed |
+| Phase 03 |  | Thiết kế hệ thống | Completed |
+| Phase 04 | 02/06/2026 | Implementation | Completed |
 | Phase 05 |  | Testing & Debug | Not Started / In Progress / Completed |
 | Phase 06 |  | Hoàn thiện báo cáo và demo | Not Started / In Progress / Completed |
 
@@ -214,32 +214,32 @@ Viết tại đây...
 ## Ngày thực hiện
 
 ```text
-DD/MM/YYYY
+02/06/2026
 ```
 
 ## Đã hoàn thành
 
-- [ ] Tạo project structure
-- [ ] Cài đặt database connection
+- [x] Tạo project structure
+- [x] Cài đặt database connection
 - [ ] Xây dựng backend
-- [ ] Xây dựng frontend
-- [ ] Xây dựng authentication/authorization
+- [x] Xây dựng frontend
+- [x] Xây dựng authentication/authorization
 - [ ] Xử lý CRUD
-- [ ] Xử lý validation
-- [ ] Tích hợp API
+- [x] Xử lý validation
+- [x] Tích hợp API
 - [ ] Xử lý upload/download file
-- [ ] Xử lý lỗi
-- [ ] Tối ưu giao diện
+- [x] Xử lý lỗi
+- [x] Tối ưu giao diện
 - [ ] Cập nhật README hướng dẫn chạy
 
 ## Thay đổi chi tiết
 
 | STT | Nội dung thay đổi | Người thực hiện | File/Module liên quan | Minh chứng |
 |---:|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
+| 1 | Thêm Context API (AuthContext) | AI | context/AuthContext.tsx | |
+| 2 | Cập nhật Login | AI | app/index.tsx | |
+| 3 | Thêm Home Screen | AI | app/home.tsx | |
+| 4 | Cập nhật Layout | AI | app/_layout.tsx | |
 | 5 |  |  |  |  |
 
 ## AI có hỗ trợ không?
