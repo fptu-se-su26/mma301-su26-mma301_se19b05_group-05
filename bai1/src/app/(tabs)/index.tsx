@@ -7,8 +7,16 @@ import {
   ScrollView,
 } from "react-native";
 import { router } from "expo-router";
+import {
+  getCartCount,
+  useAppState,
+} from "@/state/AppStateContext";
 
 export default function HomeScreen() {
+  const { cartItems, wishlistItems } = useAppState();
+  const cartCount = getCartCount(cartItems);
+  const wishlistCount = wishlistItems.length;
+
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -46,7 +54,7 @@ export default function HomeScreen() {
             onPress={() => router.push("/cart")}
           >
             <Text style={styles.cardEmoji}>🛒</Text>
-            <Text style={styles.cardTitle}>Cart</Text>
+            <Text style={styles.cardTitle}>Cart ({cartCount})</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -62,7 +70,9 @@ export default function HomeScreen() {
             onPress={() => router.push("/wishlist")}
           >
             <Text style={styles.cardEmoji}>❤️</Text>
-            <Text style={styles.cardTitle}>Wishlist</Text>
+            <Text style={styles.cardTitle}>
+              Wishlist ({wishlistCount})
+            </Text>
           </TouchableOpacity>
 
           <TouchableOpacity

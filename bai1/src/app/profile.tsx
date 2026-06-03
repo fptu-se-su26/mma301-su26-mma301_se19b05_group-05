@@ -8,8 +8,17 @@ import {
   ScrollView,
 } from "react-native";
 import { router } from "expo-router";
+import { getCartCount, useAppState } from "@/state/AppStateContext";
 
 export default function ProfileScreen() {
+  const { cartItems, wishlistItems } = useAppState();
+  const cartCount = getCartCount(cartItems);
+  const wishlistCount = wishlistItems.length;
+  const cartTotal = cartItems.reduce(
+    (sum, item) => sum + item.price * item.quantity,
+    0
+  );
+
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -32,6 +41,25 @@ export default function ProfileScreen() {
           <Text style={styles.userEmail}>
             johndoe@gmail.com
           </Text>
+        </View>
+
+        {/* Context / Stats Section */}
+        <View style={styles.contextSection}>
+          <Text style={styles.contextTitle}>Overview</Text>
+          <View style={styles.contextRow}>
+            <View style={styles.contextCard}>
+              <Text style={styles.contextValue}>{cartCount}</Text>
+              <Text style={styles.contextLabel}>Items in Cart</Text>
+            </View>
+            <View style={styles.contextCard}>
+              <Text style={styles.contextValue}>{wishlistCount}</Text>
+              <Text style={styles.contextLabel}>Wishlisted</Text>
+            </View>
+            <View style={styles.contextCard}>
+              <Text style={styles.contextValue}>${cartTotal}</Text>
+              <Text style={styles.contextLabel}>Cart Total</Text>
+            </View>
+          </View>
         </View>
 
         {/* Menu Section */}
@@ -60,7 +88,9 @@ export default function ProfileScreen() {
             <Text style={styles.menuEmoji}>❤️</Text>
 
             <View style={styles.menuTextContainer}>
-              <Text style={styles.menuTitle}>Wishlist</Text>
+              <Text style={styles.menuTitle}>
+                Wishlist ({wishlistCount})
+              </Text>
 
               <Text style={styles.menuSubtitle}>
                 Your favorite furniture items
@@ -76,7 +106,7 @@ export default function ProfileScreen() {
             <Text style={styles.menuEmoji}>🛒</Text>
 
             <View style={styles.menuTextContainer}>
-              <Text style={styles.menuTitle}>My Cart</Text>
+              <Text style={styles.menuTitle}>My Cart ({cartCount})</Text>
 
               <Text style={styles.menuSubtitle}>
                 Check your shopping cart
@@ -209,5 +239,48 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 18,
     fontWeight: "700",
+  },
+
+  contextSection: {
+    marginBottom: 30,
+  },
+
+  contextTitle: {
+    fontSize: 20,
+    fontWeight: "700",
+    color: "#111",
+    marginBottom: 14,
+  },
+
+  contextRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    gap: 12,
+  },
+
+  contextCard: {
+    flex: 1,
+    backgroundColor: "#fff",
+    borderRadius: 18,
+    paddingVertical: 18,
+    alignItems: "center",
+
+    shadowColor: "#000",
+    shadowOpacity: 0.05,
+    shadowRadius: 10,
+    elevation: 4,
+  },
+
+  contextValue: {
+    fontSize: 22,
+    fontWeight: "700",
+    color: "#f97316",
+  },
+
+  contextLabel: {
+    marginTop: 6,
+    fontSize: 12,
+    color: "#777",
+    textAlign: "center",
   },
 });
