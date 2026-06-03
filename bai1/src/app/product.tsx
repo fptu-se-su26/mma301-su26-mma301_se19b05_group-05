@@ -1,8 +1,21 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity, SafeAreaView, Platform } from 'react-native';
-import { Stack } from 'expo-router';
+import { Stack, router } from 'expo-router';
+import { useApp } from '@/context/AppContext';
 
 export default function ProductPage() {
+  const { addToCart, addToWishlist, isInWishlist, removeFromWishlist } = useApp();
+
+  const product = {
+    id: "p1",
+    name: "The Noir Classic",
+    price: 450,
+    category: "FOOTWEAR ARCHIVE",
+    image: 'https://images.unsplash.com/photo-1605733513597-a8f8341084e6?q=80&w=1000&auto=format&fit=crop&grayscale=true',
+  };
+
+  const isFav = isInWishlist(product.id);
+
   return (
     <SafeAreaView style={styles.container}>
       <Stack.Screen options={{ 
@@ -23,7 +36,7 @@ export default function ProductPage() {
           {/* Note: In pure RN without Expo Image processing, applying grayscale via filter isn't native, 
               so we use a naturally black & white/monochrome image URL to keep the B&W vibe */}
           <Image 
-            source={{ uri: 'https://images.unsplash.com/photo-1605733513597-a8f8341084e6?q=80&w=1000&auto=format&fit=crop&grayscale=true' }} 
+            source={{ uri: product.image }} 
             style={styles.productImage} 
           />
           <View style={styles.imageLabel}>
@@ -62,9 +75,36 @@ export default function ProductPage() {
             </View>
           </View>
 
-          <TouchableOpacity style={styles.buyButton} activeOpacity={0.9}>
-            <Text style={styles.buyButtonText}>ADD TO COLLECTION</Text>
-          </TouchableOpacity>
+          <View style={styles.buttonRow}>
+            <TouchableOpacity 
+              style={styles.buyButton} 
+              activeOpacity={0.9}
+              onPress={() => {
+                addToCart(product);
+                router.push('/cart');
+              }}
+            >
+              <Text style={styles.buyButtonText}>ADD TO COLLECTION</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={[
+                styles.favButton,
+                isFav && styles.favButtonActive
+              ]}
+              onPress={() => {
+                if (isFav) {
+                  removeFromWishlist(product.id);
+                } else {
+                  addToWishlist(product);
+                }
+              }}
+            >
+              <Text style={[styles.favButtonText, isFav && styles.favButtonTextActive]}>
+                {isFav ? '❤️' : '🖤'}
+              </Text>
+            </TouchableOpacity>
+          </View>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -159,12 +199,17 @@ const styles = StyleSheet.create({
     color: '#000000',
     marginTop: 6,
   },
+  buttonRow: {
+    flexDirection: 'row',
+    gap: 12,
+  },
   buyButton: {
+    flex: 1,
     backgroundColor: '#000000',
     paddingVertical: 18,
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 0, // Flat 100%, sharp corners
+    borderRadius: 0,
   },
   buyButtonText: {
     color: '#FFFFFF',
@@ -174,4 +219,24 @@ const styles = StyleSheet.create({
     letterSpacing: 2,
     textTransform: 'uppercase',
   },
+  favButton: {
+    width: 58,
+    backgroundColor: '#FFFFFF',
+    borderWidth: 1,
+    borderColor: '#000000',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 0,
+  },
+  favButtonActive: {
+    backgroundColor: '#ff4757',
+    borderColor: '#ff4757',
+  },
+  favButtonText: {
+    fontSize: 18,
+  },
+  favButtonTextActive: {
+    color: '#FFFFFF',
+  },
 });
+

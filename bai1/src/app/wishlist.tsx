@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   StyleSheet,
   SafeAreaView,
@@ -11,40 +11,12 @@ import {
 import { router } from "expo-router";
 import { ThemedView } from "@/components/themed-view";
 import { ThemedText } from "@/components/themed-text";
+import { useApp } from "@/context/AppContext";
+
 const { width } = Dimensions.get("window");
 
-// Dữ liệu mẫu sản phẩm nội thất trong Wishlist
-const INITIAL_WISHLIST = [
-  {
-    id: "1",
-    name: "Modern Velvet Sofa",
-    category: "Living Room",
-    price: "$850",
-    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=500", // Link ảnh bàn ghế mẫu
-  },
-  {
-    id: "2",
-    name: "Minimalist Wooden Table",
-    category: "Dining Room",
-    price: "$320",
-    image: "https://images.unsplash.com/photo-1577140917170-285929fb55b7?w=500",
-  },
-  {
-    id: "3",
-    name: "Scandinavian Armchair",
-    category: "Bedroom",
-    price: "$210",
-    image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=500",
-  },
-];
-
 export default function WishlistScreen() {
-  const [wishlistItems, setWishlistItems] = useState(INITIAL_WISHLIST);
-
-  // Hàm xóa sản phẩm khỏi Wishlist
-  const removeItem = (id: string) => {
-    setWishlistItems(wishlistItems.filter((item) => item.id !== id));
-  };
+  const { wishlistItems, removeFromWishlist, addToCart } = useApp();
 
   return (
     <SafeAreaView style={styles.safeArea}>
@@ -83,7 +55,7 @@ export default function WishlistScreen() {
                 {/* Nút xóa nhanh khỏi Wishlist */}
                 <TouchableOpacity 
                   style={styles.heartBadge} 
-                  onPress={() => removeItem(item.id)}
+                  onPress={() => removeFromWishlist(item.id)}
                 >
                   <ThemedText style={{ fontSize: 16 }}>❤️</ThemedText>
                 </TouchableOpacity>
@@ -91,13 +63,16 @@ export default function WishlistScreen() {
                 <ThemedView style={styles.productInfo}>
                   <ThemedText type="small" style={styles.categoryText}>{item.category}</ThemedText>
                   <ThemedText type="default" style={styles.productName} numberOfLines={1}>{item.name}</ThemedText>
-                  <ThemedText type="smallBold" style={styles.productPrice}>{item.price}</ThemedText>
+                  <ThemedText type="smallBold" style={styles.productPrice}>${item.price}</ThemedText>
                 </ThemedView>
 
                 {/* Nút Thêm vào giỏ hàng nhanh */}
                 <TouchableOpacity 
                   style={styles.addToCartButton}
-                  onPress={() => router.push("/cart")}
+                  onPress={() => {
+                    addToCart(item);
+                    router.push("/cart");
+                  }}
                 >
                   <ThemedText type="smallBold" style={styles.addToCartText}>Add to Cart 🛒</ThemedText>
                 </TouchableOpacity>
@@ -109,6 +84,7 @@ export default function WishlistScreen() {
     </SafeAreaView>
   );
 }
+
 
 const styles = StyleSheet.create({
   safeArea: {

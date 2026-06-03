@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Alert,
   FlatList,
@@ -11,74 +11,19 @@ import {
 
 import { Feather, Ionicons, MaterialIcons } from "@expo/vector-icons";
 import { router } from "expo-router";
-
-
-const initialCart = [
-  {
-    id: "1",
-    name: "Modern Chair",
-    price: 120,
-    quantity: 1,
-    image: "https://tse1.mm.bing.net/th/id/OIP.dEBSoPzPj1HInVior87AtwHaLy?pid=Api&P=0&h=180",
-  },
-  {
-    id: "2",
-    name: "Wood Table",
-    price: 250,
-    quantity: 2,
-    image: "https://tse1.mm.bing.net/th/id/OIP.Qn9OQK9IYgTqIKgpYJrlSQHaHa?pid=Api&P=0&h=180",
-  },
-  {
-    id: "3",
-    name: "Oil Lamp",
-    price: 400,
-    quantity: 10,
-    image: "https://tse1.mm.bing.net/th/id/OIP.fPgiVSEbYPbrI9K9RFpB-wHaEK?pid=Api&P=0&h=180",
-  },
-];
+import { useApp } from "@/context/AppContext";
 
 export default function CartScreen() {
-  const [cartItems, setCartItems] = useState(initialCart);
+  const { cartItems, increaseQuantity, decreaseQuantity, removeFromCart } = useApp();
 
-  
-  const increaseQuantity = (id: string) => {
-    const updated = cartItems.map((item) =>
-      item.id === id
-        ? { ...item, quantity: item.quantity + 1 }
-        : item
-    );
-    setCartItems(updated);
-  };
-
-  
-  const decreaseQuantity = (id: string) => {
-    const updated = cartItems.map((item) =>
-      item.id === id
-        ? {
-            ...item,
-            quantity: item.quantity > 1 ? item.quantity - 1 : 1,
-          }
-        : item
-    );
-    setCartItems(updated);
-  };
-
-  
-  const removeItem = (id: string) => {
-    const updated = cartItems.filter((item) => item.id !== id);
-    setCartItems(updated);
-  };
-
-  
   const subtotal = cartItems.reduce(
-    (sum, item) => sum + item.price * item.quantity,
+    (sum, item) => sum + Number(item.price) * (item.quantity || 1),
     0
   );
 
   const shipping = cartItems.length > 0 ? 15 : 0;
   const total = subtotal + shipping;
 
-  
   const renderItem = ({ item }: any) => (
     <View style={styles.cartItem}>
       <Image source={{ uri: item.image }} style={styles.image} />
@@ -106,11 +51,12 @@ export default function CartScreen() {
         </View>
       </View>
 
-      <TouchableOpacity onPress={() => removeItem(item.id)}>
+      <TouchableOpacity onPress={() => removeFromCart(item.id)}>
         <Ionicons name="trash-outline" size={24} color="red" />
       </TouchableOpacity>
     </View>
   );
+
 
   return (
     <View style={styles.container}>  
